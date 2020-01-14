@@ -13,19 +13,23 @@ using ArchaicQuestII.Engine.World;
 using ArchaicQuestII.Engine.World.Area.Model;
 using ArchaicQuestII.Engine.World.Room;
 using ArchaicQuestII.Engine.World.Room.Model;
+using Microsoft.Extensions.Logging;
+using ILogger = Serilog.ILogger;
 
 namespace ArchaicQuestII.Core.Events
 {
-    public class DB
+    public class DB : IDB
     {
-        private static Log.Log _logger { get; set; }
-
-        public DB() { 
-            _logger = new Log.Log();
+        private ILogger<DB> _logger { get; set; }
+        private LiteDatabase _db { get; set; }
+        public DB(LiteDatabase db, ILogger<DB> logger)
+        {
+            _logger = logger;
+            _db = db;
         }
 
 
-        public static bool Save<T>(T data, string collectionName)
+        public bool Save<T>(T data, string collectionName)
         {
             if (data == null)
             {
@@ -37,7 +41,7 @@ namespace ArchaicQuestII.Core.Events
                 using (var db = new LiteDatabase(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "MyData.db")))
                 {
                     db.GetCollection<T>(collectionName).Upsert(data);
-                   
+
                 }
 
                 return true;
@@ -51,12 +55,12 @@ namespace ArchaicQuestII.Core.Events
 
         }
 
-        public static List<T> GetCollection<T>(string collectionName)
-        { 
+        public List<T> GetCollection<T>(string collectionName)
+        {
             try
             {
                 using (var db = new LiteDatabase(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "MyData.db")))
-                {                 
+                {
                     return db.GetCollection<T>(collectionName).FindAll().ToList();
                 }
             }
@@ -69,7 +73,7 @@ namespace ArchaicQuestII.Core.Events
         }
 
 
-        public static T FindById<T>(string id, string collectionName)
+        public T FindById<T>(string id, string collectionName)
         {
 
             try
@@ -88,7 +92,7 @@ namespace ArchaicQuestII.Core.Events
 
         }
 
-        public static LiteCollection<T> GetColumn<T>(string collectionName)
+        public LiteCollection<T> GetColumn<T>(string collectionName)
         {
             try
             {
@@ -105,32 +109,31 @@ namespace ArchaicQuestII.Core.Events
             return null;
         }
 
- 
-        public static List<Area> GetAreas()
+
+        public List<Area> GetAreas()
         {
 
-                using (var db = new LiteDatabase(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "MyData.db")))
+            using (var db = new LiteDatabase(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "MyData.db")))
+            {
+                var col = db.GetCollection<Area>("Area");
+                var data = col.FindAll().ToList();
+                var roomCol = db.GetCollection<Room>("Room");
+
+                //This can/should be improved - will do for now
+                foreach (var area in data)
                 {
-                    var col = db.GetCollection<Area>("Area");
-                    var data = col.FindAll().ToList();
-                    var roomCol = db.GetCollection<Room>("Room");
-                    
-                    //This can/should be improved - will do for now
-                    foreach (var area in data)
-                    {
-                        var getRooms = roomCol.FindAll().Where(x => x.AreaId.Equals(area.Id)).ToList();
-                        area.Rooms = getRooms;
-                    }
+                    var getRooms = roomCol.FindAll().Where(x => x.AreaId.Equals(area.Id)).ToList();
+                    area.Rooms = getRooms;
+                }
 
                 return data;
 
-                }
+            }
         }
 
- 
 
- 
+
+
 
     }
 }
-     

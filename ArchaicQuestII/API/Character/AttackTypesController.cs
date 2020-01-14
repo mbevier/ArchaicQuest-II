@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ArchaicQuestII.Core.Events;
 using ArchaicQuestII.Engine.Character.Race.Commands;
 using ArchaicQuestII.Engine.Character.Race.Model;
 using ArchaicQuestII.Engine.Item;
@@ -11,7 +12,10 @@ namespace ArchaicQuestII.API.Character
 {
     public class RaceController
     {
-
+        public RaceController(IDB db)
+        {
+                
+        }
         [HttpPost]
         [Route("api/Character/Race")]
         public void Post(Race race)

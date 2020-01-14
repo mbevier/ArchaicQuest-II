@@ -11,6 +11,8 @@ using ArchaicQuestII.Hubs;
 using Serilog;
 using ArchaicQuestII.Core.Events;
 using ArchaicQuestII.Log;
+using LiteDB;
+using System.IO;
 
 namespace ArchaicQuestII
 {
@@ -27,6 +29,8 @@ namespace ArchaicQuestII
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<ILog>(new Log.Log());
+            services.AddSingleton<LiteDatabase>(new LiteDatabase(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "MyData.db")));
+            services.AddScoped<IDB, DB>();
             services.AddMvc();
             services.AddSignalR(o =>
             {

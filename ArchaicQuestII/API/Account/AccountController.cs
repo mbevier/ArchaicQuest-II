@@ -11,6 +11,10 @@ namespace ArchaicQuestII.Controllers
 {
     public class AccountController : Controller
     {
+        public AccountController()
+        {
+            
+        }
 
         [HttpPost]
         [Route("api/Account")]
