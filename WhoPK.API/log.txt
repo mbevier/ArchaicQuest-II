@@ -1,0 +1,24 @@
+2020-04-28 15:47:24.718 -07:00 [INF] Starting up ArchaicQuest
+2020-04-28 16:21:25.404 -07:00 [INF] Starting up ArchaicQuest
+2020-04-28 16:21:26.513 -07:00 [INF] User profile is available. Using 'C:\Users\Mark\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-04-28 16:21:26.912 -07:00 [INF] Creating key {deb8ff0a-37e1-446d-97eb-6ed82f893dea} with creation date 2020-04-28 23:21:26Z, activation date 2020-04-28 23:21:26Z, and expiration date 2020-07-27 23:21:26Z.
+2020-04-28 16:21:26.934 -07:00 [INF] Writing data to file 'C:\Users\Mark\AppData\Local\ASP.NET\DataProtection-Keys\key-deb8ff0a-37e1-446d-97eb-6ed82f893dea.xml'.
+2020-04-28 16:21:26.983 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/  
+2020-04-28 16:21:27.210 -07:00 [INF] Request finished in 230.043ms 404 
+2020-04-28 16:22:02.138 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/account  
+2020-04-28 16:22:02.177 -07:00 [INF] Route matched with {action = "Get", controller = "Room"}. Executing controller action with signature WhoPK.GameLogic.World.Room.Room Get(Int32) on controller WhoPK.API.World.RoomController (WhoPK.API).
+2020-04-28 16:22:02.198 -07:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2020-04-28 16:22:02.202 -07:00 [INF] Executed action WhoPK.API.World.RoomController.Get (WhoPK.API) in 20.4193ms
+2020-04-28 16:22:02.205 -07:00 [INF] Request finished in 67.4091ms 204 
+2020-04-28 16:22:07.723 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/  
+2020-04-28 16:22:07.727 -07:00 [INF] Request finished in 4.4026ms 404 
+2020-04-28 16:22:17.372 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/account  
+2020-04-28 16:22:17.375 -07:00 [INF] Request finished in 3.1065ms 404 
+2020-04-28 16:22:53.361 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/world/area  
+2020-04-28 16:22:53.366 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.World.Area.Area] Get() on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2020-04-28 16:22:53.371 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.World.Area.Area, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-28 16:22:53.383 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 17.3291ms
+2020-04-28 16:22:53.384 -07:00 [INF] Request finished in 22.8546ms 200 application/json; charset=utf-8
+2020-04-28 16:22:53.516 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/favicon.ico  
+2020-04-28 16:22:53.554 -07:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\WhoPK\Core\WhoPK.API\wwwroot\favicon.ico'
+2020-04-28 16:22:53.554 -07:00 [INF] Request finished in 38.6046ms 200 image/x-icon
