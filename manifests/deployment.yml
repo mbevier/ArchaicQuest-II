@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: coreapi 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: coreapi 
+    spec:
+      containers:
+        - name: coreapi 
+          image: randomcontainerregistry.azurecr.io/coreapi
+          ports:
+          - containerPort: 80
