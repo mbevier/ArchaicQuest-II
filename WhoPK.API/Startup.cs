@@ -56,11 +56,11 @@ namespace WhoPK.API
             services.AddCors(options =>
             {
                 options.AddPolicy("client",
-                    builder => builder.WithOrigins("http://localhost:4200", "http://localhost:1337")
+                    builder => builder.WithOrigins("http://localhost:4200", "http://localhost:1337", "http://52.141.211.127:4200")
                         .AllowAnyMethod().AllowAnyHeader().AllowCredentials());
-                //options.AddPolicy("admin",
-                //    builder => builder.WithOrigins("http://localhost:1337")
-                //        .AllowAnyMethod().AllowAnyHeader().AllowCredentials());
+                options.AddPolicy("admin",
+                    builder => builder.WithOrigins("http://52.141.211.177:4300")
+                        .AllowAnyMethod().AllowAnyHeader().AllowCredentials());
             });
 
             // configure strongly typed settings objects
@@ -122,16 +122,12 @@ namespace WhoPK.API
          
             app.UseStaticFiles();
 
-            app.UseCors(
-                options => options.WithOrigins("http://http://52.141.211.127/:4200").AllowAnyMethod().AllowAnyHeader().AllowCredentials()
-            );
-
             //app.UseCors(
             //    options => options.WithOrigins("http://localhost:4").AllowAnyMethod().AllowAnyHeader().AllowCredentials()
             //);
 
-            //app.UseCors("client");
-           // app.UseCors("admin");
+            app.UseCors("client");
+            app.UseCors("admin");
         
             app.UseAuthentication();
 
