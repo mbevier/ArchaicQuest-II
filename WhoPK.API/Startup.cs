@@ -122,9 +122,14 @@ namespace WhoPK.API
          
             app.UseStaticFiles();
 
-            //app.UseCors(
-            //    options => options.WithOrigins("http://localhost:4").AllowAnyMethod().AllowAnyHeader().AllowCredentials()
-            //);
+            app.UseCors(
+                options => options.WithOrigins("http://52.141.211.127:4200").AllowAnyMethod().AllowAnyHeader().AllowCredentials()
+            );
+
+            app.UseCors(
+            options => options.WithOrigins("52.141.211.127/:1").AllowAnyMethod().AllowAnyHeader().AllowCredentials()
+        );
+
 
             app.UseCors("client");
             app.UseCors("admin");
