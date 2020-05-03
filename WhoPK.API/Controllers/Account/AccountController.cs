@@ -13,6 +13,7 @@ using Account = WhoPK.GameLogic.Account.Account;
 using AccountStats = WhoPK.GameLogic.Account.AccountStats;
 using static WhoPK.API.Services.services;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 
 namespace WhoPK.API.Controllers
 {
@@ -28,6 +29,7 @@ namespace WhoPK.API.Controllers
 
         [HttpPost]
         [Route("api/Account")]
+        [ProducesResponseType(typeof(Guid), StatusCodes.Status200OK)]
         public IActionResult Post([FromBody] Account account)
         {
 
@@ -58,12 +60,12 @@ namespace WhoPK.API.Controllers
 
             var saved = _db.Save(data, DataBase.Collections.Account);
 
-            string json = JsonConvert.SerializeObject(new { toast = "account created successfully", id = data.Id });
-            return saved ? (IActionResult)Ok(json) : BadRequest("Error saving account");
+            return saved ? (IActionResult)Ok(data.Id) : BadRequest("Error saving account");
         }
 
         [HttpPost]
         [Route("api/Account/Login")]
+        [ProducesResponseType(typeof(Guid), StatusCodes.Status200OK)]
         public IActionResult Login([FromBody] Login login)
         {
 
@@ -85,13 +87,14 @@ namespace WhoPK.API.Controllers
                 return BadRequest("Password is not correct.");
             }      
 
-            return (IActionResult)Ok(JsonConvert.SerializeObject(new { toast = "logged in successfully", id = user.Id }));
+            return Ok(user.Id);
             
         }
 
-        [HttpPost]
-        [Route("api/Account/Profile")]
-        public IActionResult GetProfile([FromBody] Guid id)
+        [HttpGet]
+        [Route("api/Account/Profile/{id}")]
+        [ProducesResponseType(typeof(AccountViewModel), StatusCodes.Status200OK)]
+        public IActionResult GetProfile(string id)
         {
 
             if (!ModelState.IsValid)
@@ -99,8 +102,8 @@ namespace WhoPK.API.Controllers
                 var exception = new Exception("Invalid request");
                 throw exception;
             }
-
-            var user = _db.GetCollection<Account>(DataBase.Collections.Account).FindOne(x => x.Id.Equals(id));
+            var accounts = _db.GetCollection<Account>(DataBase.Collections.Account).FindAll();
+            var user = _db.GetCollection<Account>(DataBase.Collections.Account).FindOne(x => x.Id.ToString().Equals(id));
 
             if (user == null)
             {
@@ -122,13 +125,14 @@ namespace WhoPK.API.Controllers
             };
 
            
-            return Ok(JsonConvert.SerializeObject(new { toast = "logged in successfully", profile }));
+            return Ok(profile);
 
         }
 
 
         //https://jasonwatmore.com/post/2018/08/14/aspnet-core-21-jwt-authentication-tutorial-with-example-api
         [HttpPost("api/Account/authenticate")]
+        [ProducesResponseType(typeof(AdminUser), StatusCodes.Status200OK)]
         public IActionResult Authenticate([FromBody]AdminUser userParam)
         {
             var user = _adminUserService.Authenticate(userParam.Username, userParam.Password);

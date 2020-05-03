@@ -31,13 +31,13 @@ namespace WhoPK.GameLogic.Character.Race
                             Description = @"`Elves are shorter and slimmer than humans, they are also more in tune with nature and magic.
                      They have an innate ability of Sneaking, Infrasion and resistance to charm spells."
                         },
-                        new Race()
-                        {
-                            Name = "Wood-elf",
-                            CreatedBy = "Malleus",
-                            Description = @"wood elf",
+                        //new Race()
+                        //{
+                        //    Name = "Wood-elf",
+                        //    CreatedBy = "Malleus",
+                        //    Description = @"wood elf",
 
-                        },
+                        //},
                         new Race()
                         {
                             Name = "Half Elf",
@@ -45,13 +45,13 @@ namespace WhoPK.GameLogic.Character.Race
                             Description = @"`Elves are shorter and slimmer than humans, they are also more in tune with nature and magic.
                      They have an innate ability of Sneaking, Infrasion and resistance to charm spells."
                         },
-                        new Race()
-                        {
-                            Name = "Dark Elf",
-                            CreatedBy = "Malleus",
-                            Description = @"`Dark Elves are identical to their elven brethren except their skin ranges from dark pale blue to black.
-                     They too have an innate ability of Sneaking, Infrasion and resistance to charm spells."
-                        },
+                     //   new Race()
+                     //   {
+                     //       Name = "Dark Elf",
+                     //       CreatedBy = "Malleus",
+                     //       Description = @"`Dark Elves are identical to their elven brethren except their skin ranges from dark pale blue to black.
+                     //They too have an innate ability of Sneaking, Infrasion and resistance to charm spells."
+                     //   },
                         new Race()
                         {
                             Name = "Half Drow",
@@ -61,7 +61,7 @@ namespace WhoPK.GameLogic.Character.Race
                         },
                         new Race()
                         {
-                            Name = "Dwarves",
+                            Name = "Dwarf",
                             CreatedBy = "Malleus",
                             Description = @"`Dwarves are a short muscular humanoids who prefer the mountains and the underdark where they enjoy
                      digging for gold. A lot of dwarves do venture out of the caves and can be found in human settlements in the local
@@ -75,27 +75,27 @@ namespace WhoPK.GameLogic.Character.Race
                      digging for gold. A lot of dwarves do venture out of the caves and can be found in human settlements in the local
                       tavern with a mug of Ale. They are powerful Warriors and Clerics"
                         },
-                        new Race()
-                        {
-                            Name = "Ariel",
-                            CreatedBy = "Malleus",
-                            Description = @"`Dwarves are a short muscular humanoids who prefer the mountains and the underdark where they enjoy
-                     digging for gold. A lot of dwarves do venture out of the caves and can be found in human settlements in the local
-                      tavern with a mug of Ale. They are powerful Warriors and Clerics"
-                        },
-                        new Race()
-                        {
-                            Name = "Mau",
-                            CreatedBy = "Malleus",
-                            Description = @"`Mau, Cat like humanoid race. Info coming soon"
-                        },
-                        new Race()
-                        {
-                            Name = "Tlaloc",
-                            CreatedBy = "Malleus",
-                            Description = @"`Tlaloc, Reptilian lizard like humanoid race. Info coming soon",
+                     //   new Race()
+                     //   {
+                     //       Name = "Ariel",
+                     //       CreatedBy = "Malleus",
+                     //       Description = @"`Dwarves are a short muscular humanoids who prefer the mountains and the underdark where they enjoy
+                     //digging for gold. A lot of dwarves do venture out of the caves and can be found in human settlements in the local
+                     // tavern with a mug of Ale. They are powerful Warriors and Clerics"
+                     //   },
+                     //   new Race()
+                     //   {
+                     //       Name = "Mau",
+                     //       CreatedBy = "Malleus",
+                     //       Description = @"`Mau, Cat like humanoid race. Info coming soon"
+                     //   },
+                     //   new Race()
+                     //   {
+                     //       Name = "Tlaloc",
+                     //       CreatedBy = "Malleus",
+                     //       Description = @"`Tlaloc, Reptilian lizard like humanoid race. Info coming soon",
 
-                        },
+                     //   },
                         new Race()
                         {
                             Name = "Minotaur",

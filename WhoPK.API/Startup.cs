@@ -24,6 +24,7 @@ using WhoPK.GameLogic.World.Room;
 using Microsoft.AspNetCore.SignalR;
 using static WhoPK.API.Services.services;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.NewtonsoftJson;
 
 namespace WhoPK.API
 {
@@ -46,10 +47,8 @@ namespace WhoPK.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-           
+            services.AddMvc(option => option.EnableEndpointRouting = false).AddNewtonsoftJson();
 
-
-            services.AddMvc(option => option.EnableEndpointRouting = false);
             services.AddSignalR(o =>
             {
                 o.EnableDetailedErrors = true;
@@ -102,6 +101,8 @@ namespace WhoPK.API
             services.AddTransient<IAddRoom, AddRoom>();
             services.AddSingleton<IWriteToClient, WriteToClient>((factory) => new WriteToClient(_hubContext));
 
+            // Register the Swagger services
+            services.AddSwaggerDocument();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -121,18 +122,22 @@ namespace WhoPK.API
          
             app.UseStaticFiles();
 
-            //app.UseCors(
-            //    options => options.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader().AllowCredentials()   
-            //);
+            app.UseCors(
+                options => options.WithOrigins("http://http://52.141.211.127/:4200").AllowAnyMethod().AllowAnyHeader().AllowCredentials()
+            );
 
             //app.UseCors(
             //    options => options.WithOrigins("http://localhost:4").AllowAnyMethod().AllowAnyHeader().AllowCredentials()
             //);
 
-            app.UseCors("client");
+            //app.UseCors("client");
            // app.UseCors("admin");
         
             app.UseAuthentication();
+
+            // Register the Swagger generator and the Swagger UI middlewares
+            app.UseOpenApi();
+            app.UseSwaggerUi3();
 
             app.UseMvc(routes =>
             {

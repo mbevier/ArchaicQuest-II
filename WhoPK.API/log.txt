@@ -22,3 +22,1497 @@
 2020-04-28 16:22:53.516 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/favicon.ico  
 2020-04-28 16:22:53.554 -07:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\WhoPK\Core\WhoPK.API\wwwroot\favicon.ico'
 2020-04-28 16:22:53.554 -07:00 [INF] Request finished in 38.6046ms 200 image/x-icon
+2020-04-29 08:14:36.496 -07:00 [INF] Starting up ArchaicQuest
+2020-04-29 08:14:37.638 -07:00 [INF] User profile is available. Using 'C:\Users\Mark\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-04-29 08:14:37.919 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/  
+2020-04-29 08:14:38.140 -07:00 [INF] Route matched with {action = "Get", controller = "Room"}. Executing controller action with signature WhoPK.GameLogic.World.Room.Room Get(Int32) on controller WhoPK.API.World.RoomController (WhoPK.API).
+2020-04-29 08:14:38.181 -07:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2020-04-29 08:14:38.186 -07:00 [INF] Executed action WhoPK.API.World.RoomController.Get (WhoPK.API) in 41.2102ms
+2020-04-29 08:14:38.196 -07:00 [INF] Request finished in 279.407ms 204 
+2020-04-29 08:14:40.503 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/character/race  
+2020-04-29 08:14:40.513 -07:00 [INF] Route matched with {action = "Get", controller = "Race"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Race.Race] Get() on controller WhoPK.API.Controllers.Character.RaceController (WhoPK.API).
+2020-04-29 08:14:40.583 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Race.Race, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 08:14:40.601 -07:00 [INF] Executed action WhoPK.API.Controllers.Character.RaceController.Get (WhoPK.API) in 77.3818ms
+2020-04-29 08:14:40.604 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: The collection type 'System.Collections.Generic.Dictionary`2[WhoPK.GameLogic.Effect.EffectLocation,System.Int32]' on 'WhoPK.GameLogic.Character.Model.Attributes.Attribute' is not supported.
+   at System.Text.Json.JsonClassInfo.GetElementType(Type propertyType, Type parentType, MemberInfo memberInfo, JsonSerializerOptions options)
+   at System.Text.Json.JsonClassInfo.CreateProperty(Type declaredPropertyType, Type runtimePropertyType, Type implementedPropertyType, PropertyInfo propertyInfo, Type parentClassType, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.JsonClassInfo.AddProperty(Type propertyType, PropertyInfo propertyInfo, Type classType, JsonSerializerOptions options)
+   at System.Text.Json.JsonClassInfo..ctor(Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializerOptions.GetOrAddClass(Type classType)
+   at System.Text.Json.JsonPropertyInfo.get_RuntimeClassInfo()
+   at System.Text.Json.JsonSerializer.Write(Utf8JsonWriter writer, Int32 originalWriterDepth, Int32 flushThreshold, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteAsyncCore(Stream utf8Json, Object value, Type inputType, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-04-29 08:14:40.721 -07:00 [INF] Request finished in 218.1927ms 500 text/html; charset=utf-8
+2020-04-29 08:14:51.070 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/character/race  
+2020-04-29 08:14:51.075 -07:00 [INF] Route matched with {action = "Get", controller = "Race"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Race.Race] Get() on controller WhoPK.API.Controllers.Character.RaceController (WhoPK.API).
+2020-04-29 08:15:00.423 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Race.Race, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 08:15:00.425 -07:00 [INF] Executed action WhoPK.API.Controllers.Character.RaceController.Get (WhoPK.API) in 9349.7006ms
+2020-04-29 08:15:00.425 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: The collection type 'System.Collections.Generic.Dictionary`2[WhoPK.GameLogic.Effect.EffectLocation,System.Int32]' on 'WhoPK.GameLogic.Character.Model.Attributes.Attribute' is not supported.
+   at System.Text.Json.JsonClassInfo.GetElementType(Type propertyType, Type parentType, MemberInfo memberInfo, JsonSerializerOptions options)
+   at System.Text.Json.JsonClassInfo.CreateProperty(Type declaredPropertyType, Type runtimePropertyType, Type implementedPropertyType, PropertyInfo propertyInfo, Type parentClassType, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.JsonClassInfo.AddProperty(Type propertyType, PropertyInfo propertyInfo, Type classType, JsonSerializerOptions options)
+   at System.Text.Json.JsonClassInfo..ctor(Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializerOptions.GetOrAddClass(Type classType)
+   at System.Text.Json.JsonPropertyInfo.get_RuntimeClassInfo()
+   at System.Text.Json.JsonSerializer.Write(Utf8JsonWriter writer, Int32 originalWriterDepth, Int32 flushThreshold, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteAsyncCore(Stream utf8Json, Object value, Type inputType, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-04-29 08:15:00.435 -07:00 [INF] Request finished in 9364.907ms 500 text/html; charset=utf-8
+2020-04-29 08:15:00.592 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/favicon.ico  
+2020-04-29 08:15:00.610 -07:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\WhoPK\Core\WhoPK.API\wwwroot\favicon.ico'
+2020-04-29 08:15:00.611 -07:00 [INF] Request finished in 19.6847ms 200 image/x-icon
+2020-04-29 08:28:28.819 -07:00 [INF] Starting up ArchaicQuest
+2020-04-29 08:28:29.818 -07:00 [INF] User profile is available. Using 'C:\Users\Mark\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-04-29 08:28:30.049 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/character/race  
+2020-04-29 08:28:30.217 -07:00 [INF] Route matched with {action = "Get", controller = "Race"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Race.Race] Get() on controller WhoPK.API.Controllers.Character.RaceController (WhoPK.API).
+2020-04-29 08:28:32.254 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Race.Race, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 08:28:32.423 -07:00 [INF] Executed action WhoPK.API.Controllers.Character.RaceController.Get (WhoPK.API) in 2200.6393ms
+2020-04-29 08:28:32.425 -07:00 [INF] Request finished in 2379.1597ms 200 application/json; charset=utf-8
+2020-04-29 08:28:32.556 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/favicon.ico  
+2020-04-29 08:28:32.578 -07:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\WhoPK\Core\WhoPK.API\wwwroot\favicon.ico'
+2020-04-29 08:28:32.579 -07:00 [INF] Request finished in 22.8981ms 200 image/x-icon
+2020-04-29 08:28:44.971 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/character/race  
+2020-04-29 08:28:44.974 -07:00 [INF] Route matched with {action = "Get", controller = "Race"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Race.Race] Get() on controller WhoPK.API.Controllers.Character.RaceController (WhoPK.API).
+2020-04-29 08:28:50.747 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Race.Race, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 08:28:50.748 -07:00 [INF] Executed action WhoPK.API.Controllers.Character.RaceController.Get (WhoPK.API) in 5774.2361ms
+2020-04-29 08:28:50.748 -07:00 [INF] Request finished in 5777.7012ms 200 application/json; charset=utf-8
+2020-04-29 08:28:50.885 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/favicon.ico  
+2020-04-29 08:28:50.891 -07:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\WhoPK\Core\WhoPK.API\wwwroot\favicon.ico'
+2020-04-29 08:28:50.891 -07:00 [INF] Request finished in 5.7041ms 200 image/x-icon
+2020-04-29 08:30:04.596 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/character/race  
+2020-04-29 08:30:04.599 -07:00 [INF] Route matched with {action = "Get", controller = "Race"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Race.Race] Get() on controller WhoPK.API.Controllers.Character.RaceController (WhoPK.API).
+2020-04-29 08:30:09.992 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Race.Race, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 08:30:09.993 -07:00 [INF] Executed action WhoPK.API.Controllers.Character.RaceController.Get (WhoPK.API) in 5393.5978ms
+2020-04-29 08:30:09.993 -07:00 [INF] Request finished in 5398.2107ms 200 application/json; charset=utf-8
+2020-04-29 08:30:25.536 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/character/class  
+2020-04-29 08:30:25.543 -07:00 [INF] Route matched with {action = "Get", controller = "Class"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Class.Class] Get() on controller WhoPK.API.Character.ClassController (WhoPK.API).
+2020-04-29 08:30:25.554 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Class.Class, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 08:30:25.560 -07:00 [INF] Executed action WhoPK.API.Character.ClassController.Get (WhoPK.API) in 16.2724ms
+2020-04-29 08:30:25.560 -07:00 [INF] Request finished in 24.4262ms 200 application/json; charset=utf-8
+2020-04-29 11:25:26.998 -07:00 [INF] Starting up ArchaicQuest
+2020-04-29 11:25:28.283 -07:00 [INF] User profile is available. Using 'C:\Users\Mark\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-04-29 11:25:28.581 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Alignment  
+2020-04-29 11:25:28.808 -07:00 [INF] Route matched with {action = "Get", controller = "Alignment"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Alignment.Alignment] Get() on controller WhoPK.API.Character.AlignmentController (WhoPK.API).
+2020-04-29 11:25:28.855 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Alignment.Alignment, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 11:25:29.006 -07:00 [INF] Executed action WhoPK.API.Character.AlignmentController.Get (WhoPK.API) in 192.6369ms
+2020-04-29 11:25:29.009 -07:00 [INF] Request finished in 430.9339ms 200 application/json; charset=utf-8
+2020-04-29 11:25:37.689 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Class  
+2020-04-29 11:25:37.702 -07:00 [INF] Route matched with {action = "Get", controller = "Class"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Class.Class] Get() on controller WhoPK.API.Character.ClassController (WhoPK.API).
+2020-04-29 11:25:37.709 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Class.Class, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 11:25:37.714 -07:00 [INF] Executed action WhoPK.API.Character.ClassController.Get (WhoPK.API) in 10.8206ms
+2020-04-29 11:25:37.714 -07:00 [INF] Request finished in 25.1627ms 200 application/json; charset=utf-8
+2020-04-29 11:25:44.061 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Race  
+2020-04-29 11:25:44.066 -07:00 [INF] Route matched with {action = "Get", controller = "Race"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Race.Race] Get() on controller WhoPK.API.Controllers.Character.RaceController (WhoPK.API).
+2020-04-29 11:25:44.080 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Race.Race, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 11:25:44.096 -07:00 [INF] Executed action WhoPK.API.Controllers.Character.RaceController.Get (WhoPK.API) in 29.533ms
+2020-04-29 11:25:44.096 -07:00 [INF] Request finished in 35.0065ms 200 application/json; charset=utf-8
+2020-04-29 11:25:50.111 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Status  
+2020-04-29 11:25:50.115 -07:00 [INF] Route matched with {action = "Get", controller = "Status"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Core.Option] Get() on controller WhoPK.API.Controllers.Character.StatusController (WhoPK.API).
+2020-04-29 11:25:50.121 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Core.Option, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 11:25:50.126 -07:00 [INF] Executed action WhoPK.API.Controllers.Character.StatusController.Get (WhoPK.API) in 10.2414ms
+2020-04-29 11:25:50.126 -07:00 [INF] Request finished in 14.7519ms 200 application/json; charset=utf-8
+2020-04-29 11:25:59.876 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/AttackTypes  
+2020-04-29 11:25:59.895 -07:00 [INF] Request finished in 19.0482ms 404 
+2020-04-29 14:23:27.659 -07:00 [INF] Starting up ArchaicQuest
+2020-04-29 14:23:28.834 -07:00 [INF] User profile is available. Using 'C:\Users\Mark\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-04-29 14:23:29.117 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Race  
+2020-04-29 14:23:29.127 -07:00 [INF] CORS policy execution successful.
+2020-04-29 14:23:29.320 -07:00 [INF] Route matched with {action = "Get", controller = "Race"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Race.Race] Get() on controller WhoPK.API.Controllers.Character.RaceController (WhoPK.API).
+2020-04-29 14:23:29.376 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Race.Race, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 14:23:29.538 -07:00 [INF] Executed action WhoPK.API.Controllers.Character.RaceController.Get (WhoPK.API) in 213.9549ms
+2020-04-29 14:23:29.542 -07:00 [INF] Request finished in 427.2741ms 200 application/json; charset=utf-8
+2020-04-29 14:27:05.084 -07:00 [INF] Starting up ArchaicQuest
+2020-04-29 14:27:05.968 -07:00 [INF] User profile is available. Using 'C:\Users\Mark\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-04-29 14:27:06.196 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Race  
+2020-04-29 14:27:06.205 -07:00 [INF] CORS policy execution successful.
+2020-04-29 14:27:06.355 -07:00 [INF] Route matched with {action = "Get", controller = "Race"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Race.Race] Get() on controller WhoPK.API.Controllers.Character.RaceController (WhoPK.API).
+2020-04-29 14:27:06.407 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Race.Race, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 14:27:06.544 -07:00 [INF] Executed action WhoPK.API.Controllers.Character.RaceController.Get (WhoPK.API) in 184.5598ms
+2020-04-29 14:27:06.548 -07:00 [INF] Request finished in 354.487ms 200 application/json; charset=utf-8
+2020-04-29 14:27:25.046 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Race  
+2020-04-29 14:27:25.047 -07:00 [INF] CORS policy execution successful.
+2020-04-29 14:27:25.050 -07:00 [INF] Route matched with {action = "Get", controller = "Race"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Race.Race] Get() on controller WhoPK.API.Controllers.Character.RaceController (WhoPK.API).
+2020-04-29 14:27:25.053 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Race.Race, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 14:27:25.057 -07:00 [INF] Executed action WhoPK.API.Controllers.Character.RaceController.Get (WhoPK.API) in 7.0182ms
+2020-04-29 14:27:25.058 -07:00 [INF] Request finished in 11.8957ms 200 application/json; charset=utf-8
+2020-04-29 14:28:20.977 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Race  
+2020-04-29 14:28:20.979 -07:00 [INF] CORS policy execution successful.
+2020-04-29 14:28:20.983 -07:00 [INF] Route matched with {action = "Get", controller = "Race"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Race.Race] Get() on controller WhoPK.API.Controllers.Character.RaceController (WhoPK.API).
+2020-04-29 14:29:49.920 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Race.Race, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 14:29:49.921 -07:00 [INF] Executed action WhoPK.API.Controllers.Character.RaceController.Get (WhoPK.API) in 88937.6321ms
+2020-04-29 14:29:49.921 -07:00 [INF] Request finished in 88944.2001ms 200 application/json; charset=utf-8
+2020-04-29 14:29:58.486 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Race  
+2020-04-29 14:29:58.487 -07:00 [INF] CORS policy execution successful.
+2020-04-29 14:29:58.487 -07:00 [INF] Route matched with {action = "Get", controller = "Race"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Race.Race] Get() on controller WhoPK.API.Controllers.Character.RaceController (WhoPK.API).
+2020-04-29 14:30:11.701 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Race.Race, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 14:30:11.704 -07:00 [INF] Executed action WhoPK.API.Controllers.Character.RaceController.Get (WhoPK.API) in 13216.9593ms
+2020-04-29 14:30:11.705 -07:00 [INF] Request finished in 13219.131ms 200 application/json; charset=utf-8
+2020-04-29 14:47:22.126 -07:00 [INF] Starting up ArchaicQuest
+2020-04-29 14:47:22.987 -07:00 [INF] User profile is available. Using 'C:\Users\Mark\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-04-29 14:47:23.318 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Race  
+2020-04-29 14:47:23.327 -07:00 [INF] CORS policy execution successful.
+2020-04-29 14:47:23.489 -07:00 [INF] Route matched with {action = "Get", controller = "Race"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Race.Race] Get() on controller WhoPK.API.Controllers.Character.RaceController (WhoPK.API).
+2020-04-29 14:47:23.495 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Race.Race, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 14:47:23.607 -07:00 [INF] Executed action WhoPK.API.Controllers.Character.RaceController.Get (WhoPK.API) in 113.0518ms
+2020-04-29 14:47:23.611 -07:00 [INF] Request finished in 297.4325ms 200 application/json; charset=utf-8
+2020-04-29 14:47:56.449 -07:00 [INF] Starting up ArchaicQuest
+2020-04-29 14:47:57.446 -07:00 [INF] User profile is available. Using 'C:\Users\Mark\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-04-29 14:47:57.802 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Race  
+2020-04-29 14:47:57.813 -07:00 [INF] CORS policy execution successful.
+2020-04-29 14:47:57.968 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Race  
+2020-04-29 14:47:57.968 -07:00 [INF] CORS policy execution successful.
+2020-04-29 14:47:58.004 -07:00 [INF] Route matched with {action = "Get", controller = "Race"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Race.Race] Get() on controller WhoPK.API.Controllers.Character.RaceController (WhoPK.API).
+2020-04-29 14:47:58.004 -07:00 [INF] Route matched with {action = "Get", controller = "Race"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Race.Race] Get() on controller WhoPK.API.Controllers.Character.RaceController (WhoPK.API).
+2020-04-29 14:47:58.047 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Race.Race, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 14:47:58.047 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Race.Race, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 14:47:58.219 -07:00 [INF] Executed action WhoPK.API.Controllers.Character.RaceController.Get (WhoPK.API) in 208.9021ms
+2020-04-29 14:47:58.219 -07:00 [INF] Executed action WhoPK.API.Controllers.Character.RaceController.Get (WhoPK.API) in 210.5892ms
+2020-04-29 14:47:58.224 -07:00 [INF] Request finished in 424.7135ms 200 application/json; charset=utf-8
+2020-04-29 14:47:58.224 -07:00 [INF] Request finished in 255.4593ms 200 application/json; charset=utf-8
+2020-04-29 15:24:57.002 -07:00 [INF] Starting up ArchaicQuest
+2020-04-29 15:24:59.240 -07:00 [INF] User profile is available. Using 'C:\Users\Mark\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-04-29 15:24:59.574 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Class  
+2020-04-29 15:24:59.830 -07:00 [INF] Route matched with {action = "Get", controller = "Class"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Class.Class] Get() on controller WhoPK.API.Character.ClassController (WhoPK.API).
+2020-04-29 15:24:59.891 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Class.Class, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 15:25:00.087 -07:00 [INF] Executed action WhoPK.API.Character.ClassController.Get (WhoPK.API) in 252.0749ms
+2020-04-29 15:25:00.090 -07:00 [INF] Request finished in 518.6984ms 200 application/json; charset=utf-8
+2020-04-29 15:26:05.839 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Class  
+2020-04-29 15:26:05.852 -07:00 [INF] Route matched with {action = "Get", controller = "Class"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Class.Class] Get() on controller WhoPK.API.Character.ClassController (WhoPK.API).
+2020-04-29 15:26:05.853 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Class.Class, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 15:26:05.854 -07:00 [INF] Executed action WhoPK.API.Character.ClassController.Get (WhoPK.API) in 2.3926ms
+2020-04-29 15:26:05.855 -07:00 [INF] Request finished in 16.1567ms 200 application/json; charset=utf-8
+2020-04-29 15:26:05.990 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/favicon.ico  
+2020-04-29 15:26:06.019 -07:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\WhoPK\Core\WhoPK.API\wwwroot\favicon.ico'
+2020-04-29 15:26:06.020 -07:00 [INF] Request finished in 30.0888ms 200 image/x-icon
+2020-04-29 15:32:50.846 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/race  
+2020-04-29 15:32:50.852 -07:00 [INF] Route matched with {action = "Get", controller = "Race"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Race.Race] Get() on controller WhoPK.API.Controllers.Character.RaceController (WhoPK.API).
+2020-04-29 15:32:50.865 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Race.Race, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 15:32:50.880 -07:00 [INF] Executed action WhoPK.API.Controllers.Character.RaceController.Get (WhoPK.API) in 27.7348ms
+2020-04-29 15:32:50.880 -07:00 [INF] Request finished in 34.3004ms 200 application/json; charset=utf-8
+2020-04-29 15:46:57.437 -07:00 [INF] Starting up ArchaicQuest
+2020-04-29 15:46:58.627 -07:00 [INF] User profile is available. Using 'C:\Users\Mark\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-04-29 15:46:58.916 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Class  
+2020-04-29 15:46:59.117 -07:00 [INF] Route matched with {action = "Get", controller = "Class"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Class.Class] Get() on controller WhoPK.API.Character.ClassController (WhoPK.API).
+2020-04-29 15:46:59.161 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Class.Class, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 15:46:59.318 -07:00 [INF] Executed action WhoPK.API.Character.ClassController.Get (WhoPK.API) in 193.6254ms
+2020-04-29 15:46:59.322 -07:00 [INF] Request finished in 409.4488ms 200 application/json; charset=utf-8
+2020-04-29 15:56:57.900 -07:00 [INF] Starting up ArchaicQuest
+2020-04-29 15:56:58.940 -07:00 [INF] User profile is available. Using 'C:\Users\Mark\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-04-29 15:56:59.186 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger  
+2020-04-29 15:56:59.291 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/index.html  
+2020-04-29 15:56:59.291 -07:00 [INF] Request finished in 106.7242ms 302 
+2020-04-29 15:56:59.448 -07:00 [INF] Request finished in 157.7229ms 200 text/html; charset=utf-8
+2020-04-29 15:56:59.503 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/swagger-ui.css  
+2020-04-29 15:56:59.503 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/swagger-ui-bundle.js  
+2020-04-29 15:56:59.505 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/swagger-ui-standalone-preset.js  
+2020-04-29 15:56:59.541 -07:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-04-29 15:56:59.541 -07:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-04-29 15:56:59.544 -07:00 [INF] Request finished in 40.8607ms 200 text/css
+2020-04-29 15:56:59.544 -07:00 [INF] Request finished in 38.3729ms 200 application/javascript
+2020-04-29 15:56:59.548 -07:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-04-29 15:56:59.548 -07:00 [INF] Request finished in 45.3546ms 200 application/javascript
+2020-04-29 15:56:59.821 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/v1/swagger.json  
+2020-04-29 15:56:59.902 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/favicon-32x32.png  
+2020-04-29 15:56:59.903 -07:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2020-04-29 15:56:59.904 -07:00 [INF] Request finished in 2.0219ms 200 image/png
+2020-04-29 15:57:00.717 -07:00 [INF] Request finished in 896.1656ms 200 application/json; charset=utf-8
+2020-04-29 15:57:22.327 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/v1/swagger.json  
+2020-04-29 15:57:22.334 -07:00 [INF] Request finished in 7.3044ms 200 application/json; charset=utf-8
+2020-04-29 17:22:01.288 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Race  
+2020-04-29 17:22:01.288 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Class  
+2020-04-29 17:22:01.313 -07:00 [INF] CORS policy execution successful.
+2020-04-29 17:22:01.313 -07:00 [INF] CORS policy execution successful.
+2020-04-29 17:22:01.418 -07:00 [INF] Route matched with {action = "Get", controller = "Class"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Class.Class] Get() on controller WhoPK.API.Character.ClassController (WhoPK.API).
+2020-04-29 17:22:01.418 -07:00 [INF] Route matched with {action = "Get", controller = "Race"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Race.Race] Get() on controller WhoPK.API.Controllers.Character.RaceController (WhoPK.API).
+2020-04-29 17:22:01.482 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Race.Race, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 17:22:01.482 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Class.Class, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 17:22:01.513 -07:00 [INF] Executed action WhoPK.API.Character.ClassController.Get (WhoPK.API) in 88.4784ms
+2020-04-29 17:22:01.513 -07:00 [INF] Executed action WhoPK.API.Controllers.Character.RaceController.Get (WhoPK.API) in 88.2998ms
+2020-04-29 17:22:01.515 -07:00 [INF] Request finished in 229.8237ms 200 application/json; charset=utf-8
+2020-04-29 17:22:01.515 -07:00 [INF] Request finished in 229.8307ms 200 application/json; charset=utf-8
+2020-04-29 17:29:29.375 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Race  
+2020-04-29 17:29:29.376 -07:00 [INF] CORS policy execution successful.
+2020-04-29 17:29:29.376 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Class  
+2020-04-29 17:29:29.377 -07:00 [INF] CORS policy execution successful.
+2020-04-29 17:29:29.378 -07:00 [INF] Route matched with {action = "Get", controller = "Race"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Race.Race] Get() on controller WhoPK.API.Controllers.Character.RaceController (WhoPK.API).
+2020-04-29 17:29:29.378 -07:00 [INF] Route matched with {action = "Get", controller = "Class"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Class.Class] Get() on controller WhoPK.API.Character.ClassController (WhoPK.API).
+2020-04-29 17:29:29.380 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Class.Class, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 17:29:29.380 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Race.Race, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 17:29:29.382 -07:00 [INF] Executed action WhoPK.API.Character.ClassController.Get (WhoPK.API) in 3.6968ms
+2020-04-29 17:29:29.382 -07:00 [INF] Executed action WhoPK.API.Controllers.Character.RaceController.Get (WhoPK.API) in 3.9019ms
+2020-04-29 17:29:29.382 -07:00 [INF] Request finished in 6.0718ms 200 application/json; charset=utf-8
+2020-04-29 17:29:29.383 -07:00 [INF] Request finished in 7.6489ms 200 application/json; charset=utf-8
+2020-04-29 17:36:58.113 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Race  
+2020-04-29 17:36:58.113 -07:00 [INF] CORS policy execution successful.
+2020-04-29 17:36:58.115 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Class  
+2020-04-29 17:36:58.116 -07:00 [INF] CORS policy execution successful.
+2020-04-29 17:36:58.115 -07:00 [INF] Route matched with {action = "Get", controller = "Race"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Race.Race] Get() on controller WhoPK.API.Controllers.Character.RaceController (WhoPK.API).
+2020-04-29 17:36:58.121 -07:00 [INF] Route matched with {action = "Get", controller = "Class"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Class.Class] Get() on controller WhoPK.API.Character.ClassController (WhoPK.API).
+2020-04-29 17:36:58.123 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Class.Class, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 17:36:58.125 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Race.Race, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 17:36:58.127 -07:00 [INF] Executed action WhoPK.API.Controllers.Character.RaceController.Get (WhoPK.API) in 7.4702ms
+2020-04-29 17:36:58.128 -07:00 [INF] Request finished in 15.3748ms 200 application/json; charset=utf-8
+2020-04-29 17:36:58.136 -07:00 [INF] Executed action WhoPK.API.Character.ClassController.Get (WhoPK.API) in 13.9123ms
+2020-04-29 17:36:58.136 -07:00 [INF] Request finished in 20.9962ms 200 application/json; charset=utf-8
+2020-04-29 17:39:34.206 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Race  
+2020-04-29 17:39:34.207 -07:00 [INF] CORS policy execution successful.
+2020-04-29 17:39:34.208 -07:00 [INF] Route matched with {action = "Get", controller = "Race"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Race.Race] Get() on controller WhoPK.API.Controllers.Character.RaceController (WhoPK.API).
+2020-04-29 17:39:34.210 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Class  
+2020-04-29 17:39:34.210 -07:00 [INF] CORS policy execution successful.
+2020-04-29 17:39:34.210 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Race.Race, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 17:39:34.211 -07:00 [INF] Route matched with {action = "Get", controller = "Class"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Class.Class] Get() on controller WhoPK.API.Character.ClassController (WhoPK.API).
+2020-04-29 17:39:34.211 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Class.Class, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 17:39:34.213 -07:00 [INF] Executed action WhoPK.API.Controllers.Character.RaceController.Get (WhoPK.API) in 4.2988ms
+2020-04-29 17:39:34.213 -07:00 [INF] Request finished in 7.3065ms 200 application/json; charset=utf-8
+2020-04-29 17:39:34.214 -07:00 [INF] Executed action WhoPK.API.Character.ClassController.Get (WhoPK.API) in 2.4599ms
+2020-04-29 17:39:34.214 -07:00 [INF] Request finished in 3.7541ms 200 application/json; charset=utf-8
+2020-04-29 17:39:54.846 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Character/Player  
+2020-04-29 17:39:54.847 -07:00 [INF] CORS policy execution successful.
+2020-04-29 17:39:54.849 -07:00 [INF] Request finished in 3.0512ms 204 
+2020-04-29 17:39:54.853 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Character/Player application/json-patch+json 718
+2020-04-29 17:39:54.854 -07:00 [INF] CORS policy execution successful.
+2020-04-29 17:39:54.870 -07:00 [INF] Route matched with {action = "Post", controller = "Player"}. Executing controller action with signature Void Post(WhoPK.GameLogic.Character.Player) on controller WhoPK.Controllers.PlayerController (WhoPK.API).
+2020-04-29 17:42:36.589 -07:00 [INF] Starting up ArchaicQuest
+2020-04-29 17:42:37.667 -07:00 [INF] User profile is available. Using 'C:\Users\Mark\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-04-29 17:42:37.953 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Race  
+2020-04-29 17:42:37.953 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Class  
+2020-04-29 17:42:37.967 -07:00 [INF] CORS policy execution successful.
+2020-04-29 17:42:37.967 -07:00 [INF] CORS policy execution successful.
+2020-04-29 17:42:38.192 -07:00 [INF] Route matched with {action = "Get", controller = "Race"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Race.Race] Get() on controller WhoPK.API.Controllers.Character.RaceController (WhoPK.API).
+2020-04-29 17:42:38.192 -07:00 [INF] Route matched with {action = "Get", controller = "Class"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Class.Class] Get() on controller WhoPK.API.Character.ClassController (WhoPK.API).
+2020-04-29 17:42:38.245 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Class.Class, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 17:42:38.246 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Race.Race, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 17:42:38.399 -07:00 [INF] Executed action WhoPK.API.Character.ClassController.Get (WhoPK.API) in 201.8173ms
+2020-04-29 17:42:38.399 -07:00 [INF] Executed action WhoPK.API.Controllers.Character.RaceController.Get (WhoPK.API) in 201.8166ms
+2020-04-29 17:42:38.402 -07:00 [INF] Request finished in 452.8422ms 200 application/json; charset=utf-8
+2020-04-29 17:42:38.402 -07:00 [INF] Request finished in 452.8304ms 200 application/json; charset=utf-8
+2020-04-29 17:42:55.162 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Character/Player  
+2020-04-29 17:42:55.163 -07:00 [INF] CORS policy execution successful.
+2020-04-29 17:42:55.165 -07:00 [INF] Request finished in 3.2694ms 204 
+2020-04-29 17:42:55.168 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Character/Player application/json-patch+json 720
+2020-04-29 17:42:55.168 -07:00 [INF] CORS policy execution successful.
+2020-04-29 17:42:55.211 -07:00 [INF] Route matched with {action = "Post", controller = "Player"}. Executing controller action with signature Void Post(WhoPK.GameLogic.Character.Player) on controller WhoPK.Controllers.PlayerController (WhoPK.API).
+2020-04-29 19:23:45.698 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Race  
+2020-04-29 19:23:45.698 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Race  
+2020-04-29 19:23:45.698 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Class  
+2020-04-29 19:23:45.698 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Class  
+2020-04-29 19:23:45.711 -07:00 [INF] CORS policy execution successful.
+2020-04-29 19:23:45.711 -07:00 [INF] CORS policy execution successful.
+2020-04-29 19:23:45.711 -07:00 [INF] CORS policy execution successful.
+2020-04-29 19:23:45.711 -07:00 [INF] CORS policy execution successful.
+2020-04-29 19:23:45.720 -07:00 [INF] Executed action WhoPK.Controllers.PlayerController.Post (WhoPK.API) in 6050510.4963ms
+2020-04-29 19:23:45.728 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WhoPK.Controllers.PlayerController.Post(Player player) in C:\WhoPK\Core\WhoPK.API\Controllers\Character\PlayerController.cs:line 39
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-04-29 19:23:45.735 -07:00 [INF] Route matched with {action = "Get", controller = "Race"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Race.Race] Get() on controller WhoPK.API.Controllers.Character.RaceController (WhoPK.API).
+2020-04-29 19:23:45.748 -07:00 [INF] Route matched with {action = "Get", controller = "Class"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Class.Class] Get() on controller WhoPK.API.Character.ClassController (WhoPK.API).
+2020-04-29 19:23:45.747 -07:00 [INF] Route matched with {action = "Get", controller = "Class"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Class.Class] Get() on controller WhoPK.API.Character.ClassController (WhoPK.API).
+2020-04-29 19:23:45.735 -07:00 [INF] Route matched with {action = "Get", controller = "Race"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Race.Race] Get() on controller WhoPK.API.Controllers.Character.RaceController (WhoPK.API).
+2020-04-29 19:23:45.882 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Class.Class, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 19:23:45.882 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Race.Race, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 19:23:45.882 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Class.Class, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 19:23:45.883 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Race.Race, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 19:23:45.892 -07:00 [INF] Executed action WhoPK.API.Character.ClassController.Get (WhoPK.API) in 24.8392ms
+2020-04-29 19:23:45.892 -07:00 [INF] Executed action WhoPK.API.Character.ClassController.Get (WhoPK.API) in 24.8695ms
+2020-04-29 19:23:45.892 -07:00 [INF] Executed action WhoPK.API.Controllers.Character.RaceController.Get (WhoPK.API) in 24.7665ms
+2020-04-29 19:23:45.892 -07:00 [INF] Executed action WhoPK.API.Controllers.Character.RaceController.Get (WhoPK.API) in 24.909ms
+2020-04-29 19:23:45.893 -07:00 [INF] Request finished in 197.555ms 200 application/json; charset=utf-8
+2020-04-29 19:23:45.893 -07:00 [INF] Request finished in 197.5573ms 200 application/json; charset=utf-8
+2020-04-29 19:23:45.893 -07:00 [INF] Request finished in 197.6005ms 200 application/json; charset=utf-8
+2020-04-29 19:23:45.893 -07:00 [INF] Request finished in 197.5562ms 200 application/json; charset=utf-8
+2020-04-29 19:23:45.902 -07:00 [INF] Request finished in 6050737.2042ms 500 text/plain
+2020-04-29 19:24:05.183 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Character/Player  
+2020-04-29 19:24:05.188 -07:00 [INF] CORS policy execution successful.
+2020-04-29 19:24:05.191 -07:00 [INF] Request finished in 8.8742ms 204 
+2020-04-29 19:24:05.200 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Character/Player application/json-patch+json 719
+2020-04-29 19:24:05.201 -07:00 [INF] CORS policy execution successful.
+2020-04-29 19:24:05.205 -07:00 [INF] Route matched with {action = "Post", controller = "Player"}. Executing controller action with signature Void Post(WhoPK.GameLogic.Character.Player) on controller WhoPK.Controllers.PlayerController (WhoPK.API).
+2020-04-29 19:24:37.970 -07:00 [INF] Executed action WhoPK.Controllers.PlayerController.Post (WhoPK.API) in 32764.1441ms
+2020-04-29 19:24:37.971 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WhoPK.Controllers.PlayerController.Post(Player player) in C:\WhoPK\Core\WhoPK.API\Controllers\Character\PlayerController.cs:line 39
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-04-29 19:24:37.974 -07:00 [INF] Request finished in 32773.9389ms 500 text/plain
+2020-04-29 19:31:39.317 -07:00 [INF] Starting up ArchaicQuest
+2020-04-29 19:31:40.523 -07:00 [INF] User profile is available. Using 'C:\Users\Mark\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-04-29 19:31:40.816 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Character/Player  
+2020-04-29 19:31:40.825 -07:00 [INF] CORS policy execution successful.
+2020-04-29 19:31:40.842 -07:00 [INF] Request finished in 28.4524ms 204 
+2020-04-29 19:31:40.842 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Character/Player application/json-patch+json 719
+2020-04-29 19:31:40.843 -07:00 [INF] CORS policy execution successful.
+2020-04-29 19:31:41.068 -07:00 [INF] Route matched with {action = "Post", controller = "Player"}. Executing controller action with signature Void Post(WhoPK.GameLogic.Character.Player) on controller WhoPK.Controllers.PlayerController (WhoPK.API).
+2020-04-29 20:04:06.306 -07:00 [INF] Starting up ArchaicQuest
+2020-04-29 20:04:07.628 -07:00 [INF] User profile is available. Using 'C:\Users\Mark\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-04-29 20:04:07.919 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/v1/swagger.json  
+2020-04-29 20:04:08.959 -07:00 [INF] Request finished in 1042.1008ms 200 application/json; charset=utf-8
+2020-04-29 20:04:09.400 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/favicon.ico  
+2020-04-29 20:04:09.424 -07:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\WhoPK\Core\WhoPK.API\wwwroot\favicon.ico'
+2020-04-29 20:04:09.425 -07:00 [INF] Request finished in 25.5442ms 200 image/x-icon
+2020-04-29 20:14:26.589 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Class  
+2020-04-29 20:14:26.659 -07:00 [INF] Route matched with {action = "Get", controller = "Class"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Class.Class] Get() on controller WhoPK.API.Character.ClassController (WhoPK.API).
+2020-04-29 20:14:26.713 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Class.Class, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-29 20:14:26.736 -07:00 [INF] Executed action WhoPK.API.Character.ClassController.Get (WhoPK.API) in 69.9082ms
+2020-04-29 20:14:26.738 -07:00 [INF] Request finished in 149.2026ms 200 application/json; charset=utf-8
+2020-04-29 20:16:37.109 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account  
+2020-04-29 20:16:37.115 -07:00 [INF] CORS policy execution successful.
+2020-04-29 20:16:37.121 -07:00 [INF] Request finished in 12.4809ms 204 
+2020-04-29 20:16:37.125 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account application/json-patch+json 71
+2020-04-29 20:16:37.125 -07:00 [INF] CORS policy execution successful.
+2020-04-29 20:16:37.141 -07:00 [INF] Route matched with {action = "Post", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(WhoPK.GameLogic.Account.Account) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-04-29 20:16:37.408 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-04-29 20:16:37.413 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Post (WhoPK.API) in 271.8929ms
+2020-04-29 20:16:37.413 -07:00 [INF] Request finished in 288.9165ms 200 application/json; charset=utf-8
+2020-04-29 20:17:25.717 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account  
+2020-04-29 20:17:25.717 -07:00 [INF] CORS policy execution successful.
+2020-04-29 20:17:25.718 -07:00 [INF] Request finished in 1.1817ms 204 
+2020-04-29 20:17:25.719 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account application/json-patch+json 71
+2020-04-29 20:17:25.720 -07:00 [INF] CORS policy execution successful.
+2020-04-29 20:17:25.721 -07:00 [INF] Route matched with {action = "Post", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(WhoPK.GameLogic.Account.Account) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-04-29 20:17:41.478 -07:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-04-29 20:17:41.479 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Post (WhoPK.API) in 15758.3178ms
+2020-04-29 20:17:41.485 -07:00 [INF] Request finished in 15765.8909ms 400 application/json; charset=utf-8
+2020-04-29 20:17:58.998 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account  
+2020-04-29 20:17:58.998 -07:00 [INF] CORS policy execution successful.
+2020-04-29 20:17:58.999 -07:00 [INF] Request finished in 1.1259ms 204 
+2020-04-29 20:17:59.000 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account application/json-patch+json 71
+2020-04-29 20:17:59.001 -07:00 [INF] CORS policy execution successful.
+2020-04-29 20:17:59.002 -07:00 [INF] Route matched with {action = "Post", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(WhoPK.GameLogic.Account.Account) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-04-30 14:27:57.423 -07:00 [INF] Starting up ArchaicQuest
+2020-04-30 14:27:58.718 -07:00 [INF] User profile is available. Using 'C:\Users\Mark\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-04-30 14:27:59.010 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/  
+2020-04-30 14:27:59.159 -07:00 [INF] Request finished in 151.4753ms 302 
+2020-04-30 14:27:59.160 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/index.html  
+2020-04-30 14:27:59.336 -07:00 [INF] Request finished in 176.7859ms 200 text/html; charset=utf-8
+2020-04-30 14:27:59.629 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/v1/swagger.json  
+2020-04-30 14:28:00.562 -07:00 [INF] Request finished in 933.802ms 200 application/json; charset=utf-8
+2020-04-30 14:28:03.540 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/v1/swagger.json  
+2020-04-30 14:28:03.545 -07:00 [INF] Request finished in 4.9947ms 200 application/json; charset=utf-8
+2020-04-30 14:35:06.478 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-04-30 14:35:06.485 -07:00 [INF] CORS policy execution successful.
+2020-04-30 14:35:06.490 -07:00 [INF] Request finished in 12.0637ms 204 
+2020-04-30 14:35:06.492 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-04-30 14:35:06.492 -07:00 [INF] CORS policy execution successful.
+2020-04-30 14:35:06.560 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-04-30 14:35:31.645 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-04-30 14:35:31.660 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 25093.069ms
+2020-04-30 14:35:31.662 -07:00 [INF] Request finished in 25170.0589ms 200 application/json; charset=utf-8
+2020-04-30 14:37:00.935 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-04-30 14:37:00.936 -07:00 [INF] CORS policy execution successful.
+2020-04-30 14:37:00.937 -07:00 [INF] Request finished in 1.6699ms 204 
+2020-04-30 14:37:00.940 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-04-30 14:37:00.940 -07:00 [INF] CORS policy execution successful.
+2020-04-30 14:37:00.941 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-04-30 14:37:01.021 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-04-30 14:37:01.022 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 81.0808ms
+2020-04-30 14:37:01.022 -07:00 [INF] Request finished in 82.547ms 200 application/json; charset=utf-8
+2020-04-30 14:54:33.739 -07:00 [INF] Starting up ArchaicQuest
+2020-04-30 14:54:34.990 -07:00 [INF] User profile is available. Using 'C:\Users\Mark\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-04-30 14:54:35.284 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-04-30 14:54:35.296 -07:00 [INF] CORS policy execution successful.
+2020-04-30 14:54:35.317 -07:00 [INF] Request finished in 35.2215ms 204 
+2020-04-30 14:54:35.317 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-04-30 14:54:35.318 -07:00 [INF] CORS policy execution successful.
+2020-04-30 14:54:35.539 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-04-30 14:54:37.956 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-04-30 14:54:37.989 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 2444.4007ms
+2020-04-30 14:54:37.990 -07:00 [INF] Request finished in 2672.8191ms 200 application/json; charset=utf-8
+2020-04-30 14:56:56.064 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-04-30 14:56:56.065 -07:00 [INF] CORS policy execution successful.
+2020-04-30 14:56:56.066 -07:00 [INF] Request finished in 2.1748ms 204 
+2020-04-30 14:56:56.068 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-04-30 14:56:56.069 -07:00 [INF] CORS policy execution successful.
+2020-04-30 14:56:56.079 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-04-30 14:56:57.736 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-04-30 14:56:57.737 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 1657.3906ms
+2020-04-30 14:56:57.737 -07:00 [INF] Request finished in 1669.153ms 200 application/json; charset=utf-8
+2020-04-30 14:58:38.050 -07:00 [INF] Starting up ArchaicQuest
+2020-04-30 14:58:39.030 -07:00 [INF] User profile is available. Using 'C:\Users\Mark\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-04-30 14:58:39.277 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-04-30 14:58:39.286 -07:00 [INF] CORS policy execution successful.
+2020-04-30 14:58:39.301 -07:00 [INF] Request finished in 25.772ms 204 
+2020-04-30 14:58:39.302 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-04-30 14:58:39.303 -07:00 [INF] CORS policy execution successful.
+2020-04-30 14:58:39.488 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-04-30 14:58:41.640 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-04-30 14:58:41.670 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 2177.2182ms
+2020-04-30 14:58:41.671 -07:00 [INF] Request finished in 2368.855ms 200 application/json; charset=utf-8
+2020-04-30 15:02:39.377 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-04-30 15:02:39.378 -07:00 [INF] CORS policy execution successful.
+2020-04-30 15:02:39.379 -07:00 [INF] Request finished in 1.9959ms 204 
+2020-04-30 15:02:39.381 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-04-30 15:02:39.382 -07:00 [INF] CORS policy execution successful.
+2020-04-30 15:02:39.392 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-04-30 15:02:41.210 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-04-30 15:02:41.211 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 1818.7102ms
+2020-04-30 15:02:41.211 -07:00 [INF] Request finished in 1830.1052ms 200 application/json; charset=utf-8
+2020-04-30 15:08:45.107 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-04-30 15:08:45.108 -07:00 [INF] CORS policy execution successful.
+2020-04-30 15:08:45.108 -07:00 [INF] Request finished in 1.1473ms 204 
+2020-04-30 15:08:45.110 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-04-30 15:08:45.110 -07:00 [INF] CORS policy execution successful.
+2020-04-30 15:08:45.114 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-04-30 15:08:47.173 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-04-30 15:08:47.174 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 2059.7624ms
+2020-04-30 15:08:47.176 -07:00 [INF] Request finished in 2066.1306ms 200 application/json; charset=utf-8
+2020-05-03 09:03:25.328 -07:00 [INF] Starting up ArchaicQuest
+2020-05-03 09:03:26.618 -07:00 [INF] User profile is available. Using 'C:\Users\Mark\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-03 09:03:27.913 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-05-03 09:03:27.923 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:03:27.943 -07:00 [INF] Request finished in 31.7292ms 204 
+2020-05-03 09:03:27.943 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-05-03 09:03:27.943 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:03:28.165 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 09:03:30.508 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-05-03 09:03:30.540 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 2369.666ms
+2020-05-03 09:03:30.541 -07:00 [INF] Request finished in 2597.8215ms 200 application/json; charset=utf-8
+2020-05-03 09:18:41.322 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Profile  
+2020-05-03 09:18:41.325 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:18:41.327 -07:00 [INF] Request finished in 6.3848ms 204 
+2020-05-03 09:18:41.332 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Profile application/json-patch+json 36
+2020-05-03 09:18:41.333 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:18:41.354 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.Guid) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 09:18:57.713 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-05-03 09:18:57.713 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:18:57.714 -07:00 [INF] Request finished in 3.123ms 204 
+2020-05-03 09:18:57.716 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-05-03 09:18:57.716 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:18:57.718 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 16363.3753ms
+2020-05-03 09:18:57.720 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 09:18:57.721 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Invalid request
+   at WhoPK.API.Controllers.AccountController.GetProfile(Guid id) in C:\WhoPK\Core\WhoPK.API\Controllers\Account\AccountController.cs:line 106
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-03 09:18:59.323 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-05-03 09:18:59.326 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 1606.0398ms
+2020-05-03 09:18:59.326 -07:00 [INF] Request finished in 1610.302ms 200 application/json; charset=utf-8
+2020-05-03 09:18:59.329 -07:00 [INF] Request finished in 17998.3625ms 500 text/plain
+2020-05-03 09:18:59.407 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Profile  
+2020-05-03 09:18:59.408 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:18:59.408 -07:00 [INF] Request finished in 0.6401ms 204 
+2020-05-03 09:18:59.414 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Profile application/json-patch+json 36
+2020-05-03 09:18:59.415 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:18:59.416 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.Guid) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 09:19:06.006 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 6590.4535ms
+2020-05-03 09:19:06.008 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Invalid request
+   at WhoPK.API.Controllers.AccountController.GetProfile(Guid id) in C:\WhoPK\Core\WhoPK.API\Controllers\Account\AccountController.cs:line 106
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-03 09:19:06.013 -07:00 [INF] Request finished in 6598.4612ms 500 text/plain
+2020-05-03 09:19:15.936 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-05-03 09:19:15.936 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:19:15.937 -07:00 [INF] Request finished in 1.0195ms 204 
+2020-05-03 09:19:15.938 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-05-03 09:19:15.938 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:19:15.939 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 09:19:19.234 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-05-03 09:19:19.235 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 3295.9777ms
+2020-05-03 09:19:19.235 -07:00 [INF] Request finished in 3297.4038ms 200 application/json; charset=utf-8
+2020-05-03 09:19:19.265 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Profile  
+2020-05-03 09:19:19.266 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:19:19.266 -07:00 [INF] Request finished in 0.9539ms 204 
+2020-05-03 09:19:19.270 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Profile application/json-patch+json 36
+2020-05-03 09:19:19.270 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:19:19.270 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.Guid) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 09:22:11.706 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 172435.6425ms
+2020-05-03 09:22:11.712 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Invalid request
+   at WhoPK.API.Controllers.AccountController.GetProfile(Guid id) in C:\WhoPK\Core\WhoPK.API\Controllers\Account\AccountController.cs:line 106
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-03 09:22:11.714 -07:00 [INF] Request finished in 172444.6522ms 500 text/plain
+2020-05-03 09:22:12.854 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Profile  
+2020-05-03 09:22:12.855 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:22:12.856 -07:00 [INF] Request finished in 1.7046ms 204 
+2020-05-03 09:22:12.861 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Profile application/json-patch+json 36
+2020-05-03 09:22:12.861 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:22:12.862 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.Guid) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 09:22:15.439 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 2576.9206ms
+2020-05-03 09:22:15.441 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Invalid request
+   at WhoPK.API.Controllers.AccountController.GetProfile(Guid id) in C:\WhoPK\Core\WhoPK.API\Controllers\Account\AccountController.cs:line 106
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-03 09:22:15.445 -07:00 [INF] Request finished in 2584.4306ms 500 text/plain
+2020-05-03 09:22:24.393 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-05-03 09:22:24.393 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:22:24.394 -07:00 [INF] Request finished in 0.8381ms 204 
+2020-05-03 09:22:24.396 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-05-03 09:22:24.396 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:22:24.396 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 09:22:24.476 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-05-03 09:22:24.477 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 80.3167ms
+2020-05-03 09:22:24.477 -07:00 [INF] Request finished in 81.2447ms 200 application/json; charset=utf-8
+2020-05-03 09:22:24.511 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Profile  
+2020-05-03 09:22:24.511 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:22:24.511 -07:00 [INF] Request finished in 0.4721ms 204 
+2020-05-03 09:22:24.514 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Profile application/json-patch+json 36
+2020-05-03 09:22:24.515 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:22:24.515 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.Guid) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 09:31:23.051 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 538535.9262ms
+2020-05-03 09:31:23.053 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Invalid request
+   at WhoPK.API.Controllers.AccountController.GetProfile(Guid id) in C:\WhoPK\Core\WhoPK.API\Controllers\Account\AccountController.cs:line 106
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-03 09:31:23.056 -07:00 [INF] Request finished in 538541.4362ms 500 text/plain
+2020-05-03 09:31:32.085 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-05-03 09:31:32.085 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:31:32.086 -07:00 [INF] Request finished in 1.2084ms 204 
+2020-05-03 09:31:32.089 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-05-03 09:31:32.090 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:31:32.091 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 09:31:32.172 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-05-03 09:31:32.173 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 82.227ms
+2020-05-03 09:31:32.173 -07:00 [INF] Request finished in 83.8411ms 200 application/json; charset=utf-8
+2020-05-03 09:31:32.205 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Profile  
+2020-05-03 09:31:32.206 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:31:32.207 -07:00 [INF] Request finished in 1.801ms 204 
+2020-05-03 09:31:32.212 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Profile application/json-patch+json 36
+2020-05-03 09:31:32.213 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:31:32.214 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.Guid) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 09:40:30.275 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-05-03 09:40:30.275 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Profile  
+2020-05-03 09:40:30.276 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:40:30.276 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:40:30.276 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 538061.8173ms
+2020-05-03 09:40:30.276 -07:00 [INF] Request finished in 5.5977ms 204 
+2020-05-03 09:40:30.277 -07:00 [INF] Request finished in 3.7472ms 204 
+2020-05-03 09:40:30.277 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Invalid request
+   at WhoPK.API.Controllers.AccountController.GetProfile(Guid id) in C:\WhoPK\Core\WhoPK.API\Controllers\Account\AccountController.cs:line 106
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-03 09:40:30.280 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Profile application/json-patch+json 36
+2020-05-03 09:40:30.280 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-05-03 09:40:30.281 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:40:30.281 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:40:30.281 -07:00 [INF] Request finished in 538069.2092ms 500 text/plain
+2020-05-03 09:40:30.282 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.Guid) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 09:40:30.282 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 09:40:31.957 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 1675.2785ms
+2020-05-03 09:40:31.958 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Invalid request
+   at WhoPK.API.Controllers.AccountController.GetProfile(Guid id) in C:\WhoPK\Core\WhoPK.API\Controllers\Account\AccountController.cs:line 106
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-03 09:40:31.960 -07:00 [INF] Request finished in 1679.9016ms 500 text/plain
+2020-05-03 09:40:32.041 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-05-03 09:40:32.042 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 1759.6905ms
+2020-05-03 09:40:32.042 -07:00 [INF] Request finished in 1761.2573ms 200 application/json; charset=utf-8
+2020-05-03 09:40:32.096 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Profile application/json-patch+json 36
+2020-05-03 09:40:32.096 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:40:32.096 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.Guid) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 09:40:32.730 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 633.6009ms
+2020-05-03 09:40:32.731 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Invalid request
+   at WhoPK.API.Controllers.AccountController.GetProfile(Guid id) in C:\WhoPK\Core\WhoPK.API\Controllers\Account\AccountController.cs:line 106
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-03 09:40:32.734 -07:00 [INF] Request finished in 637.8903ms 500 text/plain
+2020-05-03 09:42:51.233 -07:00 [INF] Starting up ArchaicQuest
+2020-05-03 09:42:52.406 -07:00 [INF] User profile is available. Using 'C:\Users\Mark\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-03 09:42:52.688 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-05-03 09:42:52.698 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:42:52.718 -07:00 [INF] Request finished in 31.8756ms 204 
+2020-05-03 09:42:52.719 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-05-03 09:42:52.719 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:42:52.926 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 09:42:53.218 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-05-03 09:42:53.246 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 314.5241ms
+2020-05-03 09:42:53.248 -07:00 [INF] Request finished in 529.1684ms 200 application/json; charset=utf-8
+2020-05-03 09:42:53.283 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Profile  
+2020-05-03 09:42:53.285 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:42:53.286 -07:00 [INF] Request finished in 3.0777ms 204 
+2020-05-03 09:42:53.290 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Profile application/json-patch+json 36
+2020-05-03 09:42:53.290 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:42:53.294 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 09:45:28.728 -07:00 [INF] Starting up ArchaicQuest
+2020-05-03 09:45:29.709 -07:00 [INF] User profile is available. Using 'C:\Users\Mark\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-03 09:45:29.945 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-05-03 09:45:29.953 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:45:29.969 -07:00 [INF] Request finished in 26.6786ms 204 
+2020-05-03 09:45:29.971 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-05-03 09:45:29.971 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:45:30.153 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 09:45:30.432 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-05-03 09:45:30.459 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 300.7347ms
+2020-05-03 09:45:30.461 -07:00 [INF] Request finished in 490.6142ms 200 application/json; charset=utf-8
+2020-05-03 09:45:30.507 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Profile  
+2020-05-03 09:45:30.508 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:45:30.508 -07:00 [INF] Request finished in 1.1ms 204 
+2020-05-03 09:45:30.511 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Profile application/json-patch+json 36
+2020-05-03 09:45:30.512 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:45:30.515 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 09:49:51.750 -07:00 [INF] Starting up ArchaicQuest
+2020-05-03 09:49:53.204 -07:00 [INF] User profile is available. Using 'C:\Users\Mark\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-03 09:49:53.670 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Profile  
+2020-05-03 09:49:53.683 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:49:53.710 -07:00 [INF] Request finished in 37.4621ms 204 
+2020-05-03 09:51:23.349 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/v1/swagger.json  
+2020-05-03 09:51:23.351 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/robots.txt  
+2020-05-03 09:51:23.582 -07:00 [ERR] Request matched multiple actions resulting in ambiguity. Matching actions: WhoPK.API.World.RoomController.Get (WhoPK.API)
+WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API)
+2020-05-03 09:51:23.594 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Mvc.Infrastructure.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+WhoPK.API.World.RoomController.Get (WhoPK.API)
+WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Routing.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.RouteCollection.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-03 09:51:23.685 -07:00 [INF] Request finished in 334.912ms 500 text/plain
+2020-05-03 09:51:24.239 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The method 'get' on path '/{id}' is registered multiple times.
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.AddOperationDescriptionsToDocument(OpenApiDocument document, Type controllerType, List`1 operations, OpenApiDocumentGenerator swaggerGenerator, OpenApiSchemaResolver schemaResolver)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateForControllers(OpenApiDocument document, IGrouping`2[] apiGroups, OpenApiSchemaResolver schemaResolver)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateAsync(ApiDescriptionGroupCollection apiDescriptionGroups)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateAsync(Object serviceProvider)
+   at NSwag.AspNetCore.OpenApiDocumentProvider.GenerateAsync(String documentName)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GenerateDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GetDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-03 09:51:24.269 -07:00 [INF] Request finished in 919.9905ms 500 text/html; charset=utf-8
+2020-05-03 09:51:28.267 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/  
+2020-05-03 09:51:28.271 -07:00 [INF] Request finished in 4.682ms 302 
+2020-05-03 09:51:28.277 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/index.html  
+2020-05-03 09:51:28.301 -07:00 [INF] Request finished in 24.3466ms 200 text/html; charset=utf-8
+2020-05-03 09:51:28.331 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/swagger-ui.css  
+2020-05-03 09:51:28.331 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/swagger-ui-bundle.js  
+2020-05-03 09:51:28.341 -07:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-05-03 09:51:28.341 -07:00 [INF] The file /swagger-ui.css was not modified
+2020-05-03 09:51:28.348 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/swagger-ui-standalone-preset.js  
+2020-05-03 09:51:28.348 -07:00 [INF] Request finished in 17.7968ms 304 application/javascript
+2020-05-03 09:51:28.348 -07:00 [INF] Request finished in 17.793ms 304 text/css
+2020-05-03 09:51:28.350 -07:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-05-03 09:51:28.351 -07:00 [INF] Request finished in 2.1084ms 304 application/javascript
+2020-05-03 09:51:28.586 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/v1/swagger.json  
+2020-05-03 09:51:28.589 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The method 'get' on path '/{id}' is registered multiple times.
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GetDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-03 09:51:28.592 -07:00 [INF] Request finished in 5.7437ms 500 text/plain
+2020-05-03 09:51:45.803 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/  
+2020-05-03 09:51:45.804 -07:00 [INF] Request finished in 1.267ms 302 
+2020-05-03 09:51:45.810 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/index.html  
+2020-05-03 09:51:45.812 -07:00 [INF] Request finished in 1.4578ms 200 text/html; charset=utf-8
+2020-05-03 09:51:46.003 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/v1/swagger.json  
+2020-05-03 09:51:46.064 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The method 'get' on path '/{id}' is registered multiple times.
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.AddOperationDescriptionsToDocument(OpenApiDocument document, Type controllerType, List`1 operations, OpenApiDocumentGenerator swaggerGenerator, OpenApiSchemaResolver schemaResolver)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateForControllers(OpenApiDocument document, IGrouping`2[] apiGroups, OpenApiSchemaResolver schemaResolver)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateAsync(ApiDescriptionGroupCollection apiDescriptionGroups)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateAsync(Object serviceProvider)
+   at NSwag.AspNetCore.OpenApiDocumentProvider.GenerateAsync(String documentName)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GenerateDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GetDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-03 09:51:46.066 -07:00 [INF] Request finished in 62.7194ms 500 text/plain
+2020-05-03 09:51:52.184 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/  
+2020-05-03 09:51:52.202 -07:00 [INF] Request finished in 18.1348ms 404 
+2020-05-03 09:51:56.744 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger  
+2020-05-03 09:51:56.745 -07:00 [INF] Request finished in 1.084ms 302 
+2020-05-03 09:51:56.750 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/index.html  
+2020-05-03 09:51:56.751 -07:00 [INF] Request finished in 1.3477ms 200 text/html; charset=utf-8
+2020-05-03 09:51:56.914 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/v1/swagger.json  
+2020-05-03 09:51:56.971 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The method 'get' on path '/{id}' is registered multiple times.
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.AddOperationDescriptionsToDocument(OpenApiDocument document, Type controllerType, List`1 operations, OpenApiDocumentGenerator swaggerGenerator, OpenApiSchemaResolver schemaResolver)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateForControllers(OpenApiDocument document, IGrouping`2[] apiGroups, OpenApiSchemaResolver schemaResolver)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateAsync(ApiDescriptionGroupCollection apiDescriptionGroups)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateAsync(Object serviceProvider)
+   at NSwag.AspNetCore.OpenApiDocumentProvider.GenerateAsync(String documentName)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GenerateDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GetDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-03 09:51:56.974 -07:00 [INF] Request finished in 59.5907ms 500 text/plain
+2020-05-03 09:53:01.746 -07:00 [INF] Starting up ArchaicQuest
+2020-05-03 09:53:02.751 -07:00 [INF] User profile is available. Using 'C:\Users\Mark\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-03 09:53:02.986 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/  
+2020-05-03 09:53:03.086 -07:00 [INF] Request finished in 101.8748ms 302 
+2020-05-03 09:53:03.106 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/index.html  
+2020-05-03 09:53:03.249 -07:00 [INF] Request finished in 145.1037ms 200 text/html; charset=utf-8
+2020-05-03 09:53:03.467 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/v1/swagger.json  
+2020-05-03 09:53:04.079 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The method 'get' on path '/{id}' is registered multiple times.
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.AddOperationDescriptionsToDocument(OpenApiDocument document, Type controllerType, List`1 operations, OpenApiDocumentGenerator swaggerGenerator, OpenApiSchemaResolver schemaResolver)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateForControllers(OpenApiDocument document, IGrouping`2[] apiGroups, OpenApiSchemaResolver schemaResolver)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateAsync(ApiDescriptionGroupCollection apiDescriptionGroups)
+   at NSwag.Generation.AspNetCore.AspNetCoreOpenApiDocumentGenerator.GenerateAsync(Object serviceProvider)
+   at NSwag.AspNetCore.OpenApiDocumentProvider.GenerateAsync(String documentName)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GenerateDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.GetDocumentAsync(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-03 09:53:04.122 -07:00 [INF] Request finished in 655.531ms 500 text/plain
+2020-05-03 09:53:11.145 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-03 09:53:11.145 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/swagger-ui-bundle.js.map  
+2020-05-03 09:53:11.154 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/swagger-ui.css.map  
+2020-05-03 09:53:11.203 -07:00 [INF] Request finished in 58.9684ms 404 
+2020-05-03 09:53:11.208 -07:00 [INF] Request finished in 53.6358ms 404 
+2020-05-03 09:53:11.208 -07:00 [INF] Request finished in 63.5317ms 404 
+2020-05-03 09:55:24.712 -07:00 [INF] Starting up ArchaicQuest
+2020-05-03 09:55:25.781 -07:00 [INF] User profile is available. Using 'C:\Users\Mark\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-03 09:55:26.032 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/index.html  
+2020-05-03 09:55:26.250 -07:00 [INF] Request finished in 220.3735ms 200 text/html; charset=utf-8
+2020-05-03 09:55:26.416 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/swagger-ui.css.map  
+2020-05-03 09:55:26.554 -07:00 [INF] Request finished in 138.218ms 404 
+2020-05-03 09:55:26.585 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/swagger-ui-bundle.js.map  
+2020-05-03 09:55:26.586 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/swagger-ui-standalone-preset.js.map  
+2020-05-03 09:55:26.593 -07:00 [INF] Request finished in 6.9229ms 404 
+2020-05-03 09:55:26.593 -07:00 [INF] Request finished in 7.3327ms 404 
+2020-05-03 09:55:26.631 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/v1/swagger.json  
+2020-05-03 09:55:26.644 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/favicon-32x32.png  
+2020-05-03 09:55:26.662 -07:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2020-05-03 09:55:26.662 -07:00 [INF] Request finished in 18.3116ms 200 image/png
+2020-05-03 09:55:27.401 -07:00 [INF] Request finished in 769.7983ms 200 application/json; charset=utf-8
+2020-05-03 09:55:32.794 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/swagger/v1/swagger.json  
+2020-05-03 09:55:32.799 -07:00 [INF] Request finished in 5.7004ms 200 application/json; charset=utf-8
+2020-05-03 09:57:17.914 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 09:57:17.921 -07:00 [INF] CORS policy execution successful.
+2020-05-03 09:57:17.966 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:00:19.415 -07:00 [INF] Starting up ArchaicQuest
+2020-05-03 10:00:20.433 -07:00 [INF] User profile is available. Using 'C:\Users\Mark\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-03 10:00:20.695 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-05-03 10:00:20.704 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:00:20.718 -07:00 [INF] Request finished in 24.9756ms 204 
+2020-05-03 10:00:20.719 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-05-03 10:00:20.719 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:00:20.891 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:00:21.205 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-05-03 10:00:21.232 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 335.5169ms
+2020-05-03 10:00:21.239 -07:00 [INF] Request finished in 519.9613ms 200 application/json; charset=utf-8
+2020-05-03 10:00:21.306 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 10:00:21.307 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:00:21.312 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:00:32.046 -07:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-05-03 10:00:32.049 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 10736.567ms
+2020-05-03 10:00:32.050 -07:00 [INF] Request finished in 10743.2202ms 400 application/json; charset=utf-8
+2020-05-03 10:00:53.559 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 10:00:53.560 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:00:53.565 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:00:53.570 -07:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-05-03 10:00:53.571 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 4.9647ms
+2020-05-03 10:00:53.571 -07:00 [INF] Request finished in 13.0531ms 400 application/json; charset=utf-8
+2020-05-03 10:00:56.890 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-05-03 10:00:56.891 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:00:56.891 -07:00 [INF] Request finished in 1.2256ms 204 
+2020-05-03 10:00:56.894 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-05-03 10:00:56.894 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:00:56.895 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:00:56.978 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-05-03 10:00:56.979 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 83.9062ms
+2020-05-03 10:00:56.979 -07:00 [INF] Request finished in 86.103ms 200 application/json; charset=utf-8
+2020-05-03 10:00:57.005 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 10:00:57.005 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:00:57.006 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:00:57.008 -07:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-05-03 10:00:57.009 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 3.3108ms
+2020-05-03 10:00:57.009 -07:00 [INF] Request finished in 4.911ms 400 application/json; charset=utf-8
+2020-05-03 10:01:11.573 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 10:01:11.574 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:01:11.575 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:01:11.578 -07:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-05-03 10:01:11.579 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 3.3766ms
+2020-05-03 10:01:11.579 -07:00 [INF] Request finished in 6.0237ms 400 application/json; charset=utf-8
+2020-05-03 10:01:35.868 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-05-03 10:01:35.869 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:01:35.870 -07:00 [INF] Request finished in 1.583ms 204 
+2020-05-03 10:01:35.871 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-05-03 10:01:35.872 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:01:35.873 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:01:35.961 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-05-03 10:01:35.962 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 88.5933ms
+2020-05-03 10:01:35.966 -07:00 [INF] Request finished in 91.3275ms 200 application/json; charset=utf-8
+2020-05-03 10:01:36.014 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 10:01:36.015 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:01:36.015 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:01:42.630 -07:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-05-03 10:01:42.631 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 6615.1338ms
+2020-05-03 10:01:42.631 -07:00 [INF] Request finished in 6617.0275ms 400 application/json; charset=utf-8
+2020-05-03 10:02:04.284 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Race  
+2020-05-03 10:02:04.285 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:02:04.287 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Class  
+2020-05-03 10:02:04.288 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:02:04.289 -07:00 [INF] Route matched with {action = "Get", controller = "Class"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Class.Class] Get() on controller WhoPK.API.Character.ClassController (WhoPK.API).
+2020-05-03 10:02:04.289 -07:00 [INF] Route matched with {action = "Get", controller = "Race"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Race.Race] Get() on controller WhoPK.API.Controllers.Character.RaceController (WhoPK.API).
+2020-05-03 10:02:04.298 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Class.Class, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-03 10:02:04.306 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Race.Race, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-03 10:02:04.329 -07:00 [INF] Executed action WhoPK.API.Character.ClassController.Get (WhoPK.API) in 38.9938ms
+2020-05-03 10:02:04.329 -07:00 [INF] Request finished in 42.0247ms 200 application/json; charset=utf-8
+2020-05-03 10:02:04.334 -07:00 [INF] Executed action WhoPK.API.Controllers.Character.RaceController.Get (WhoPK.API) in 44.9527ms
+2020-05-03 10:02:04.335 -07:00 [INF] Request finished in 50.4138ms 200 application/json; charset=utf-8
+2020-05-03 10:02:07.476 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-05-03 10:02:07.476 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:02:07.476 -07:00 [INF] Request finished in 0.7055ms 204 
+2020-05-03 10:02:07.478 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-05-03 10:02:07.478 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:02:07.479 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:02:07.565 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-05-03 10:02:07.566 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 87.2426ms
+2020-05-03 10:02:07.567 -07:00 [INF] Request finished in 88.7495ms 200 application/json; charset=utf-8
+2020-05-03 10:02:07.596 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 10:02:07.597 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:02:07.599 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:03:48.429 -07:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2020-05-03 10:03:48.430 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 100831.0613ms
+2020-05-03 10:03:48.430 -07:00 [INF] Request finished in 100833.962ms 400 application/json; charset=utf-8
+2020-05-03 10:03:52.752 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Race  
+2020-05-03 10:03:52.753 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:03:52.753 -07:00 [INF] Route matched with {action = "Get", controller = "Race"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Race.Race] Get() on controller WhoPK.API.Controllers.Character.RaceController (WhoPK.API).
+2020-05-03 10:03:52.754 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Class  
+2020-05-03 10:03:52.754 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:03:52.755 -07:00 [INF] Route matched with {action = "Get", controller = "Class"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Class.Class] Get() on controller WhoPK.API.Character.ClassController (WhoPK.API).
+2020-05-03 10:03:52.756 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Class.Class, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-03 10:03:52.756 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Race.Race, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-03 10:03:52.758 -07:00 [INF] Executed action WhoPK.API.Character.ClassController.Get (WhoPK.API) in 2.612ms
+2020-05-03 10:03:52.763 -07:00 [INF] Request finished in 8.7456ms 200 application/json; charset=utf-8
+2020-05-03 10:03:52.764 -07:00 [INF] Executed action WhoPK.API.Controllers.Character.RaceController.Get (WhoPK.API) in 10.7582ms
+2020-05-03 10:03:52.764 -07:00 [INF] Request finished in 12.1567ms 200 application/json; charset=utf-8
+2020-05-03 10:04:07.637 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Character/Player  
+2020-05-03 10:04:07.638 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:04:07.638 -07:00 [INF] Request finished in 0.6541ms 204 
+2020-05-03 10:04:07.641 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Character/Player application/json-patch+json 749
+2020-05-03 10:04:07.641 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:04:07.644 -07:00 [INF] Route matched with {action = "Post", controller = "Player"}. Executing controller action with signature Void Post(WhoPK.GameLogic.Character.Player) on controller WhoPK.Controllers.PlayerController (WhoPK.API).
+2020-05-03 10:04:10.859 -07:00 [INF] Executed action WhoPK.Controllers.PlayerController.Post (WhoPK.API) in 3215.6844ms
+2020-05-03 10:04:10.860 -07:00 [INF] Request finished in 3219.4904ms 200 
+2020-05-03 10:04:15.645 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Character/Player  
+2020-05-03 10:04:15.645 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:04:15.645 -07:00 [INF] Request finished in 0.5629ms 204 
+2020-05-03 10:04:15.647 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Character/Player application/json-patch+json 749
+2020-05-03 10:04:15.648 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:04:15.648 -07:00 [INF] Route matched with {action = "Post", controller = "Player"}. Executing controller action with signature Void Post(WhoPK.GameLogic.Character.Player) on controller WhoPK.Controllers.PlayerController (WhoPK.API).
+2020-05-03 10:04:19.589 -07:00 [INF] Executed action WhoPK.Controllers.PlayerController.Post (WhoPK.API) in 3940.525ms
+2020-05-03 10:04:19.590 -07:00 [INF] Request finished in 3942.2887ms 200 
+2020-05-03 10:04:37.679 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Character/Player  
+2020-05-03 10:04:37.679 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:04:37.679 -07:00 [INF] Request finished in 0.5055ms 204 
+2020-05-03 10:04:37.681 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Character/Player application/json-patch+json 749
+2020-05-03 10:04:37.681 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:04:37.682 -07:00 [INF] Route matched with {action = "Post", controller = "Player"}. Executing controller action with signature Void Post(WhoPK.GameLogic.Character.Player) on controller WhoPK.Controllers.PlayerController (WhoPK.API).
+2020-05-03 10:05:13.779 -07:00 [INF] Executed action WhoPK.Controllers.PlayerController.Post (WhoPK.API) in 36097.5323ms
+2020-05-03 10:05:13.783 -07:00 [INF] Request finished in 36102.1975ms 200 
+2020-05-03 10:08:47.140 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Race  
+2020-05-03 10:08:47.140 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:08:47.141 -07:00 [INF] Route matched with {action = "Get", controller = "Race"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Race.Race] Get() on controller WhoPK.API.Controllers.Character.RaceController (WhoPK.API).
+2020-05-03 10:08:47.142 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Class  
+2020-05-03 10:08:47.142 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:08:47.143 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Race.Race, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-03 10:08:47.146 -07:00 [INF] Route matched with {action = "Get", controller = "Class"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Class.Class] Get() on controller WhoPK.API.Character.ClassController (WhoPK.API).
+2020-05-03 10:08:47.146 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Class.Class, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-03 10:08:47.147 -07:00 [INF] Executed action WhoPK.API.Controllers.Character.RaceController.Get (WhoPK.API) in 5.6476ms
+2020-05-03 10:08:47.147 -07:00 [INF] Executed action WhoPK.API.Character.ClassController.Get (WhoPK.API) in 1.3283ms
+2020-05-03 10:08:47.147 -07:00 [INF] Request finished in 7.0705ms 200 application/json; charset=utf-8
+2020-05-03 10:08:47.147 -07:00 [INF] Request finished in 5.4669ms 200 application/json; charset=utf-8
+2020-05-03 10:08:55.702 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Character/Player  
+2020-05-03 10:08:55.702 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:08:55.703 -07:00 [INF] Request finished in 0.7902ms 204 
+2020-05-03 10:08:55.706 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Character/Player application/json-patch+json 756
+2020-05-03 10:08:55.706 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:08:55.706 -07:00 [INF] Route matched with {action = "Post", controller = "Player"}. Executing controller action with signature Void Post(WhoPK.GameLogic.Character.Player) on controller WhoPK.Controllers.PlayerController (WhoPK.API).
+2020-05-03 10:13:31.795 -07:00 [INF] Executed action WhoPK.Controllers.PlayerController.Post (WhoPK.API) in 276088.0543ms
+2020-05-03 10:13:31.795 -07:00 [INF] Request finished in 276089.7864ms 200 
+2020-05-03 10:14:12.382 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-05-03 10:14:12.382 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:14:12.382 -07:00 [INF] Request finished in 0.5034ms 204 
+2020-05-03 10:14:12.385 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-05-03 10:14:12.385 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:14:12.385 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:14:12.466 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-05-03 10:14:12.466 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 81.0663ms
+2020-05-03 10:14:12.467 -07:00 [INF] Request finished in 81.9059ms 200 application/json; charset=utf-8
+2020-05-03 10:14:12.506 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 10:14:12.506 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:14:12.507 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:15:28.075 -07:00 [INF] Starting up ArchaicQuest
+2020-05-03 10:15:29.123 -07:00 [INF] User profile is available. Using 'C:\Users\Mark\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-03 10:15:29.365 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-05-03 10:15:29.373 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:15:29.388 -07:00 [INF] Request finished in 25.5848ms 204 
+2020-05-03 10:15:29.389 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-05-03 10:15:29.389 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:15:29.581 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:15:29.856 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-05-03 10:15:29.882 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 295.8264ms
+2020-05-03 10:15:29.883 -07:00 [INF] Request finished in 494.2623ms 200 application/json; charset=utf-8
+2020-05-03 10:15:29.914 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 10:15:29.914 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:15:29.918 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:18:03.075 -07:00 [INF] Starting up ArchaicQuest
+2020-05-03 10:18:04.077 -07:00 [INF] User profile is available. Using 'C:\Users\Mark\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-03 10:18:04.311 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-05-03 10:18:04.320 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:18:04.334 -07:00 [INF] Request finished in 24.9865ms 204 
+2020-05-03 10:18:04.335 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-05-03 10:18:04.335 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:18:04.520 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:18:04.789 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-05-03 10:18:04.816 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 291.2348ms
+2020-05-03 10:18:04.817 -07:00 [INF] Request finished in 482.3018ms 200 application/json; charset=utf-8
+2020-05-03 10:18:04.845 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 10:18:04.846 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:18:04.850 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:18:14.317 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 10:18:14.387 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 9536.7907ms
+2020-05-03 10:18:14.387 -07:00 [INF] Request finished in 9542.1039ms 200 application/json; charset=utf-8
+2020-05-03 10:25:56.354 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 10:25:56.354 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:25:56.359 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:25:56.368 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 10:25:56.370 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 10.1578ms
+2020-05-03 10:25:56.370 -07:00 [INF] Request finished in 17.0424ms 200 application/json; charset=utf-8
+2020-05-03 10:26:51.155 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 10:26:51.156 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:26:51.157 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:26:51.164 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 10:26:51.165 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 8.0796ms
+2020-05-03 10:26:51.166 -07:00 [INF] Request finished in 11.0158ms 200 application/json; charset=utf-8
+2020-05-03 10:27:01.387 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-05-03 10:27:01.388 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:27:01.388 -07:00 [INF] Request finished in 0.9858ms 204 
+2020-05-03 10:27:01.390 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-05-03 10:27:01.390 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:27:01.391 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:27:01.470 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-05-03 10:27:01.471 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 79.7189ms
+2020-05-03 10:27:01.471 -07:00 [INF] Request finished in 80.8288ms 200 application/json; charset=utf-8
+2020-05-03 10:27:01.520 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 10:27:01.520 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:27:01.521 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:27:01.524 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 10:27:01.526 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 4.9308ms
+2020-05-03 10:27:01.526 -07:00 [INF] Request finished in 6.022ms 200 application/json; charset=utf-8
+2020-05-03 10:36:10.779 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 10:36:10.780 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:36:10.782 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:36:10.792 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 10:36:10.798 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 15.5732ms
+2020-05-03 10:36:10.799 -07:00 [INF] Request finished in 20.0638ms 200 application/json; charset=utf-8
+2020-05-03 10:36:17.128 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-05-03 10:36:17.129 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:36:17.130 -07:00 [INF] Request finished in 2.4295ms 204 
+2020-05-03 10:36:17.133 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-05-03 10:36:17.133 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:36:17.134 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:36:17.215 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-05-03 10:36:17.215 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 81.6852ms
+2020-05-03 10:36:17.216 -07:00 [INF] Request finished in 83.0615ms 200 application/json; charset=utf-8
+2020-05-03 10:36:17.246 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 10:36:17.247 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:36:17.247 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:36:17.258 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 10:36:17.259 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 11.6869ms
+2020-05-03 10:36:17.260 -07:00 [INF] Request finished in 13.8964ms 200 application/json; charset=utf-8
+2020-05-03 10:36:53.118 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 10:36:53.119 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:36:53.120 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:36:53.125 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 10:36:53.126 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 6.0103ms
+2020-05-03 10:36:53.131 -07:00 [INF] Request finished in 8.9286ms 200 application/json; charset=utf-8
+2020-05-03 10:37:03.575 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-05-03 10:37:03.575 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:37:03.576 -07:00 [INF] Request finished in 0.9123ms 204 
+2020-05-03 10:37:03.578 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-05-03 10:37:03.578 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:37:03.578 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:37:03.660 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-05-03 10:37:03.661 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 82.4071ms
+2020-05-03 10:37:03.661 -07:00 [INF] Request finished in 83.41ms 200 application/json; charset=utf-8
+2020-05-03 10:37:03.728 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 10:37:03.729 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:37:03.730 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:37:03.734 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 10:37:03.734 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 4.2842ms
+2020-05-03 10:37:03.735 -07:00 [INF] Request finished in 6.8067ms 200 application/json; charset=utf-8
+2020-05-03 10:38:51.231 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 10:38:51.231 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:38:51.233 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:38:51.240 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 10:38:51.242 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 9.2607ms
+2020-05-03 10:38:51.243 -07:00 [INF] Request finished in 11.9012ms 200 application/json; charset=utf-8
+2020-05-03 10:38:56.664 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-05-03 10:38:56.664 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:38:56.665 -07:00 [INF] Request finished in 0.5866ms 204 
+2020-05-03 10:38:56.666 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-05-03 10:38:56.667 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:38:56.668 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:38:56.748 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-05-03 10:38:56.749 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 80.5252ms
+2020-05-03 10:38:56.749 -07:00 [INF] Request finished in 82.3373ms 200 application/json; charset=utf-8
+2020-05-03 10:38:56.779 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 10:38:56.779 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:38:56.780 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:38:56.785 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 10:38:56.786 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 5.7121ms
+2020-05-03 10:38:56.787 -07:00 [INF] Request finished in 7.6448ms 200 application/json; charset=utf-8
+2020-05-03 10:48:27.840 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 10:48:27.841 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:48:27.842 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:48:27.845 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 10:48:27.846 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 4.4671ms
+2020-05-03 10:48:27.847 -07:00 [INF] Request finished in 6.8272ms 200 application/json; charset=utf-8
+2020-05-03 10:48:32.897 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-05-03 10:48:32.897 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:48:32.898 -07:00 [INF] Request finished in 0.5858ms 204 
+2020-05-03 10:48:32.900 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-05-03 10:48:32.900 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:48:32.901 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:48:32.984 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-05-03 10:48:32.985 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 83.4822ms
+2020-05-03 10:48:32.985 -07:00 [INF] Request finished in 85.1148ms 200 application/json; charset=utf-8
+2020-05-03 10:48:33.027 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 10:48:33.027 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:48:33.029 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:48:33.031 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 10:48:33.032 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 3.3409ms
+2020-05-03 10:48:33.032 -07:00 [INF] Request finished in 5.8414ms 200 application/json; charset=utf-8
+2020-05-03 10:49:16.918 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-05-03 10:49:16.919 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:49:16.919 -07:00 [INF] Request finished in 0.5988ms 204 
+2020-05-03 10:49:16.921 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-05-03 10:49:16.921 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:49:16.922 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:49:17.001 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-05-03 10:49:17.001 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 79.7324ms
+2020-05-03 10:49:17.002 -07:00 [INF] Request finished in 80.9481ms 200 application/json; charset=utf-8
+2020-05-03 10:49:17.031 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 10:49:17.032 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:49:17.036 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:49:24.666 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 10:49:24.667 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 7630.636ms
+2020-05-03 10:49:24.667 -07:00 [INF] Request finished in 7636.6379ms 200 application/json; charset=utf-8
+2020-05-03 10:50:25.931 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 10:50:25.932 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:50:25.932 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:50:33.016 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 10:50:33.025 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 7092.1879ms
+2020-05-03 10:50:33.025 -07:00 [INF] Request finished in 7093.582ms 200 application/json; charset=utf-8
+2020-05-03 10:50:38.140 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-05-03 10:50:38.140 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:50:38.140 -07:00 [INF] Request finished in 0.4408ms 204 
+2020-05-03 10:50:38.142 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-05-03 10:50:38.142 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:50:38.143 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:50:38.223 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-05-03 10:50:38.223 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 80.3095ms
+2020-05-03 10:50:38.223 -07:00 [INF] Request finished in 81.4466ms 200 application/json; charset=utf-8
+2020-05-03 10:50:38.269 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 10:50:38.269 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:50:38.270 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:50:38.275 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 10:50:38.277 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 7.5185ms
+2020-05-03 10:50:38.278 -07:00 [INF] Request finished in 9.1612ms 200 application/json; charset=utf-8
+2020-05-03 10:51:27.033 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 10:51:27.033 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:51:27.034 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:51:27.038 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 10:51:27.040 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 5.9521ms
+2020-05-03 10:51:27.041 -07:00 [INF] Request finished in 8.2863ms 200 application/json; charset=utf-8
+2020-05-03 10:51:39.129 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-05-03 10:51:39.129 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:51:39.130 -07:00 [INF] Request finished in 0.4375ms 204 
+2020-05-03 10:51:39.132 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-05-03 10:51:39.132 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:51:39.132 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:51:39.210 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-05-03 10:51:39.211 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 78.8016ms
+2020-05-03 10:51:39.211 -07:00 [INF] Request finished in 79.6166ms 200 application/json; charset=utf-8
+2020-05-03 10:51:39.251 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 10:51:39.252 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:51:39.252 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:51:39.255 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 10:51:39.256 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 3.4647ms
+2020-05-03 10:51:39.256 -07:00 [INF] Request finished in 4.6572ms 200 application/json; charset=utf-8
+2020-05-03 10:53:19.979 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 10:53:19.979 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:53:19.979 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:53:19.984 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 10:53:19.986 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 6.146ms
+2020-05-03 10:53:19.986 -07:00 [INF] Request finished in 7.0432ms 200 application/json; charset=utf-8
+2020-05-03 10:53:24.954 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-05-03 10:53:24.954 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:53:24.954 -07:00 [INF] Request finished in 0.538ms 204 
+2020-05-03 10:53:24.956 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-05-03 10:53:24.956 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:53:24.957 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:53:25.035 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-05-03 10:53:25.035 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 78.5849ms
+2020-05-03 10:53:25.035 -07:00 [INF] Request finished in 79.4083ms 200 application/json; charset=utf-8
+2020-05-03 10:53:25.064 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 10:53:25.064 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:53:25.064 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:53:25.069 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 10:53:25.071 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 6.1998ms
+2020-05-03 10:53:25.071 -07:00 [INF] Request finished in 7.45ms 200 application/json; charset=utf-8
+2020-05-03 10:58:06.832 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 10:58:06.832 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:58:06.833 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:58:06.842 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 10:58:06.846 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 13.3422ms
+2020-05-03 10:58:06.847 -07:00 [INF] Request finished in 15.2306ms 200 application/json; charset=utf-8
+2020-05-03 10:59:37.112 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 10:59:37.112 -07:00 [INF] CORS policy execution successful.
+2020-05-03 10:59:37.112 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 10:59:37.114 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 10:59:37.115 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 2.8165ms
+2020-05-03 10:59:37.115 -07:00 [INF] Request finished in 3.8516ms 200 application/json; charset=utf-8
+2020-05-03 11:00:22.004 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 11:00:22.004 -07:00 [INF] CORS policy execution successful.
+2020-05-03 11:00:22.005 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 11:00:22.007 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 11:00:22.008 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 3.1761ms
+2020-05-03 11:00:22.008 -07:00 [INF] Request finished in 4.1224ms 200 application/json; charset=utf-8
+2020-05-03 11:00:29.653 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 11:00:29.653 -07:00 [INF] CORS policy execution successful.
+2020-05-03 11:00:29.654 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 11:00:29.657 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 11:00:29.658 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 4.1534ms
+2020-05-03 11:00:29.658 -07:00 [INF] Request finished in 5.061ms 200 application/json; charset=utf-8
+2020-05-03 11:00:31.277 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Race  
+2020-05-03 11:00:31.277 -07:00 [INF] CORS policy execution successful.
+2020-05-03 11:00:31.279 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Class  
+2020-05-03 11:00:31.280 -07:00 [INF] CORS policy execution successful.
+2020-05-03 11:00:31.282 -07:00 [INF] Route matched with {action = "Get", controller = "Class"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Class.Class] Get() on controller WhoPK.API.Character.ClassController (WhoPK.API).
+2020-05-03 11:00:31.282 -07:00 [INF] Route matched with {action = "Get", controller = "Race"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Race.Race] Get() on controller WhoPK.API.Controllers.Character.RaceController (WhoPK.API).
+2020-05-03 11:00:31.292 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Class.Class, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-03 11:00:31.292 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Race.Race, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-03 11:00:31.300 -07:00 [INF] Executed action WhoPK.API.Controllers.Character.RaceController.Get (WhoPK.API) in 17.4618ms
+2020-05-03 11:00:31.300 -07:00 [INF] Executed action WhoPK.API.Character.ClassController.Get (WhoPK.API) in 17.4966ms
+2020-05-03 11:00:31.300 -07:00 [INF] Request finished in 20.7986ms 200 application/json; charset=utf-8
+2020-05-03 11:00:31.300 -07:00 [INF] Request finished in 22.9599ms 200 application/json; charset=utf-8
+2020-05-03 11:00:32.650 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 11:00:32.650 -07:00 [INF] CORS policy execution successful.
+2020-05-03 11:00:32.651 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 11:00:32.654 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 11:00:32.655 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 3.2581ms
+2020-05-03 11:00:32.655 -07:00 [INF] Request finished in 4.8519ms 200 application/json; charset=utf-8
+2020-05-03 11:00:36.973 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 11:00:36.973 -07:00 [INF] CORS policy execution successful.
+2020-05-03 11:00:36.973 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 11:00:36.977 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 11:00:36.979 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 5.2626ms
+2020-05-03 11:00:36.979 -07:00 [INF] Request finished in 6.1939ms 200 application/json; charset=utf-8
+2020-05-03 11:00:37.882 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Race  
+2020-05-03 11:00:37.882 -07:00 [INF] CORS policy execution successful.
+2020-05-03 11:00:37.882 -07:00 [INF] Route matched with {action = "Get", controller = "Race"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Race.Race] Get() on controller WhoPK.API.Controllers.Character.RaceController (WhoPK.API).
+2020-05-03 11:00:37.883 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Race.Race, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-03 11:00:37.883 -07:00 [INF] Executed action WhoPK.API.Controllers.Character.RaceController.Get (WhoPK.API) in 1.0802ms
+2020-05-03 11:00:37.883 -07:00 [INF] Request finished in 1.6293ms 200 application/json; charset=utf-8
+2020-05-03 11:00:37.884 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Character/Class  
+2020-05-03 11:00:37.884 -07:00 [INF] CORS policy execution successful.
+2020-05-03 11:00:37.884 -07:00 [INF] Route matched with {action = "Get", controller = "Class"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Character.Class.Class] Get() on controller WhoPK.API.Character.ClassController (WhoPK.API).
+2020-05-03 11:00:37.884 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Character.Class.Class, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-05-03 11:00:37.885 -07:00 [INF] Executed action WhoPK.API.Character.ClassController.Get (WhoPK.API) in 0.8318ms
+2020-05-03 11:00:37.885 -07:00 [INF] Request finished in 1.4896ms 200 application/json; charset=utf-8
+2020-05-03 11:00:38.613 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 11:00:38.613 -07:00 [INF] CORS policy execution successful.
+2020-05-03 11:00:38.614 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 11:00:38.617 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 11:00:38.618 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 3.9214ms
+2020-05-03 11:00:38.618 -07:00 [INF] Request finished in 4.5593ms 200 application/json; charset=utf-8
+2020-05-03 11:00:40.664 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 11:00:40.664 -07:00 [INF] CORS policy execution successful.
+2020-05-03 11:00:40.664 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 11:00:40.666 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 11:00:40.667 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 2.7138ms
+2020-05-03 11:00:40.667 -07:00 [INF] Request finished in 3.1892ms 200 application/json; charset=utf-8
+2020-05-03 11:00:43.385 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 11:00:43.385 -07:00 [INF] CORS policy execution successful.
+2020-05-03 11:00:43.385 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 11:00:43.388 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 11:00:43.388 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 2.6508ms
+2020-05-03 11:00:43.388 -07:00 [INF] Request finished in 3.2651ms 200 application/json; charset=utf-8
+2020-05-03 11:00:52.412 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-05-03 11:00:52.412 -07:00 [INF] CORS policy execution successful.
+2020-05-03 11:00:52.412 -07:00 [INF] Request finished in 0.3659ms 204 
+2020-05-03 11:00:52.414 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-05-03 11:00:52.414 -07:00 [INF] CORS policy execution successful.
+2020-05-03 11:00:52.414 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 11:00:52.494 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-05-03 11:00:52.494 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 79.921ms
+2020-05-03 11:00:52.494 -07:00 [INF] Request finished in 80.5551ms 200 application/json; charset=utf-8
+2020-05-03 11:00:52.549 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 11:00:52.549 -07:00 [INF] CORS policy execution successful.
+2020-05-03 11:00:52.549 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 11:00:52.553 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 11:00:52.553 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 4.2782ms
+2020-05-03 11:00:52.554 -07:00 [INF] Request finished in 5.2753ms 200 application/json; charset=utf-8
+2020-05-03 11:05:30.007 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2020-05-03 11:05:30.007 -07:00 [INF] CORS policy execution successful.
+2020-05-03 11:05:30.007 -07:00 [INF] Request finished in 0.3625ms 204 
+2020-05-03 11:05:30.008 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2020-05-03 11:05:30.009 -07:00 [INF] CORS policy execution successful.
+2020-05-03 11:05:30.009 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 11:05:30.087 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2020-05-03 11:05:30.088 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 78.9561ms
+2020-05-03 11:05:30.088 -07:00 [INF] Request finished in 79.4007ms 200 application/json; charset=utf-8
+2020-05-03 11:05:30.131 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2020-05-03 11:05:30.131 -07:00 [INF] CORS policy execution successful.
+2020-05-03 11:05:30.131 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2020-05-03 11:05:30.138 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2020-05-03 11:05:30.139 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 7.9543ms
+2020-05-03 11:05:30.139 -07:00 [INF] Request finished in 8.6643ms 200 application/json; charset=utf-8
