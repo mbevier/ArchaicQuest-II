@@ -63,6 +63,11 @@ namespace WhoPK.API
                         .AllowAnyMethod().AllowAnyHeader().AllowCredentials());
             });
 
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
+            });
+
             // configure strongly typed settings objects
             var appSettingsSection = Configuration.GetSection("AppSettings");
             services.Configure<AppSettings>(appSettingsSection);
@@ -122,15 +127,15 @@ namespace WhoPK.API
          
             app.UseStaticFiles();
 
-            app.UseCors(
-                options => options.WithOrigins("http://52.141.211.127:4200").AllowAnyMethod().AllowAnyHeader().AllowCredentials()
-            );
+        //    app.UseCors(
+        //        options => options.WithOrigins("http://52.141.211.127:4200").AllowAnyMethod().AllowAnyHeader().AllowCredentials()
+        //    );
 
-            app.UseCors(
-            options => options.WithOrigins("52.141.211.127/:1").AllowAnyMethod().AllowAnyHeader().AllowCredentials()
-        );
+        //    app.UseCors(
+        //    options => options.WithOrigins("52.141.211.127/:1").AllowAnyMethod().AllowAnyHeader().AllowCredentials()
+        //);
 
-
+            app.UseCors(options => options.AllowAnyOrigin());
             app.UseCors("client");
             app.UseCors("admin");
         
