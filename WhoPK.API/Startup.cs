@@ -56,7 +56,7 @@ namespace WhoPK.API
             services.AddCors(options =>
             {
                 options.AddPolicy("client",
-                    builder => builder.WithOrigins("http://localhost:4200", "http://localhost:1337", "http://52.141.211.127:4200", "http://52.141.211.127/:1")
+                    builder => builder.WithOrigins("http://localhost:4200", "http://localhost:1337", "http://52.141.211.127:4200", "http://52.141.211.127", "52.141.211.127/:1")
                         .AllowAnyMethod().AllowAnyHeader().AllowCredentials());
                 options.AddPolicy("admin",
                     builder => builder.WithOrigins("http://52.141.211.177:4300")
@@ -135,9 +135,9 @@ namespace WhoPK.API
         //    options => options.WithOrigins("52.141.211.127/:1").AllowAnyMethod().AllowAnyHeader().AllowCredentials()
         //);
 
-            app.UseCors(options => options.AllowAnyOrigin());
+            //app.UseCors(options => options.AllowAnyOrigin());
             app.UseCors("client");
-            app.UseCors("admin");
+            app.UseCors("AllowOrigin");
         
             app.UseAuthentication();
 
