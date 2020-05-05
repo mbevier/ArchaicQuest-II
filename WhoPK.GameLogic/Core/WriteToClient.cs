@@ -23,7 +23,7 @@ namespace WhoPK.GameLogic.Core
             try
             {
                 
-                await _hubContext.Clients.Client(id).SendAsync("SendMessage", message, "");
+                await _hubContext.Clients.Client(id).SendAsync("SendMessage", message + "<br />", "");
             }
             catch (Exception ex)
             {

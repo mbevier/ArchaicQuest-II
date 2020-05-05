@@ -64,8 +64,8 @@ namespace WhoPK.GameLogic.Hubs
         /// <returns></returns>
         public async Task SendToServer(string message, string connectionId)
         {
-           // _logger.LogInformation($"Player sent {message}, hub ID{connectionId}");
-            var player = _cache.GetPlayer(connectionId);
+            _logger.LogInformation($"Player sent {message}, hub ID{connectionId}");
+            var player = _cache.GetPlayer(Context.ConnectionId);
             player.Buffer.Push(message);
           //   var room = _cache.GetRoom(player.RoomId);
 

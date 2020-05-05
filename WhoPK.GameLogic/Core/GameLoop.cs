@@ -29,7 +29,7 @@ namespace WhoPK.GameLogic.Core
 
         public async Task UpdateTime()
         {
-            _writeToClient.WriteLine("start looper ");
+            _writeToClient.WriteLine("start game loop ");
             //var players = _cache.GetPlayerCache();
             //var validPlayers = players.Where(x => x.Value.Buffer.Count > 0);
 
@@ -47,7 +47,7 @@ namespace WhoPK.GameLogic.Core
 
                 foreach (var player in players)
                 {
-                    _writeToClient.WriteLine("update", player.Value.ConnectionId);
+                    _writeToClient.WriteLine("tick", player.Value.ConnectionId);
 
                 }
             }
