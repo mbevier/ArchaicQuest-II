@@ -103,7 +103,7 @@ namespace WhoPK.GameLogic.Hubs
 
             var motd = File.ReadAllText(directory + "/motd");
  
-           await SendToClient(motd, id);
+           await SendToClient(motd, Context.ConnectionId);
         }
  
 
@@ -121,14 +121,14 @@ namespace WhoPK.GameLogic.Hubs
         public async void AddCharacter(string hubId, Guid characterId)
         {
 
-            var player = GetCharacter(hubId, characterId);
-            AddCharacterToCache(hubId, player);
+            var player = GetCharacter(Context.ConnectionId, characterId);
+            AddCharacterToCache(Context.ConnectionId, player);
 
           
 
-            await SendToClient($"Welcome {player.Name}. Your adventure awaits you.", hubId);
+            await SendToClient($"Welcome {player.Name}. Your adventure awaits you.", Context.ConnectionId);
 
-            GetRoom(hubId, player);
+            GetRoom(Context.ConnectionId, player);
         }
 
         /// <summary>

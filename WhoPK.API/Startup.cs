@@ -25,6 +25,7 @@ using Microsoft.AspNetCore.SignalR;
 using static WhoPK.API.Services.services;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.NewtonsoftJson;
+using WhoPK.GameLogic.World.Area;
 
 namespace WhoPK.API
 {
@@ -170,6 +171,7 @@ namespace WhoPK.API
             {
                 _cache.AddRoom(room.Id, room);
             }
+
 
 
             if (!_db.DoesCollectionExist(DataBase.Collections.Alignment))
