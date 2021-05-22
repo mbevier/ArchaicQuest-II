@@ -10,8 +10,8 @@ namespace WhoPK.GameLogic.World.Room
     public class RoomActions:IRoomActions
     {
 
-        private readonly IWriteToClient _writeToClient;
-        public RoomActions(IWriteToClient writeToClient)
+        private readonly IClientMessenger _writeToClient;
+        public RoomActions(IClientMessenger writeToClient)
         {
             _writeToClient = writeToClient;
         }

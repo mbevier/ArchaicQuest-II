@@ -9,11 +9,11 @@ namespace WhoPK.GameLogic.Skill.Type
     /// </summary>
     public class SkillAffect
     {
-        private readonly IWriteToClient _writer;
+        private readonly IClientMessenger _writer;
         private static SkillTarget _skillTarget;
         private readonly int _value;
 
-        public SkillAffect(IWriteToClient writer, SkillTarget skillTarget, int value)
+        public SkillAffect(IClientMessenger writer, SkillTarget skillTarget, int value)
         {
             _writer = writer;
             _skillTarget = skillTarget;

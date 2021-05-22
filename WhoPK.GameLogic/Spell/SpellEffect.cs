@@ -9,11 +9,11 @@ namespace WhoPK.GameLogic.Spell
 {
     public class SpellEffect
     {
-        private static IWriteToClient _writer;
+        private static IClientMessenger _writer;
         private static SkillTarget _skillTarget;
         private static int _value;
 
-        public SpellEffect(IWriteToClient writer, SkillTarget skillTarget, int value)
+        public SpellEffect(IClientMessenger writer, SkillTarget skillTarget, int value)
         {
             _writer = writer;
             _skillTarget = skillTarget;

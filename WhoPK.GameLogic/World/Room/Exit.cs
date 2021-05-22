@@ -40,4 +40,15 @@ namespace WhoPK.GameLogic.World.Room
         public Exit Down { get; set; }
 
     }
+
+    public enum Direction
+    {
+        None,
+        North,
+        East,
+        South,
+        West,
+        Up,
+        Down     
+    }
 }

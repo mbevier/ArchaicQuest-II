@@ -12,9 +12,9 @@ namespace WhoPK.GameLogic.Spell
 {
     public class Spells : ISpells
     {
-        private readonly IWriteToClient _writer;
+        private readonly IClientMessenger _writer;
 
-        public Spells(IWriteToClient writer)
+        public Spells(IClientMessenger writer)
         {
             _writer = writer;
 

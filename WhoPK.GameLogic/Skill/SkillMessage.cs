@@ -6,9 +6,9 @@ namespace WhoPK.GameLogic.Skill
 {
     public class SkillMessage
     {
-        private readonly IWriteToClient _writer;
+        private readonly IClientMessenger _writer;
 
-        public SkillMessage(IWriteToClient writer)
+        public SkillMessage(IClientMessenger writer)
         {
             _writer = writer;
         }

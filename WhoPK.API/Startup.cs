@@ -35,7 +35,7 @@ namespace WhoPK.API
         private IDataBase _db;
         private ICache _cache;
       
-        private IWriteToClient _writeToClient;
+        private IClientMessenger _writeToClient;
         private IHubContext<GameHub> _hubContext;
         public Startup(IConfiguration configuration)
         {
@@ -114,7 +114,7 @@ namespace WhoPK.API
             services.AddSingleton<IGameLoop, GameLoop>();
             services.AddTransient<IRoomActions, RoomActions>();
             services.AddTransient<IAddRoom, AddRoom>();
-            services.AddSingleton<IWriteToClient, WriteToClient>((factory) => new WriteToClient(_hubContext));
+            services.AddSingleton<IClientMessenger, WriteToClient>((factory) => new WriteToClient(_hubContext));
 
             // Register the Swagger services
             services.AddSwaggerDocument();

@@ -21,10 +21,10 @@ namespace WhoPK.GameLogic.Hubs
         private readonly ILogger<GameHub> _logger;
         private IDataBase _db { get; }
         private ICache _cache { get; }
-        private readonly IWriteToClient _writeToClient;
+        private readonly IClientMessenger _writeToClient;
         private int start = 0;
         private EntityWorld _entityWorld;
-        public GameHub(IDataBase db, ICache cache, ILogger<GameHub> logger, IWriteToClient writeToClient)
+        public GameHub(IDataBase db, ICache cache, ILogger<GameHub> logger, IClientMessenger writeToClient)
         {
             _logger = logger;
             _db = db;

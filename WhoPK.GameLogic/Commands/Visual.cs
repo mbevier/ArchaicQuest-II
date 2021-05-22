@@ -13,9 +13,9 @@ namespace WhoPK.GameLogic.Commands
     {
         private IRoomActions _roomActions;
         private ICache _cache;
-        private readonly IWriteToClient _writeToClient;
+        private readonly IClientMessenger _writeToClient;
 
-        public Visual(IRoomActions roomActions, ICache cache, IWriteToClient writeToClient)
+        public Visual(IRoomActions roomActions, ICache cache, IClientMessenger writeToClient)
         {
             _roomActions = roomActions;
             _cache = cache;

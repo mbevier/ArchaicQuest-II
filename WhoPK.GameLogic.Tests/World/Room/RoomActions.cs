@@ -13,11 +13,11 @@ namespace WhoPK.GameLogic.Tests.World.Room
     {
         private GameLogic.World.Room.Room _room;
         private Player _player;
-        private readonly Mock<IWriteToClient> _writer;
+        private readonly Mock<IClientMessenger> _writer;
  
         public RoomActionsTests()
         {
-            _writer = new Mock<IWriteToClient>();
+            _writer = new Mock<IClientMessenger>();
             
         }
 

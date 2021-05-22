@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.SignalR;
 
 namespace WhoPK.GameLogic.Core
 {
-    public class WriteToClient : IWriteToClient
+    public class WriteToClient : IClientMessenger
     {
         private readonly IHubContext<GameHub> _hubContext;
       

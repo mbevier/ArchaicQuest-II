@@ -10,11 +10,11 @@ namespace WhoPK.GameLogic.Commands.Movement
 {
     public class Communication : ICommunication
     {
-        private readonly IWriteToClient _writeToClient;
+        private readonly IClientMessenger _writeToClient;
         private readonly ICache _cache;
 
 
-        public Communication(IWriteToClient writeToClient, ICache cache)
+        public Communication(IClientMessenger writeToClient, ICache cache)
         {
             _writeToClient = writeToClient;
             _cache = cache; 

@@ -11,12 +11,11 @@ namespace WhoPK.GameLogic.Commands.Movement
 {
     public class Movement : IMovement
     {
-        private readonly IWriteToClient _writeToClient;
+        private readonly IClientMessenger _writeToClient;
         private readonly IRoomActions _roomActions;
         private readonly ICache _cache;
 
-
-        public Movement(IWriteToClient writeToClient, ICache cache, IRoomActions roomActions)
+        public Movement(IClientMessenger writeToClient, ICache cache, IRoomActions roomActions)
         {
             _writeToClient = writeToClient;
             _cache = cache;

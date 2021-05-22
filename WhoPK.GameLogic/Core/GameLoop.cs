@@ -15,12 +15,12 @@ namespace WhoPK.GameLogic.Core
     public class GameLoop : IGameLoop
     {
 
-        private IWriteToClient _writeToClient;
+        private IClientMessenger _writeToClient;
         private ICache _cache;
         private ICommandManager _commandManager;
         private PlayerInputSystem _playerInputSystem;
 
-        public GameLoop(IWriteToClient writeToClient, ICache cache, ICommandManager commandManager)
+        public GameLoop(IClientMessenger writeToClient, ICache cache, ICommandManager commandManager)
         {
             _writeToClient = writeToClient;
             _cache = cache;
