@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using WhoPK.GameLogic.Commands;
 using WhoPK.GameLogic.Hubs;
 using Microsoft.AspNet.SignalR;
+using WhoPK.GameLogic.Core.System;
 
 namespace WhoPK.GameLogic.Core
 {
@@ -14,22 +15,22 @@ namespace WhoPK.GameLogic.Core
     public class GameLoop : IGameLoop
     {
 
-
         private IWriteToClient _writeToClient;
         private ICache _cache;
-        private ICommands _commands;
+        private ICommandManager _commandManager;
+        private PlayerInputSystem _playerInputSystem;
 
-        public GameLoop(IWriteToClient writeToClient, ICache cache, ICommands commands)
+        public GameLoop(IWriteToClient writeToClient, ICache cache, ICommandManager commandManager)
         {
             _writeToClient = writeToClient;
             _cache = cache;
-            _commands = commands;
+            _commandManager = commandManager;
         }
 
 
         public async Task UpdateTime()
         {
-            _writeToClient.WriteLine("start game loop ");
+
             //var players = _cache.GetPlayerCache();
             //var validPlayers = players.Where(x => x.Value.Buffer.Count > 0);
 
@@ -38,18 +39,31 @@ namespace WhoPK.GameLogic.Core
             //    _writeToClient.WriteLine("update", player.Value.ConnectionId);
 
             //}
-            while (true)
+
+        }
+
+        public async Task Start()
+        {
+            try
             {
-                await Task.Delay(1000);
-
-                var players = _cache.GetPlayerCache();
-                var validPlayers = players.Where(x => x.Value.Buffer.Count > 0);
-
-                foreach (var player in players)
+                _writeToClient.WriteLine("start game loop ");
+                while (true)
                 {
-                    _writeToClient.WriteLine("tick", player.Value.ConnectionId);
+                    await Task.Delay(50);
+                    //var players = _cache.GetPlayerCache();
+                    //var commandQueuedPlayers = players.Where(x => x.Value.Buffer.Count > 0);
 
+                    _playerInputSystem.Process();
+                    //foreach (var player in commandQueuedPlayers)
+                    //{
+                    //    var commandExecuted = _commandManager.ProcessCommand(player.Value.Buffer.Pop(), player.Value);
+                    //    if (!commandExecuted) _writeToClient.WriteLine("Huh?");
+                    //}
                 }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
             }
         }
 
@@ -59,18 +73,18 @@ namespace WhoPK.GameLogic.Core
             while (true)
             {
                 await Task.Delay(125);
-                var players = _cache.GetPlayerCache();
-                var validPlayers = players.Where(x => x.Value.Buffer.Count > 0);
+                _playerInputSystem.Process();
+                //var players = _cache.GetPlayerCache();
+                //var validPlayers = players.Where(x => x.Value.Buffer.Count > 0);
 
-                foreach (var player in validPlayers)
-                {
+                //foreach (var entity in validEntities)
+                //{
 
-                    var command = player.Value.Buffer.Pop();
-                    var room = _cache.GetRoom(player.Value.RoomId);
+                //    var command = player.Value.Buffer.Pop();
+                //    //var room = _cache.GetRoom(player.Value.RoomId);
+                //    _commandManager.ProcessCommand(command, player.Value);
 
-                    _commands.ProcessCommand(command, player.Value, room);
-
-                }
+                //}
             }
         }
 

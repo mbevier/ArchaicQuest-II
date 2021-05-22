@@ -78,7 +78,7 @@ namespace WhoPK.GameLogic.Tests.Commands.Movement
             _cache.Setup(x => x.GetRoom(2)).Returns(room2);
 
 
-            new GameLogic.Commands.Movement.Movement(_writer.Object, _cache.Object, _roomActions.Object).Move(_room, _player, "North");
+            //new GameLogic.Commands.Movement.Movement(_writer.Object, _cache.Object, _roomActions.Object).Move( _player, "North");
 
             _writer.Verify(w => w.WriteLine(It.Is<string>(s => s.Contains("Bob walks north.")), "1"), Times.Never);
             _writer.Verify(w => w.WriteLine(It.Is<string>(s => s == "Bob walks north."), "2"), Times.Once);
@@ -139,7 +139,7 @@ namespace WhoPK.GameLogic.Tests.Commands.Movement
             _cache.Setup(x => x.GetRoom(2)).Returns(room2);
 
 
-            new GameLogic.Commands.Movement.Movement(_writer.Object, _cache.Object, _roomActions.Object).Move(_room, _player, "North");
+            //new GameLogic.Commands.Movement.Movement(_writer.Object, _cache.Object, _roomActions.Object).Move(_player, "North");
 
  
             _writer.Verify(w => w.WriteLine(It.Is<string>(s => s == "You are too exhausted to move"), "1"), Times.Once);

@@ -26,6 +26,7 @@ using static WhoPK.API.Services.services;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.NewtonsoftJson;
 using WhoPK.GameLogic.World.Area;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace WhoPK.API
 {
@@ -57,17 +58,23 @@ namespace WhoPK.API
             services.AddCors(options =>
             {
                 options.AddPolicy("client",
-                    builder => builder.WithOrigins("http://localhost:4200", "http://localhost:1337", "http://52.141.211.127:4200", "http://52.141.211.127", "52.141.211.127/:1")
+                    builder => builder.WithOrigins("http://localhost:4200", "https://localhost:4200", "http://localhost:1337", "http://52.141.211.127:4200", "http://52.141.211.127", "52.141.211.127/:1")
                         .AllowAnyMethod().AllowAnyHeader().AllowCredentials());
                 options.AddPolicy("admin",
                     builder => builder.WithOrigins("http://52.141.211.177:4300")
                         .AllowAnyMethod().AllowAnyHeader().AllowCredentials());
+                options.AddPolicy("CorsPolicy",
+                builder => builder
+                //.AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .AllowCredentials()
+                .SetIsOriginAllowed((host) => true) //for signalr cors                
+        );
             });
 
-            services.AddCors(c =>
-            {
-                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
-            });
+
+
 
             // configure strongly typed settings objects
             var appSettingsSection = Configuration.GetSection("AppSettings");
@@ -101,7 +108,9 @@ namespace WhoPK.API
             services.AddScoped<IDataBase, DataBase>();
             services.AddSingleton<ICache>(new Cache());
             services.AddTransient<IMovement, Movement>();
-            services.AddSingleton<ICommands, Commands>();
+            services.AddTransient<IVisual, Visual>();
+            services.AddTransient<IInterpreter, Interpreter>();
+            services.AddSingleton<ICommandManager, CommandManager>();
             services.AddSingleton<IGameLoop, GameLoop>();
             services.AddTransient<IRoomActions, RoomActions>();
             services.AddTransient<IAddRoom, AddRoom>();
@@ -128,24 +137,31 @@ namespace WhoPK.API
          
             app.UseStaticFiles();
 
-        //    app.UseCors(
-        //        options => options.WithOrigins("http://52.141.211.127:4200").AllowAnyMethod().AllowAnyHeader().AllowCredentials()
-        //    );
 
-        //    app.UseCors(
-        //    options => options.WithOrigins("52.141.211.127/:1").AllowAnyMethod().AllowAnyHeader().AllowCredentials()
-        //);
+
+
+            //    app.UseCors(
+            //        options => options.WithOrigins("http://52.141.211.127:4200").AllowAnyMethod().AllowAnyHeader().AllowCredentials()
+            //    );
+
+            //    app.UseCors(
+            //    options => options.WithOrigins("52.141.211.127/:1").AllowAnyMethod().AllowAnyHeader().AllowCredentials()
+            //);
 
             //app.UseCors(options => options.AllowAnyOrigin());
-            app.UseCors("client");
-            app.UseCors("AllowOrigin");
-        
+            app.UseCors("CorsPolicy");
+            //app.UseCors("AllowOrigin");
             app.UseAuthentication();
-
+            
             // Register the Swagger generator and the Swagger UI middlewares
             app.UseOpenApi();
             app.UseSwaggerUi3();
 
+            app.UseSignalR(routes =>
+            {
+                routes.MapHub<GameHub>("/Hubs/game");
+
+            });
             app.UseMvc(routes =>
             {
 
@@ -155,12 +171,6 @@ namespace WhoPK.API
 
             });
 
-
-            app.UseSignalR(routes =>
-            {
-                routes.MapHub<GameHub>("/Hubs/game");
-                
-            });
             _hubContext = app.ApplicationServices.GetService<IHubContext<GameHub>>();
             app.StartLoops();
 
@@ -222,8 +232,13 @@ namespace WhoPK.API
         public static void StartLoops(this IApplicationBuilder app)
         {
             var loop = app.ApplicationServices.GetRequiredService<IGameLoop>();
-            Task.Run(loop.UpdateTime);
-            Task.Run(loop.UpdatePlayers);
+            
+            Task.Run(loop.Start).ContinueWith((t) =>
+            {
+                if (t.IsFaulted) throw t.Exception;
+            }); ;
+
+            //Task.Run(loop.UpdatePlayers);
         }
     }
 

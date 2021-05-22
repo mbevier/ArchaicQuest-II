@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Artemis;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using WhoPK.GameLogic.Character;
@@ -8,8 +9,14 @@ namespace WhoPK.GameLogic.Commands.Movement
 {
     public interface IMovement
     {
-        void Move(Room room, Player character, string direction);
+        void Move(Entity entity, string direction);
 
-        void MoveNorth(Room room, Player character);
+        void MoveNorth(Entity entity, string args);
+        void MoveSouth(Entity entity, string args);
+        void MoveEast(Entity entity, string args);
+        void MoveWest(Entity entity, string args);
+        void MoveUp(Entity entityr, string args);
+        void MoveDown(Entity entity, string args);
+
     }
 }

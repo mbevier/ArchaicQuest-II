@@ -10,6 +10,9 @@ using WhoPK.GameLogic.Core;
 using WhoPK.GameLogic.World.Room;
 using Microsoft.AspNet.SignalR.Hubs;
 using Microsoft.Extensions.Logging;
+using LiteDB;
+using Artemis;
+using WhoPK.GameLogic.Core.Component;
 
 namespace WhoPK.GameLogic.Hubs
 {
@@ -19,15 +22,15 @@ namespace WhoPK.GameLogic.Hubs
         private IDataBase _db { get; }
         private ICache _cache { get; }
         private readonly IWriteToClient _writeToClient;
-        private readonly ICommands _commands;
         private int start = 0;
-        public GameHub(IDataBase db, ICache cache, ILogger<GameHub> logger, IWriteToClient writeToClient, ICommands commands)
+        private EntityWorld _entityWorld;
+        public GameHub(IDataBase db, ICache cache, ILogger<GameHub> logger, IWriteToClient writeToClient)
         {
             _logger = logger;
             _db = db;
             _cache = cache;
             _writeToClient = writeToClient;
-            _commands = commands;
+            _entityWorld = new EntityWorld();
         }
 
  
@@ -123,8 +126,8 @@ namespace WhoPK.GameLogic.Hubs
 
             var player = GetCharacter(Context.ConnectionId, characterId);
             AddCharacterToCache(Context.ConnectionId, player);
-
-          
+            Entity playerEntity = _entityWorld.CreateEntity(); // you can pass an unique ID as first parameter.
+            playerEntity.AddComponent(new PlayerInputComponent());
 
             await SendToClient($"Welcome {player.Name}. Your adventure awaits you.", Context.ConnectionId);
 

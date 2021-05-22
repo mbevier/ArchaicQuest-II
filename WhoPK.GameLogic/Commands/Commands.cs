@@ -5,79 +5,58 @@ using System.Text;
 using WhoPK.GameLogic.Commands.Movement;
 using WhoPK.GameLogic.World.Room;
 using System.Linq;
+using WhoPK.GameLogic.Core;
+using Microsoft.AspNet.SignalR.Messaging;
+using Artemis;
+using WhoPK.GameLogic.Core.Component;
 
 namespace WhoPK.GameLogic.Commands
 {
-   public class Commands: ICommands
+   public class CommandManager : ICommandManager
     {
-        private readonly IMovement _movement;
-        private readonly IRoomActions _roomActions;
-
-        public Commands(IMovement movement, IRoomActions roomActions)
+        IInterpreter _interpreter;
+        IMovement _movement;
+        IVisual _visual;
+        public CommandManager(IInterpreter interpreter, IMovement movement, IVisual visual)
         {
+            _interpreter = interpreter;
             _movement = movement;
-            _roomActions = roomActions;
+            _visual = visual;
+            LoadCommands();
         }
- 
-        public void CommandList(string key, string options, Player player, Room room)
+
+        private void LoadCommands()
         {
-            switch (key)
+            //TODO:  Have these tag with component for further processing?  hmmm
+            CommandList = new Dictionary<string, Action<Entity, string>>()
             {
-                case "north west":
-                case "nw":
-                    _movement.Move(room, player, "North West");
-                    break;
-                case "north east":
-                case "ne":
-                    _movement.Move(room, player, "North East");
-                    break;
-                case "south east":
-                case "se":
-                    _movement.Move(room, player, "South East");
-                    break;
-                case "south west":
-                case "sw":
-                    _movement.Move(room, player, "South West");
-                    break;
-                case "north":
-                case "n":
-                    _movement.Move(room, player, "North");
-                    break;
-                case "east":
-                case "e":
-                    _movement.Move(room, player, "East");
-                    break;
-                case "south":
-                case "s":
-                    _movement.Move(room, player, "South");
-                    break;
-                case "west":
-                case "w":
-                    _movement.Move(room, player, "West");
-                    break;
-                case "up":
-                case "u":
-                    _movement.Move(room, player, "Up");
-                    break;
-                case "down":
-                case "d":
-                    _movement.Move(room, player, "Down");
-                    break;
-                case "look":
-                case "l":
-                    _roomActions.Look(room, player);
-                    break;
-            }
-        }    
+                { "north", new Action<Entity, string>(_movement.MoveNorth) },
+                { "south", new Action<Entity, string>(_movement.MoveSouth) },
+                { "east", new Action<Entity, string>(_movement.MoveEast) },
+                { "west", new Action<Entity, string>(_movement.MoveWest) },
+                { "look", new Action<Entity, string>(_visual.Look) },
+            };
+        }
+        public Dictionary<string, Action<Entity, string>> CommandList { get; set; }      
 
-        public void ProcessCommand(string command, Player player, Room room)
+        public bool ProcessCommand(string command, Entity entity)
         {
-
+            var userId = entity.GetComponent<PlayerInputComponent>().userId;
+            var commandFound = false;
             var cleanCommand = command.Trim().ToLower();
-            CommandList(cleanCommand, String.Empty, player, room);
+            var interpretedCommand = _interpreter.Interpret(cleanCommand);
+            foreach (KeyValuePair<string, Action<Entity, String>> cmd in CommandList)
+            {
+                if (cmd.Key.StartsWith(command))
+                {
+                    cmd.Value(entity, interpretedCommand.argument);
+                    commandFound = true;
+                }
+            }
+            return commandFound;
         }
     }
-
+    //Render system - Event, location, visibility
 
 }
 

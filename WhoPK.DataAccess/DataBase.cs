@@ -32,7 +32,15 @@ namespace WhoPK.DataAccess
             Players,
             Race,
             Room,
-            Status
+            Status,
+            Entity,
+            StatsComponent,
+            LocationComponent,
+            AbilityComponent,
+            ContainerComponent,
+            WeaponComponent,
+            ShieldComponent,
+            AlignmentComponent
         }
 
         public bool Save<T>(T data, Collections collectionName)
