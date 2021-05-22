@@ -24,24 +24,24 @@ namespace WhoPK.GameLogic.Tests.Commands
             _player.ConnectionId = "1";
             _player.Name = "Bob";
 
-            _room = new Room()
-            {
-                AreaId = 1,
-                Title = "Room 1",
-                Description = "room 1",
-                Exits = new ExitDirections()
-                {
-                    North = new Exit()
-                    {
-                        AreaId = 2,
-                        Name = "North"
-                    }
-                },
-                Players = new List<Player>()
-                {
-                    _player
-                }
-            };
+            //_room = new Room()
+            //{
+            //    AreaId = 1,
+            //    Title = "Room 1",
+            //    Description = "room 1",
+            //    Exits = new ExitDirections()
+            //    {
+            //        North = new Exit()
+            //        {
+            //            AreaId = 2,
+            //            Name = "North"
+            //        }
+            //    },
+            //    Players = new List<Player>()
+            //    {
+            //        _player
+            //    }
+            //};
 
         }
 

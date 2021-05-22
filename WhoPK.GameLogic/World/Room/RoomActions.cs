@@ -21,7 +21,7 @@ namespace WhoPK.GameLogic.World.Room
         public void Look(Room room, Player player)
         {
 
-            var exits = FindValidExits(room);
+            var exits = string.Join(", ", room.Exits.Select(x => x.Key)).Trim();
             var items = DisplayItems(room);
             var mobs = DisplayMobs(room);
 
@@ -62,73 +62,6 @@ namespace WhoPK.GameLogic.World.Room
             return mobs;
 
         }
-
-
-        /// <summary>
-        /// Displays valid exits
-        /// </summary>
-        public string FindValidExits(Room room)
-        {
-            var exits = new List<string>();
-            var exitList = string.Empty;
-
-            if (room.Exits.NorthWest != null)
-            {
-                exits.Add(room.Exits.NorthWest.Name);
-            }
-
-            if (room.Exits.North != null)
-            {
-                exits.Add(room.Exits.North.Name);
-            }
-
-            if (room.Exits.NorthEast != null)
-            {
-                exits.Add(room.Exits.NorthEast.Name);
-            }
-
-            if (room.Exits.East != null)
-            {
-                exits.Add(room.Exits.East.Name);
-            }
-
-            if (room.Exits.SouthEast != null)
-            {
-                exits.Add(room.Exits.SouthEast.Name);
-            }
-
-            if (room.Exits.South != null)
-            {
-                exits.Add(room.Exits.South.Name);
-            }
-
-            if (room.Exits.SouthWest != null)
-            {
-                exits.Add(room.Exits.SouthWest.Name);
-            }
-
-            if (room.Exits.West != null)
-            {
-                exits.Add(room.Exits.West.Name);
-            }
-
-            if (exits.Count <= 0)
-            {
-                exits.Add("None");
-            }
-
-            foreach (var exit in exits)
-            {
-                exitList += exit + ", ";
-            }
-
-            exitList = exitList.Remove(exitList.Length - 2);
-
-
-            return exitList;
-
-        }
-
 
     }
 }

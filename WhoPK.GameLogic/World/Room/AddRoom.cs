@@ -52,52 +52,28 @@ namespace WhoPK.GameLogic.World.Room
         }
         public void MapRoomId(Room room)
         {
-            var northRoom = room.Exits.North?.Coords;
+            var northRoom = room.Exits[Direction.North].Coords;
             if (northRoom != null)
             {
-                room.Exits.North.RoomId = GetRoomFromCoords(northRoom) != null ? GetRoomFromCoords(northRoom).Id : -1;
+                room.Exits[Direction.North].RoomId = GetRoomFromCoords(northRoom) != null ? GetRoomFromCoords(northRoom).Id : -1;
             }
 
-            var eastRoom = room.Exits.East?.Coords;
+            var eastRoom = room.Exits[Direction.East]?.Coords;
             if (eastRoom != null)
             {
-                room.Exits.East.RoomId = GetRoomFromCoords(eastRoom) != null ? GetRoomFromCoords(eastRoom).Id : -1;
+                room.Exits[Direction.North].RoomId = GetRoomFromCoords(eastRoom) != null ? GetRoomFromCoords(eastRoom).Id : -1;
             }
 
-            var southRoom = room.Exits.South?.Coords;
+            var southRoom = room.Exits[Direction.South]?.Coords;
             if (southRoom != null)
             {
-                room.Exits.South.RoomId = GetRoomFromCoords(southRoom) != null ? GetRoomFromCoords(southRoom).Id : -1;
+                room.Exits[Direction.South].RoomId = GetRoomFromCoords(southRoom) != null ? GetRoomFromCoords(southRoom).Id : -1;
             }
 
-            var westRoom = room.Exits.West?.Coords;
+            var westRoom = room.Exits[Direction.West]?.Coords;
             if (westRoom != null)
             {
-                room.Exits.West.RoomId = GetRoomFromCoords(westRoom) != null ? GetRoomFromCoords(westRoom).Id : -1;
-            }
-
-            var NWRoom = room.Exits.NorthWest?.Coords;
-            if (NWRoom != null)
-            {
-                room.Exits.NorthWest.RoomId = GetRoomFromCoords(NWRoom) != null ? GetRoomFromCoords(NWRoom).Id : -1;
-            }
-
-            var NERoom = room.Exits.NorthEast?.Coords;
-            if (NERoom != null)
-            {
-                room.Exits.NorthEast.RoomId = GetRoomFromCoords(NERoom) != null ? GetRoomFromCoords(NERoom).Id : -1;
-            }
-
-            var SERoom = room.Exits.SouthEast?.Coords;
-            if (SERoom != null)
-            {
-                room.Exits.SouthEast.RoomId = GetRoomFromCoords(SERoom) != null ? GetRoomFromCoords(SERoom).Id : -1;
-            }
-
-            var SWRoom = room.Exits.SouthWest?.Coords;
-            if (SWRoom != null)
-            {
-                room.Exits.SouthWest.RoomId = GetRoomFromCoords(SWRoom) != null ? GetRoomFromCoords(SWRoom).Id : -1;
+                room.Exits[Direction.West].RoomId = GetRoomFromCoords(westRoom) != null ? GetRoomFromCoords(westRoom).Id : -1;
             }
         }
 

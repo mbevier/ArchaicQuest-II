@@ -21,16 +21,10 @@ namespace WhoPK.GameLogic.Core.System
         public override void Process(Entity entity)
         {
             var commandStack = entity.GetComponent<PlayerInputComponent>().commands;
-            //var player = entity.GetComponent<Player>
             if (entity.GetComponent<PlayerInputComponent>().commands.Count > 0)
             {
                 var command = commandStack.Pop();
                 var processed = _commandManager.ProcessCommand(command, entity);
-                //_commandManager.ProcessCommand(command, player.Value);
-                //var room = _cache.GetRoom(player.Value.RoomId);
-
-                //TODO:  Player becomes an entity rather than a class
-                //_commandManager.ProcessCommand(command, player.Value);
             }
         }
     }

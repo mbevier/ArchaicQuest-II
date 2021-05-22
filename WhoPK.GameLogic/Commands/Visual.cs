@@ -1,6 +1,7 @@
 ﻿using Artemis;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using WhoPK.GameLogic.Character;
 using WhoPK.GameLogic.Core;
@@ -28,7 +29,7 @@ namespace WhoPK.GameLogic.Commands
             var roomId = entity.GetComponent<LocationComponent>().RoomId;
             var connectionId = entity.GetComponent<PlayerInputComponent>().connectionId;
             var room = _cache.GetRoom(roomId);
-            var exits = _roomActions.FindValidExits(room);
+            var exits = string.Join(", ", room.Exits.Select(x => x.Key)).Trim();
             var items = _roomActions.DisplayItems(room);
             var mobs = _roomActions.DisplayMobs(room);
 
