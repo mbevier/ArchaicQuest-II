@@ -50,6 +50,7 @@ namespace WhoPK.GameLogic.Core.System
                 {
                     if (desc.Name != player.Name)
                     {
+                        //TODO:  Handle verbs for movement affects (fly, mounted, crawl, etc)
                         _messenger.WriteLine($"{desc.Name} walks {nameof(direction).ToLower()}.", player.ConnectionId);
                     }
                 }
@@ -65,6 +66,7 @@ namespace WhoPK.GameLogic.Core.System
                 {
                     if (desc.Name != player.Name)
                     {
+                        //TODO:  Handle verbs for movement affects (fly, mounted, crawl, etc)
                         _messenger.WriteLine($"{desc.Name} walks in.", player.ConnectionId);
                     }
                 }

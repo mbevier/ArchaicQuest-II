@@ -9,6 +9,9 @@ using WhoPK.GameLogic.World.Room;
 
 namespace WhoPK.GameLogic.Commands.Movement
 {
+    /// <summary>
+    /// This class is deprecated, functionality moved to Movement System
+    /// </summary>
     public class Movement : IMovement
     {
         private readonly IClientMessenger _writeToClient;
@@ -85,30 +88,31 @@ namespace WhoPK.GameLogic.Commands.Movement
 
         public Exit FindExit(Room room, string direction)
         {
-            switch (direction)
-            {
-                case "North":
-                    return room.Exits.North;
-                case "North East":
-                    return room.Exits.NorthEast;
-                case "East":
-                    return room.Exits.East;
-                case "South East":
-                    return room.Exits.SouthEast;
-                case "South":
-                    return room.Exits.South;
-                case "South West":
-                    return room.Exits.SouthWest;
-                case "West":
-                    return room.Exits.West;
-                case "North West":
-                    return room.Exits.NorthWest;
-                case "Down":
-                    return room.Exits.Down;
-                case "Up":
-                    return room.Exits.Up;
-                default: {return null;}
-            }
+            //switch (direction)
+            //{
+            //    case "North":
+            //        return room.Exits.North;
+            //    case "North East":
+            //        return room.Exits.NorthEast;
+            //    case "East":
+            //        return room.Exits.East;
+            //    case "South East":
+            //        return room.Exits.SouthEast;
+            //    case "South":
+            //        return room.Exits.South;
+            //    case "South West":
+            //        return room.Exits.SouthWest;
+            //    case "West":
+            //        return room.Exits.West;
+            //    case "North West":
+            //        return room.Exits.NorthWest;
+            //    case "Down":
+            //        return room.Exits.Down;
+            //    case "Up":
+            //        return room.Exits.Up;
+            //    default: {return null;}
+            //}
+            return null;
         }
 
         public void NotifyRoomLeft(Room room, Player character, string direction)

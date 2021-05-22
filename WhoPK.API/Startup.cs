@@ -107,7 +107,6 @@ namespace WhoPK.API
                 new LiteDatabase(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "AQ.db")));
             services.AddScoped<IDataBase, DataBase>();
             services.AddSingleton<ICache>(new Cache());
-            services.AddTransient<IMovement, Movement>();
             services.AddTransient<IVisual, Visual>();
             services.AddTransient<IInterpreter, Interpreter>();
             services.AddSingleton<ICommandManager, CommandManager>();
