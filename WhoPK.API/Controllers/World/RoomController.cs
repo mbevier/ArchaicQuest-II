@@ -30,7 +30,16 @@ namespace WhoPK.API.World
         {
             var newRoom = _addRoom.MapRoom(room);
 
-
+            newRoom.ExitMap =
+                new System.Collections.Generic.Dictionary<Direction, Exit>()
+                {
+                    { Direction.Down, newRoom.Exits.Down},
+                    { Direction.Up, newRoom.Exits.Up},
+                    { Direction.East, newRoom.Exits.East},
+                    { Direction.West, newRoom.Exits.West},
+                    { Direction.South, newRoom.Exits.South},
+                    { Direction.North, newRoom.Exits.North}
+                };
             _db.Save(newRoom, DataBase.Collections.Room);
 
         }
@@ -47,7 +56,18 @@ namespace WhoPK.API.World
         [Route("api/World/Room/{id:int}")]
         public void Put([FromBody] Room data)
         {
+            data.ExitMap =
+                new System.Collections.Generic.Dictionary<Direction, Exit>()
+                    {
+                                                { Direction.Down, data.Exits.Down},
+                                                { Direction.Up, data.Exits.Up},
+                                                { Direction.East, data.Exits.East},
+                                                { Direction.West, data.Exits.West},
+                                                { Direction.South, data.Exits.South},
+                                                { Direction.North, data.Exits.North}
+                    };
             var updateRoom = _addRoom.MapRoom(data);
+
             _db.Save(updateRoom, DataBase.Collections.Room);
 
         }

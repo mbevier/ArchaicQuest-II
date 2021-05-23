@@ -29,7 +29,7 @@ namespace WhoPK.GameLogic.Commands
             var roomId = entity.GetComponent<LocationComponent>().RoomId;
             var connectionId = entity.GetComponent<PlayerInputComponent>().connectionId;
             var room = _cache.GetRoom(roomId);
-            var exits = string.Join(", ", room.Exits.Select(x => x.Key)).Trim();
+            var exits = string.Join(", ", room.ExitMap.Select(x => x.Key)).Trim();
             var items = _roomActions.DisplayItems(room);
             var mobs = _roomActions.DisplayMobs(room);
 

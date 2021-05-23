@@ -37,7 +37,7 @@ namespace WhoPK.GameLogic.Core.System
             //Regular movement
             if (movementRequest.direction != Direction.None)
             {
-                location.RoomId = currentRoom.Exits[movementRequest.direction].RoomId;
+                location.RoomId = currentRoom.ExitMap[movementRequest.direction].RoomId;
             }
         }
 

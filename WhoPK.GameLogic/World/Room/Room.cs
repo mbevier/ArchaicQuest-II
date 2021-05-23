@@ -41,7 +41,9 @@ namespace WhoPK.GameLogic.World.Room
         /// List of available exits
         /// North, East, West, South, Up, and Down
         /// </summary>
-        public Dictionary<Direction, Exit> Exits { get; set; } = new Dictionary<Direction, Exit>();
+        public Dictionary<Direction, Exit> ExitMap { get; set; } = new Dictionary<Direction, Exit>();
+
+        public ExitDirections Exits { get; set; } = new ExitDirections();
         public Coordinates Coords { get; set; } = new Coordinates();
         public List<Player> Players { get; set; } = new List<Player>();
         public List<Character.Character> Mobs { get; set; } = new List<Character.Character>();

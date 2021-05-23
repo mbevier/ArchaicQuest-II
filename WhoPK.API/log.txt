@@ -5527,3 +5527,850 @@ System.InvalidOperationException: Unable to resolve service for type 'WhoPK.Game
 </pre>
 2021-05-23 12:26:08.660 -07:00 [INF] Player sent Welcome Mark. Your adventure awaits you.
 2021-05-23 12:26:15.064 -07:00 [INF] Player sent look, hub ID
+2021-05-23 12:36:00.627 -07:00 [INF] Starting up ArchaicQuest
+2021-05-23 12:36:01.658 -07:00 [INF] User profile is available. Using 'C:\Users\markb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-23 12:36:01.962 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2021-05-23 12:36:01.967 -07:00 [INF] CORS policy execution successful.
+2021-05-23 12:36:02.050 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2021-05-23 12:36:02.103 -07:00 [INF] Executing action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) - Validation state: "Valid"
+2021-05-23 12:36:02.145 -07:00 [INF] Executed action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 38.1388ms.
+2021-05-23 12:36:02.147 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2021-05-23 12:36:02.240 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 188.0931ms
+2021-05-23 12:36:02.241 -07:00 [INF] Request finished in 281.4658ms 200 application/json; charset=utf-8
+2021-05-23 12:36:03.347 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2021-05-23 12:36:03.348 -07:00 [INF] CORS policy execution successful.
+2021-05-23 12:36:03.355 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2021-05-23 12:36:03.366 -07:00 [INF] Executing action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) - Validation state: "Valid"
+2021-05-23 12:36:03.368 -07:00 [INF] Executed action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.8244ms.
+2021-05-23 12:36:03.368 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2021-05-23 12:36:03.369 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 13.5275ms
+2021-05-23 12:36:03.369 -07:00 [INF] Request finished in 22.3649ms 200 application/json; charset=utf-8
+2021-05-23 12:36:04.007 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/Hubs/game/negotiate  
+2021-05-23 12:36:04.007 -07:00 [INF] CORS policy execution successful.
+2021-05-23 12:36:04.009 -07:00 [INF] Request finished in 1.7997ms 204 
+2021-05-23 12:36:04.013 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/Hubs/game/negotiate text/plain;charset=UTF-8 0
+2021-05-23 12:36:04.013 -07:00 [INF] CORS policy execution successful.
+2021-05-23 12:36:04.014 -07:00 [INF] Executing endpoint '/Hubs/game/negotiate'
+2021-05-23 12:36:04.019 -07:00 [INF] Executed endpoint '/Hubs/game/negotiate'
+2021-05-23 12:36:04.019 -07:00 [INF] Request finished in 6.0993ms 200 application/json
+2021-05-23 12:36:04.022 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/Hubs/game?id=wFUJ74cXz2IaCxoOhgDocw  
+2021-05-23 12:36:04.022 -07:00 [INF] CORS policy execution successful.
+2021-05-23 12:36:04.022 -07:00 [INF] Executing endpoint '/Hubs/game'
+2021-05-23 12:36:04.051 -07:00 [INF] Player sent 
+ <pre>    
+
+                               ==(W{==========-      /===-
+                                ||  (.--.)         /===-_---~~~~~~~----__
+                                | \_,|<span style="color:red">*</span><span style="color:red">*</span>|,__      |===-~___            _,-'`
+                   -==\\        `\ ' `--'   ),    `//~\\   ~~~~`--._.-~
+               ______-==|        /`\_. .__/\ \    | |  \\          _-~`
+         __--~~~  ,-/-==\\      (   | .  |~~~~|   | |   `\       ,'
+      _-~       /'    |  \\     )__/==0==-\<>/   / /      \     /   <span style="color:#fff">Welcome! A great addictive fantasy arena  </span> 
+    .'        /       |   \\      /~\___/~~\/  /' /        \   /     <span style="color:#fff">awaits you, I hope.     </span> 
+   /  ____  /         |    \`\.__/-~~   \  |_/'  /          \/'              
+  /-'~    ~~~~~---__  |     ~-/~         ( )   /'        _--~`                
+                    \_|      /        _) | ;  ),   __--~~                
+                      '~~--_/      _-~/- |/ \   '-~ \
+                     {\__--_/}    / \\_>-|)<__\      \
+                     /'   (_/  _-~  | |__>--<__|      |         <span style="color:#fff">Written, maintained and coded by Suunmar</span>
+                    |   _/) )-~     | |__>--<__|      |         <span style="color:#fff">Admin: Suunmar (mbevier@gmail.com)</span>
+                    / /~ ,_/       / /__>---<__/      |         <span style="color:#fff">Contributers: None!</span>
+                   o-o _//        /-~_>---<__-~      /          <span style="color:#fff">Codebase: Closed, for now</span>
+                   (^(~          /~_>---<__-      _-~
+                  <span style="color:tomato">,/|</span>           /__>--<__/     _-~
+               <span style="color:tomato">,//('(</span>          |__>--<__|     /                  .--_
+              <span style="color:tomato">( ( '))</span>          |__>--<__|    |                 /' _-_~\
+           <span style="color:tomato">`-)) )) (</span>           |__>--<__|    | -Tua Xiong    /'  /   ~\`\
+          <span style="color:tomato">,/,'//( (</span>             \__>--<__\    \            /'  //      ||
+        <span style="color:tomato">,( ( ((, ))</span>              ~-__>--<_~-_  ~--__---~'/'/  /'       VV
+      <span style="color:tomato">`~/  )` ) ,/|</span>                 ~-_~>--<_/-__      __-~ _/
+    <span style="color:tomato">._-~//( )/ )) `</span>                    ~~-'_/_/ /~~~~~__--~
+     <span style="color:tomato">;'( ')/ ,)(</span>                              ~~~~~~~~
+    <span style="color:tomato">' ') '( (/</span>
+	</span>
+</pre>
+2021-05-23 12:41:52.399 -07:00 [INF] Starting up ArchaicQuest
+2021-05-23 12:41:53.433 -07:00 [INF] User profile is available. Using 'C:\Users\markb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-23 12:41:53.731 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2021-05-23 12:41:53.736 -07:00 [INF] CORS policy execution successful.
+2021-05-23 12:41:53.819 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2021-05-23 12:41:53.874 -07:00 [INF] Executing action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) - Validation state: "Valid"
+2021-05-23 12:41:53.915 -07:00 [INF] Executed action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 37.8057ms.
+2021-05-23 12:41:53.917 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2021-05-23 12:41:54.013 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 191.422ms
+2021-05-23 12:41:54.014 -07:00 [INF] Request finished in 285.06ms 200 application/json; charset=utf-8
+2021-05-23 12:41:54.726 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2021-05-23 12:41:54.726 -07:00 [INF] CORS policy execution successful.
+2021-05-23 12:41:54.727 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2021-05-23 12:41:54.743 -07:00 [INF] Executing action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) - Validation state: "Valid"
+2021-05-23 12:41:54.745 -07:00 [INF] Executed action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.8837ms.
+2021-05-23 12:41:54.745 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2021-05-23 12:41:54.746 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 18.8745ms
+2021-05-23 12:41:54.747 -07:00 [INF] Request finished in 20.4588ms 200 application/json; charset=utf-8
+2021-05-23 12:41:56.640 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/Hubs/game/negotiate  
+2021-05-23 12:41:56.641 -07:00 [INF] CORS policy execution successful.
+2021-05-23 12:41:56.642 -07:00 [INF] Request finished in 2.0906ms 204 
+2021-05-23 12:41:56.644 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/Hubs/game/negotiate text/plain;charset=UTF-8 0
+2021-05-23 12:41:56.645 -07:00 [INF] CORS policy execution successful.
+2021-05-23 12:41:56.646 -07:00 [INF] Executing endpoint '/Hubs/game/negotiate'
+2021-05-23 12:41:56.651 -07:00 [INF] Executed endpoint '/Hubs/game/negotiate'
+2021-05-23 12:41:56.651 -07:00 [INF] Request finished in 6.7265ms 200 application/json
+2021-05-23 12:41:56.654 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/Hubs/game?id=PEY1PYmiZZ-_BZI5oi3vlQ  
+2021-05-23 12:41:56.654 -07:00 [INF] CORS policy execution successful.
+2021-05-23 12:41:56.654 -07:00 [INF] Executing endpoint '/Hubs/game'
+2021-05-23 12:41:56.686 -07:00 [INF] Player sent 
+ <pre>    
+
+                               ==(W{==========-      /===-
+                                ||  (.--.)         /===-_---~~~~~~~----__
+                                | \_,|<span style="color:red">*</span><span style="color:red">*</span>|,__      |===-~___            _,-'`
+                   -==\\        `\ ' `--'   ),    `//~\\   ~~~~`--._.-~
+               ______-==|        /`\_. .__/\ \    | |  \\          _-~`
+         __--~~~  ,-/-==\\      (   | .  |~~~~|   | |   `\       ,'
+      _-~       /'    |  \\     )__/==0==-\<>/   / /      \     /   <span style="color:#fff">Welcome! A great addictive fantasy arena  </span> 
+    .'        /       |   \\      /~\___/~~\/  /' /        \   /     <span style="color:#fff">awaits you, I hope.     </span> 
+   /  ____  /         |    \`\.__/-~~   \  |_/'  /          \/'              
+  /-'~    ~~~~~---__  |     ~-/~         ( )   /'        _--~`                
+                    \_|      /        _) | ;  ),   __--~~                
+                      '~~--_/      _-~/- |/ \   '-~ \
+                     {\__--_/}    / \\_>-|)<__\      \
+                     /'   (_/  _-~  | |__>--<__|      |         <span style="color:#fff">Written, maintained and coded by Suunmar</span>
+                    |   _/) )-~     | |__>--<__|      |         <span style="color:#fff">Admin: Suunmar (mbevier@gmail.com)</span>
+                    / /~ ,_/       / /__>---<__/      |         <span style="color:#fff">Contributers: None!</span>
+                   o-o _//        /-~_>---<__-~      /          <span style="color:#fff">Codebase: Closed, for now</span>
+                   (^(~          /~_>---<__-      _-~
+                  <span style="color:tomato">,/|</span>           /__>--<__/     _-~
+               <span style="color:tomato">,//('(</span>          |__>--<__|     /                  .--_
+              <span style="color:tomato">( ( '))</span>          |__>--<__|    |                 /' _-_~\
+           <span style="color:tomato">`-)) )) (</span>           |__>--<__|    | -Tua Xiong    /'  /   ~\`\
+          <span style="color:tomato">,/,'//( (</span>             \__>--<__\    \            /'  //      ||
+        <span style="color:tomato">,( ( ((, ))</span>              ~-__>--<_~-_  ~--__---~'/'/  /'       VV
+      <span style="color:tomato">`~/  )` ) ,/|</span>                 ~-_~>--<_/-__      __-~ _/
+    <span style="color:tomato">._-~//( )/ )) `</span>                    ~~-'_/_/ /~~~~~__--~
+     <span style="color:tomato">;'( ')/ ,)(</span>                              ~~~~~~~~
+    <span style="color:tomato">' ') '( (/</span>
+	</span>
+</pre>
+2021-05-23 12:41:56.698 -07:00 [INF] Player sent Welcome Mark. Your adventure awaits you.
+2021-05-23 12:44:10.704 -07:00 [INF] Player sent look, hub ID
+2021-05-23 12:44:19.565 -07:00 [INF] Player sent look, hub ID
+2021-05-23 12:44:20.104 -07:00 [INF] Player sent look, hub ID
+2021-05-23 12:44:20.968 -07:00 [INF] Player sent look, hub ID
+2021-05-23 12:57:54.473 -07:00 [INF] Starting up ArchaicQuest
+2021-05-23 12:57:55.630 -07:00 [INF] User profile is available. Using 'C:\Users\markb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-23 12:57:55.937 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2021-05-23 12:57:55.942 -07:00 [INF] CORS policy execution successful.
+2021-05-23 12:57:56.027 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2021-05-23 12:57:56.082 -07:00 [INF] Executing action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) - Validation state: "Valid"
+2021-05-23 12:57:56.123 -07:00 [INF] Executed action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 36.9941ms.
+2021-05-23 12:57:56.125 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2021-05-23 12:57:56.215 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 186.0088ms
+2021-05-23 12:57:56.216 -07:00 [INF] Request finished in 280.7126ms 200 application/json; charset=utf-8
+2021-05-23 12:58:02.230 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/Hubs/game/negotiate  
+2021-05-23 12:58:02.231 -07:00 [INF] CORS policy execution successful.
+2021-05-23 12:58:02.232 -07:00 [INF] Request finished in 1.994ms 204 
+2021-05-23 12:58:02.235 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/Hubs/game/negotiate text/plain;charset=UTF-8 0
+2021-05-23 12:58:02.236 -07:00 [INF] CORS policy execution successful.
+2021-05-23 12:58:02.237 -07:00 [INF] Executing endpoint '/Hubs/game/negotiate'
+2021-05-23 12:58:02.241 -07:00 [INF] Executed endpoint '/Hubs/game/negotiate'
+2021-05-23 12:58:02.241 -07:00 [INF] Request finished in 5.8287ms 200 application/json
+2021-05-23 12:58:02.245 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/Hubs/game?id=8qhNESYLJ_9TlCwm8NbVow  
+2021-05-23 12:58:02.245 -07:00 [INF] CORS policy execution successful.
+2021-05-23 12:58:02.246 -07:00 [INF] Executing endpoint '/Hubs/game'
+2021-05-23 12:58:02.285 -07:00 [INF] Player sent 
+ <pre>    
+
+                               ==(W{==========-      /===-
+                                ||  (.--.)         /===-_---~~~~~~~----__
+                                | \_,|<span style="color:red">*</span><span style="color:red">*</span>|,__      |===-~___            _,-'`
+                   -==\\        `\ ' `--'   ),    `//~\\   ~~~~`--._.-~
+               ______-==|        /`\_. .__/\ \    | |  \\          _-~`
+         __--~~~  ,-/-==\\      (   | .  |~~~~|   | |   `\       ,'
+      _-~       /'    |  \\     )__/==0==-\<>/   / /      \     /   <span style="color:#fff">Welcome! A great addictive fantasy arena  </span> 
+    .'        /       |   \\      /~\___/~~\/  /' /        \   /     <span style="color:#fff">awaits you, I hope.     </span> 
+   /  ____  /         |    \`\.__/-~~   \  |_/'  /          \/'              
+  /-'~    ~~~~~---__  |     ~-/~         ( )   /'        _--~`                
+                    \_|      /        _) | ;  ),   __--~~                
+                      '~~--_/      _-~/- |/ \   '-~ \
+                     {\__--_/}    / \\_>-|)<__\      \
+                     /'   (_/  _-~  | |__>--<__|      |         <span style="color:#fff">Written, maintained and coded by Suunmar</span>
+                    |   _/) )-~     | |__>--<__|      |         <span style="color:#fff">Admin: Suunmar (mbevier@gmail.com)</span>
+                    / /~ ,_/       / /__>---<__/      |         <span style="color:#fff">Contributers: None!</span>
+                   o-o _//        /-~_>---<__-~      /          <span style="color:#fff">Codebase: Closed, for now</span>
+                   (^(~          /~_>---<__-      _-~
+                  <span style="color:tomato">,/|</span>           /__>--<__/     _-~
+               <span style="color:tomato">,//('(</span>          |__>--<__|     /                  .--_
+              <span style="color:tomato">( ( '))</span>          |__>--<__|    |                 /' _-_~\
+           <span style="color:tomato">`-)) )) (</span>           |__>--<__|    | -Tua Xiong    /'  /   ~\`\
+          <span style="color:tomato">,/,'//( (</span>             \__>--<__\    \            /'  //      ||
+        <span style="color:tomato">,( ( ((, ))</span>              ~-__>--<_~-_  ~--__---~'/'/  /'       VV
+      <span style="color:tomato">`~/  )` ) ,/|</span>                 ~-_~>--<_/-__      __-~ _/
+    <span style="color:tomato">._-~//( )/ )) `</span>                    ~~-'_/_/ /~~~~~__--~
+     <span style="color:tomato">;'( ')/ ,)(</span>                              ~~~~~~~~
+    <span style="color:tomato">' ') '( (/</span>
+	</span>
+</pre>
+2021-05-23 12:58:02.297 -07:00 [INF] Player sent Welcome Mark. Your adventure awaits you.
+2021-05-23 12:58:09.288 -07:00 [INF] Player sent look, hub ID
+2021-05-23 13:06:50.593 -07:00 [INF] Starting up ArchaicQuest
+2021-05-23 13:06:51.681 -07:00 [INF] User profile is available. Using 'C:\Users\markb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-23 13:19:21.389 -07:00 [INF] Starting up ArchaicQuest
+2021-05-23 13:19:22.365 -07:00 [INF] User profile is available. Using 'C:\Users\markb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-23 13:19:27.321 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Item/Get  
+2021-05-23 13:19:27.326 -07:00 [INF] CORS policy execution successful.
+2021-05-23 13:19:27.398 -07:00 [INF] Route matched with {action = "GetItem", controller = "Item"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Item.Item] GetItem() on controller WhoPK.Controllers.ItemController (WhoPK.API).
+2021-05-23 13:19:27.435 -07:00 [INF] Executing action method WhoPK.Controllers.ItemController.GetItem (WhoPK.API) - Validation state: "Valid"
+2021-05-23 13:19:27.448 -07:00 [INF] Executed action method WhoPK.Controllers.ItemController.GetItem (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 8.7389ms.
+2021-05-23 13:19:27.450 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Item.Item, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-23 13:19:27.514 -07:00 [INF] Executed action WhoPK.Controllers.ItemController.GetItem (WhoPK.API) in 113.4094ms
+2021-05-23 13:19:27.515 -07:00 [INF] Request finished in 195.9705ms 200 application/json; charset=utf-8
+2021-05-23 13:19:39.109 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area  
+2021-05-23 13:19:39.109 -07:00 [INF] CORS policy execution successful.
+2021-05-23 13:19:39.124 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.World.Area.Area] Get() on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 13:19:39.133 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 13:19:39.139 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 5.6298ms.
+2021-05-23 13:19:39.139 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.World.Area.Area, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-23 13:19:39.157 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 32.454ms
+2021-05-23 13:19:39.157 -07:00 [INF] Request finished in 48.2007ms 200 application/json; charset=utf-8
+2021-05-23 13:19:42.728 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area/1  
+2021-05-23 13:19:42.729 -07:00 [INF] CORS policy execution successful.
+2021-05-23 13:19:42.736 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature WhoPK.GameLogic.World.Area.Area Get(Int32) on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 13:19:42.751 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 13:19:42.761 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 10.167ms.
+2021-05-23 13:19:42.761 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.World.Area.Area'.
+2021-05-23 13:19:42.775 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 39.1441ms
+2021-05-23 13:19:42.776 -07:00 [INF] Request finished in 47.721ms 200 application/json; charset=utf-8
+2021-05-23 13:32:56.016 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/World/Room/  
+2021-05-23 13:32:56.017 -07:00 [INF] CORS policy execution successful.
+2021-05-23 13:32:56.018 -07:00 [INF] Request finished in 1.4999ms 204 
+2021-05-23 13:32:56.019 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/World/Room/ application/json 613
+2021-05-23 13:32:56.019 -07:00 [INF] CORS policy execution successful.
+2021-05-23 13:32:56.021 -07:00 [INF] Route matched with {action = "Post", controller = "Room"}. Executing controller action with signature Void Post(WhoPK.GameLogic.World.Room.Room) on controller WhoPK.API.World.RoomController (WhoPK.API).
+2021-05-23 13:32:56.075 -07:00 [INF] Executing action method WhoPK.API.World.RoomController.Post (WhoPK.API) - Validation state: "Invalid"
+2021-05-23 13:37:40.760 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area  
+2021-05-23 13:37:40.760 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area/1  
+2021-05-23 13:37:40.760 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area  
+2021-05-23 13:37:40.760 -07:00 [INF] CORS policy execution successful.
+2021-05-23 13:37:40.760 -07:00 [INF] CORS policy execution successful.
+2021-05-23 13:37:40.760 -07:00 [INF] CORS policy execution successful.
+2021-05-23 13:37:40.762 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature WhoPK.GameLogic.World.Area.Area Get(Int32) on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 13:37:40.762 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.World.Area.Area] Get() on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 13:37:40.762 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.World.Area.Area] Get() on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 13:37:40.762 -07:00 [INF] Executed action WhoPK.API.World.RoomController.Post (WhoPK.API) in 284740.5392ms
+2021-05-23 13:37:40.778 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 13:37:40.779 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 13:37:40.786 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 13:37:40.786 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.3083ms.
+2021-05-23 13:37:40.786 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 7.6182ms.
+2021-05-23 13:37:40.786 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WhoPK.GameLogic.World.Room.AddRoom.MapRoom(Room room) in F:\WhoPK\Core\WhoPK.GameLogic\World\Room\AddRoom.cs:line 20
+   at WhoPK.API.World.RoomController.Post(Room room) in F:\WhoPK\Core\WhoPK.API\Controllers\World\RoomController.cs:line 31
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-05-23 13:37:40.786 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.World.Area.Area, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-23 13:37:40.786 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.World.Area.Area, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-23 13:37:40.787 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 8.0707ms.
+2021-05-23 13:37:40.858 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.World.Area.Area'.
+2021-05-23 13:37:40.858 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 96.393ms
+2021-05-23 13:37:40.858 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 96.3635ms
+2021-05-23 13:37:40.858 -07:00 [INF] Request finished in 97.9318ms 200 application/json; charset=utf-8
+2021-05-23 13:37:40.858 -07:00 [INF] Request finished in 97.9299ms 200 application/json; charset=utf-8
+2021-05-23 13:37:40.858 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 96.505ms
+2021-05-23 13:37:40.859 -07:00 [INF] Request finished in 108.5924ms 200 application/json; charset=utf-8
+2021-05-23 13:37:40.867 -07:00 [INF] Request finished in 284848.2252ms 500 text/plain
+2021-05-23 13:37:43.746 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area/1  
+2021-05-23 13:37:43.747 -07:00 [INF] CORS policy execution successful.
+2021-05-23 13:37:43.747 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature WhoPK.GameLogic.World.Area.Area Get(Int32) on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 13:37:43.758 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 13:37:43.759 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.0034ms.
+2021-05-23 13:37:43.759 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.World.Area.Area'.
+2021-05-23 13:37:43.759 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 11.8847ms
+2021-05-23 13:37:43.760 -07:00 [INF] Request finished in 13.2955ms 200 application/json; charset=utf-8
+2021-05-23 13:38:01.730 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/World/Room/  
+2021-05-23 13:38:01.730 -07:00 [INF] CORS policy execution successful.
+2021-05-23 13:38:01.731 -07:00 [INF] Request finished in 0.6952ms 204 
+2021-05-23 13:38:01.732 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/World/Room/ application/json 395
+2021-05-23 13:38:01.732 -07:00 [INF] CORS policy execution successful.
+2021-05-23 13:38:01.732 -07:00 [INF] Route matched with {action = "Post", controller = "Room"}. Executing controller action with signature Void Post(WhoPK.GameLogic.World.Room.Room) on controller WhoPK.API.World.RoomController (WhoPK.API).
+2021-05-23 13:38:01.743 -07:00 [INF] Executing action method WhoPK.API.World.RoomController.Post (WhoPK.API) - Validation state: "Invalid"
+2021-05-23 13:38:17.999 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area  
+2021-05-23 13:38:17.999 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area/1  
+2021-05-23 13:38:18.000 -07:00 [INF] CORS policy execution successful.
+2021-05-23 13:38:18.006 -07:00 [INF] CORS policy execution successful.
+2021-05-23 13:38:18.010 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature WhoPK.GameLogic.World.Area.Area Get(Int32) on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 13:38:18.010 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.World.Area.Area] Get() on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 13:38:18.010 -07:00 [INF] Executed action WhoPK.API.World.RoomController.Post (WhoPK.API) in 16277.7176ms
+2021-05-23 13:38:18.018 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 13:38:18.025 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 13:38:18.026 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 8.162ms.
+2021-05-23 13:38:18.026 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WhoPK.GameLogic.World.Room.AddRoom.MapRoom(Room room) in F:\WhoPK\Core\WhoPK.GameLogic\World\Room\AddRoom.cs:line 20
+   at WhoPK.API.World.RoomController.Post(Room room) in F:\WhoPK\Core\WhoPK.API\Controllers\World\RoomController.cs:line 31
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-05-23 13:38:18.026 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.World.Area.Area, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-23 13:38:18.027 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.9893ms.
+2021-05-23 13:38:18.027 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.World.Area.Area'.
+2021-05-23 13:38:18.027 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 17.3283ms
+2021-05-23 13:38:18.027 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 17.3665ms
+2021-05-23 13:38:18.027 -07:00 [INF] Request finished in 28.1346ms 200 application/json; charset=utf-8
+2021-05-23 13:38:18.027 -07:00 [INF] Request finished in 28.1365ms 200 application/json; charset=utf-8
+2021-05-23 13:38:18.028 -07:00 [INF] Request finished in 16296.1248ms 500 text/plain
+2021-05-23 13:38:20.830 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area  
+2021-05-23 13:38:20.831 -07:00 [INF] CORS policy execution successful.
+2021-05-23 13:38:20.831 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.World.Area.Area] Get() on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 13:38:20.841 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 13:38:20.841 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.3584ms.
+2021-05-23 13:38:20.842 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.World.Area.Area, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-23 13:38:20.842 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 10.7951ms
+2021-05-23 13:38:20.842 -07:00 [INF] Request finished in 11.9384ms 200 application/json; charset=utf-8
+2021-05-23 13:40:01.116 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area/1  
+2021-05-23 13:40:01.116 -07:00 [INF] CORS policy execution successful.
+2021-05-23 13:40:01.117 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature WhoPK.GameLogic.World.Area.Area Get(Int32) on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 13:40:01.127 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 13:40:01.128 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.0601ms.
+2021-05-23 13:40:01.128 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.World.Area.Area'.
+2021-05-23 13:40:01.129 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 11.9001ms
+2021-05-23 13:40:01.129 -07:00 [INF] Request finished in 12.9585ms 200 application/json; charset=utf-8
+2021-05-23 13:40:02.461 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area  
+2021-05-23 13:40:02.461 -07:00 [INF] CORS policy execution successful.
+2021-05-23 13:40:02.461 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.World.Area.Area] Get() on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 13:40:02.471 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 13:40:02.472 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.3365ms.
+2021-05-23 13:40:02.472 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.World.Area.Area, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-23 13:40:02.472 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 10.9432ms
+2021-05-23 13:40:02.473 -07:00 [INF] Request finished in 12.0669ms 200 application/json; charset=utf-8
+2021-05-23 13:40:05.804 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area/1  
+2021-05-23 13:40:05.804 -07:00 [INF] CORS policy execution successful.
+2021-05-23 13:40:05.805 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature WhoPK.GameLogic.World.Area.Area Get(Int32) on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 13:40:05.814 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 13:40:05.816 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.0539ms.
+2021-05-23 13:40:05.816 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.World.Area.Area'.
+2021-05-23 13:40:05.816 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 11.8354ms
+2021-05-23 13:40:05.816 -07:00 [INF] Request finished in 12.7872ms 200 application/json; charset=utf-8
+2021-05-23 13:40:15.702 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area/1  
+2021-05-23 13:40:15.702 -07:00 [INF] CORS policy execution successful.
+2021-05-23 13:40:15.702 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature WhoPK.GameLogic.World.Area.Area Get(Int32) on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 13:40:15.713 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 13:40:15.714 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.0647ms.
+2021-05-23 13:40:15.714 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.World.Area.Area'.
+2021-05-23 13:40:15.715 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 12.2937ms
+2021-05-23 13:40:15.715 -07:00 [INF] Request finished in 13.1227ms 200 application/json; charset=utf-8
+2021-05-23 13:40:49.277 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/World/Room/  
+2021-05-23 13:40:49.277 -07:00 [INF] CORS policy execution successful.
+2021-05-23 13:40:49.278 -07:00 [INF] Request finished in 0.4885ms 204 
+2021-05-23 13:40:49.279 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/World/Room/ application/json 407
+2021-05-23 13:40:49.279 -07:00 [INF] CORS policy execution successful.
+2021-05-23 13:40:49.279 -07:00 [INF] Route matched with {action = "Post", controller = "Room"}. Executing controller action with signature Void Post(WhoPK.GameLogic.World.Room.Room) on controller WhoPK.API.World.RoomController (WhoPK.API).
+2021-05-23 13:40:49.291 -07:00 [INF] Executing action method WhoPK.API.World.RoomController.Post (WhoPK.API) - Validation state: "Invalid"
+2021-05-23 13:41:13.547 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area/1  
+2021-05-23 13:41:13.548 -07:00 [INF] CORS policy execution successful.
+2021-05-23 13:41:13.548 -07:00 [INF] Executed action WhoPK.API.World.RoomController.Post (WhoPK.API) in 24268.3578ms
+2021-05-23 13:41:13.548 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature WhoPK.GameLogic.World.Area.Area Get(Int32) on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 13:41:13.549 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WhoPK.GameLogic.World.Room.AddRoom.MapRoom(Room room) in F:\WhoPK\Core\WhoPK.GameLogic\World\Room\AddRoom.cs:line 20
+   at WhoPK.API.World.RoomController.Post(Room room) in F:\WhoPK\Core\WhoPK.API\Controllers\World\RoomController.cs:line 31
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-05-23 13:41:13.556 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 13:41:13.558 -07:00 [INF] Request finished in 24278.7125ms 500 text/plain
+2021-05-23 13:41:13.558 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.2247ms.
+2021-05-23 13:41:13.558 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.World.Area.Area'.
+2021-05-23 13:41:13.558 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 10.1579ms
+2021-05-23 13:41:13.558 -07:00 [INF] Request finished in 14.1101ms 200 application/json; charset=utf-8
+2021-05-23 13:43:37.801 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area/1  
+2021-05-23 13:43:37.801 -07:00 [INF] CORS policy execution successful.
+2021-05-23 13:43:37.802 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature WhoPK.GameLogic.World.Area.Area Get(Int32) on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 13:43:37.812 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 13:43:37.813 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.0148ms.
+2021-05-23 13:43:37.813 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.World.Area.Area'.
+2021-05-23 13:43:37.814 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 12.1901ms
+2021-05-23 13:43:37.814 -07:00 [INF] Request finished in 13.1372ms 200 application/json; charset=utf-8
+2021-05-23 13:43:56.845 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area/1  
+2021-05-23 13:43:56.845 -07:00 [INF] CORS policy execution successful.
+2021-05-23 13:43:56.845 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature WhoPK.GameLogic.World.Area.Area Get(Int32) on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 13:43:56.856 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 13:43:56.857 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.122ms.
+2021-05-23 13:43:56.857 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.World.Area.Area'.
+2021-05-23 13:43:56.858 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 12.4287ms
+2021-05-23 13:43:56.858 -07:00 [INF] Request finished in 13.4357ms 200 application/json; charset=utf-8
+2021-05-23 13:49:02.811 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area/1  
+2021-05-23 13:49:02.811 -07:00 [INF] CORS policy execution successful.
+2021-05-23 13:49:02.812 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature WhoPK.GameLogic.World.Area.Area Get(Int32) on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 13:49:02.823 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 13:49:02.824 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.0575ms.
+2021-05-23 13:49:02.824 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.World.Area.Area'.
+2021-05-23 13:49:02.825 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 12.8445ms
+2021-05-23 13:49:02.825 -07:00 [INF] Request finished in 13.7489ms 200 application/json; charset=utf-8
+2021-05-23 13:49:58.571 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area/1  
+2021-05-23 13:49:58.571 -07:00 [INF] CORS policy execution successful.
+2021-05-23 13:49:58.571 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature WhoPK.GameLogic.World.Area.Area Get(Int32) on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 13:49:58.582 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 13:49:58.583 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.0343ms.
+2021-05-23 13:49:58.583 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.World.Area.Area'.
+2021-05-23 13:49:58.584 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 12.1278ms
+2021-05-23 13:49:58.584 -07:00 [INF] Request finished in 13.1578ms 200 application/json; charset=utf-8
+2021-05-23 13:50:10.843 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/World/Room/  
+2021-05-23 13:50:10.843 -07:00 [INF] CORS policy execution successful.
+2021-05-23 13:50:10.843 -07:00 [INF] Request finished in 0.3128ms 204 
+2021-05-23 13:50:10.844 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/World/Room/ application/json 397
+2021-05-23 13:50:10.844 -07:00 [INF] CORS policy execution successful.
+2021-05-23 13:50:10.845 -07:00 [INF] Route matched with {action = "Post", controller = "Room"}. Executing controller action with signature Void Post(WhoPK.GameLogic.World.Room.Room) on controller WhoPK.API.World.RoomController (WhoPK.API).
+2021-05-23 13:50:10.856 -07:00 [INF] Executing action method WhoPK.API.World.RoomController.Post (WhoPK.API) - Validation state: "Invalid"
+2021-05-23 13:50:22.213 -07:00 [INF] Executed action WhoPK.API.World.RoomController.Post (WhoPK.API) in 11367.9277ms
+2021-05-23 13:50:22.214 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WhoPK.GameLogic.World.Room.AddRoom.MapRoom(Room room) in F:\WhoPK\Core\WhoPK.GameLogic\World\Room\AddRoom.cs:line 20
+   at WhoPK.API.World.RoomController.Post(Room room) in F:\WhoPK\Core\WhoPK.API\Controllers\World\RoomController.cs:line 31
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.<>c__DisplayClass33_0.<WrapVoidMethod>b__0(Object target, Object[] parameters)
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.VoidResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-05-23 13:50:22.216 -07:00 [INF] Request finished in 11371.3686ms 500 text/plain
+2021-05-23 13:50:58.983 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/World/Room/  
+2021-05-23 13:50:58.984 -07:00 [INF] CORS policy execution successful.
+2021-05-23 13:50:58.984 -07:00 [INF] Request finished in 0.3449ms 204 
+2021-05-23 13:50:58.985 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/World/Room/ application/json 395
+2021-05-23 13:50:58.985 -07:00 [INF] CORS policy execution successful.
+2021-05-23 13:50:58.985 -07:00 [INF] Route matched with {action = "Post", controller = "Room"}. Executing controller action with signature Void Post(WhoPK.GameLogic.World.Room.Room) on controller WhoPK.API.World.RoomController (WhoPK.API).
+2021-05-23 13:50:58.997 -07:00 [INF] Executing action method WhoPK.API.World.RoomController.Post (WhoPK.API) - Validation state: "Invalid"
+2021-05-23 14:19:43.090 -07:00 [INF] Starting up ArchaicQuest
+2021-05-23 14:19:44.127 -07:00 [INF] User profile is available. Using 'C:\Users\markb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-23 14:19:44.425 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area/1  
+2021-05-23 14:19:44.430 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:19:44.512 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature WhoPK.GameLogic.World.Area.Area Get(Int32) on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 14:19:44.567 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:19:44.582 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 11.8894ms.
+2021-05-23 14:19:44.584 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.World.Area.Area'.
+2021-05-23 14:19:44.640 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area  
+2021-05-23 14:19:44.640 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:19:44.646 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.World.Area.Area] Get() on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 14:19:44.656 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:19:44.656 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.3193ms.
+2021-05-23 14:19:44.656 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.World.Area.Area, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-23 14:19:44.673 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 24.0442ms
+2021-05-23 14:19:44.674 -07:00 [INF] Request finished in 37.1184ms 200 application/json; charset=utf-8
+2021-05-23 14:19:44.682 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 169.3934ms
+2021-05-23 14:19:44.682 -07:00 [INF] Request finished in 258.8962ms 200 application/json; charset=utf-8
+2021-05-23 14:19:47.832 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area  
+2021-05-23 14:19:47.832 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:19:47.834 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.World.Area.Area] Get() on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 14:19:47.844 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:19:47.844 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.3418ms.
+2021-05-23 14:19:47.845 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.World.Area.Area, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-23 14:19:47.845 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 10.9122ms
+2021-05-23 14:19:47.845 -07:00 [INF] Request finished in 13.9287ms 200 application/json; charset=utf-8
+2021-05-23 14:19:50.196 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area/1  
+2021-05-23 14:19:50.197 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:19:50.197 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature WhoPK.GameLogic.World.Area.Area Get(Int32) on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 14:19:50.208 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:19:50.209 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.536ms.
+2021-05-23 14:19:50.210 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.World.Area.Area'.
+2021-05-23 14:19:50.210 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 12.8648ms
+2021-05-23 14:19:50.210 -07:00 [INF] Request finished in 14.2959ms 200 application/json; charset=utf-8
+2021-05-23 14:19:55.745 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api//world/room/1  
+2021-05-23 14:19:55.745 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:19:55.747 -07:00 [INF] Request finished in 1.8472ms 404 
+2021-05-23 14:20:00.948 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area/1  
+2021-05-23 14:20:00.948 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:20:00.949 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature WhoPK.GameLogic.World.Area.Area Get(Int32) on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 14:20:00.958 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:20:00.959 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.9971ms.
+2021-05-23 14:20:00.959 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.World.Area.Area'.
+2021-05-23 14:20:00.960 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 11.0936ms
+2021-05-23 14:20:00.960 -07:00 [INF] Request finished in 12.4521ms 200 application/json; charset=utf-8
+2021-05-23 14:20:01.930 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api//world/room/1  
+2021-05-23 14:20:01.930 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:20:01.931 -07:00 [INF] Request finished in 1.0281ms 404 
+2021-05-23 14:21:36.112 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/World/Room//1  
+2021-05-23 14:21:36.112 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:21:36.113 -07:00 [INF] Request finished in 0.9975ms 204 
+2021-05-23 14:21:36.114 -07:00 [INF] Request starting HTTP/1.1 PUT http://localhost:62640/api/World/Room//1 application/json 629
+2021-05-23 14:21:36.114 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:21:36.115 -07:00 [INF] Request finished in 0.7827ms 404 
+2021-05-23 14:22:00.847 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/World/Room//1  
+2021-05-23 14:22:00.847 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:22:00.847 -07:00 [INF] Request finished in 0.6278ms 204 
+2021-05-23 14:22:00.848 -07:00 [INF] Request starting HTTP/1.1 PUT http://localhost:62640/api/World/Room//1 application/json 629
+2021-05-23 14:22:00.849 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:22:00.849 -07:00 [INF] Request finished in 0.8767ms 404 
+2021-05-23 14:24:12.256 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api//world/room/1  
+2021-05-23 14:24:12.256 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:24:12.257 -07:00 [INF] Request finished in 0.9929ms 404 
+2021-05-23 14:24:48.874 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api//world/room/1  
+2021-05-23 14:24:48.874 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:24:48.875 -07:00 [INF] Request finished in 0.9115ms 404 
+2021-05-23 14:24:53.160 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Item/Get  
+2021-05-23 14:24:53.161 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:24:53.164 -07:00 [INF] Route matched with {action = "GetItem", controller = "Item"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.Item.Item] GetItem() on controller WhoPK.Controllers.ItemController (WhoPK.API).
+2021-05-23 14:24:53.173 -07:00 [INF] Executing action method WhoPK.Controllers.ItemController.GetItem (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:24:53.182 -07:00 [INF] Executed action method WhoPK.Controllers.ItemController.GetItem (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 9.1229ms.
+2021-05-23 14:24:53.182 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.Item.Item, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-23 14:24:53.183 -07:00 [INF] Executed action WhoPK.Controllers.ItemController.GetItem (WhoPK.API) in 19.2383ms
+2021-05-23 14:24:53.183 -07:00 [INF] Request finished in 22.6612ms 200 application/json; charset=utf-8
+2021-05-23 14:24:56.988 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area  
+2021-05-23 14:24:56.988 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:24:56.989 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.World.Area.Area] Get() on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 14:24:56.998 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:24:56.998 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.2865ms.
+2021-05-23 14:24:56.998 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.World.Area.Area, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-23 14:24:56.999 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 9.8988ms
+2021-05-23 14:24:56.999 -07:00 [INF] Request finished in 10.7281ms 200 application/json; charset=utf-8
+2021-05-23 14:25:12.327 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area  
+2021-05-23 14:25:12.327 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:25:12.328 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.World.Area.Area] Get() on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 14:25:12.336 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:25:12.337 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.2227ms.
+2021-05-23 14:25:12.337 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.World.Area.Area, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-23 14:25:12.337 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 9.7015ms
+2021-05-23 14:25:12.337 -07:00 [INF] Request finished in 10.5709ms 200 application/json; charset=utf-8
+2021-05-23 14:25:15.207 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area/1  
+2021-05-23 14:25:15.207 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:25:15.207 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature WhoPK.GameLogic.World.Area.Area Get(Int32) on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 14:25:15.217 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:25:15.218 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.1599ms.
+2021-05-23 14:25:15.219 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.World.Area.Area'.
+2021-05-23 14:25:15.220 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 12.5838ms
+2021-05-23 14:25:15.220 -07:00 [INF] Request finished in 13.4496ms 200 application/json; charset=utf-8
+2021-05-23 14:25:19.613 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area  
+2021-05-23 14:25:19.613 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:25:19.613 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.World.Area.Area] Get() on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 14:25:19.623 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:25:19.623 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.2175ms.
+2021-05-23 14:25:19.623 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.World.Area.Area, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-23 14:25:19.624 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 10.3067ms
+2021-05-23 14:25:19.624 -07:00 [INF] Request finished in 11.1145ms 200 application/json; charset=utf-8
+2021-05-23 14:25:40.939 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area/1  
+2021-05-23 14:25:40.939 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:25:40.940 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature WhoPK.GameLogic.World.Area.Area Get(Int32) on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 14:25:40.950 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:25:40.951 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.8339ms.
+2021-05-23 14:25:40.951 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.World.Area.Area'.
+2021-05-23 14:25:40.951 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 11.6387ms
+2021-05-23 14:25:40.951 -07:00 [INF] Request finished in 12.4637ms 200 application/json; charset=utf-8
+2021-05-23 14:25:43.315 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area  
+2021-05-23 14:25:43.315 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:25:43.316 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.World.Area.Area] Get() on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 14:25:43.325 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:25:43.325 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.2206ms.
+2021-05-23 14:25:43.325 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.World.Area.Area, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-23 14:25:43.325 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 9.6698ms
+2021-05-23 14:25:43.326 -07:00 [INF] Request finished in 10.2948ms 200 application/json; charset=utf-8
+2021-05-23 14:25:44.209 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area/1  
+2021-05-23 14:25:44.209 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:25:44.210 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature WhoPK.GameLogic.World.Area.Area Get(Int32) on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 14:25:44.219 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:25:44.220 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.9651ms.
+2021-05-23 14:25:44.221 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.World.Area.Area'.
+2021-05-23 14:25:44.221 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 11.4507ms
+2021-05-23 14:25:44.221 -07:00 [INF] Request finished in 12.1078ms 200 application/json; charset=utf-8
+2021-05-23 14:25:46.674 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area  
+2021-05-23 14:25:46.675 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:25:46.675 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.World.Area.Area] Get() on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 14:25:46.684 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:25:46.684 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.1885ms.
+2021-05-23 14:25:46.684 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.World.Area.Area, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-23 14:25:46.685 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 9.9049ms
+2021-05-23 14:25:46.685 -07:00 [INF] Request finished in 10.5492ms 200 application/json; charset=utf-8
+2021-05-23 14:25:51.837 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/World/Area/1  
+2021-05-23 14:25:51.837 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:25:51.837 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature WhoPK.GameLogic.World.Area.Area Get(Int32) on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 14:25:51.847 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:25:51.848 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.9438ms.
+2021-05-23 14:25:51.849 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.World.Area.Area'.
+2021-05-23 14:25:51.849 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 11.5167ms
+2021-05-23 14:25:51.849 -07:00 [INF] Request finished in 12.1883ms 200 application/json; charset=utf-8
+2021-05-23 14:25:53.488 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api//world/room/1  
+2021-05-23 14:25:53.488 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:25:53.489 -07:00 [INF] Request finished in 0.6473ms 404 
+2021-05-23 14:30:43.182 -07:00 [INF] Starting up ArchaicQuest
+2021-05-23 14:30:44.293 -07:00 [INF] User profile is available. Using 'C:\Users\markb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-23 14:30:51.823 -07:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/values  
+2021-05-23 14:30:51.897 -07:00 [INF] Request finished in 75.1955ms 404 
+2021-05-23 14:31:11.409 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/world/room/1  
+2021-05-23 14:31:11.424 -07:00 [INF] Route matched with {action = "Get", controller = "Room"}. Executing controller action with signature WhoPK.GameLogic.World.Room.Room Get(Int32) on controller WhoPK.API.World.RoomController (WhoPK.API).
+2021-05-23 14:31:11.467 -07:00 [INF] Executing action method WhoPK.API.World.RoomController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:31:16.865 -07:00 [INF] Executed action method WhoPK.API.World.RoomController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 5394.4241ms.
+2021-05-23 14:31:16.868 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.World.Room.Room'.
+2021-05-23 14:31:16.950 -07:00 [INF] Executed action WhoPK.API.World.RoomController.Get (WhoPK.API) in 5522.8528ms
+2021-05-23 14:31:16.950 -07:00 [INF] Request finished in 5540.5816ms 200 application/json; charset=utf-8
+2021-05-23 14:31:16.995 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2021-05-23 14:31:17.009 -07:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'F:\WhoPK\Core\WhoPK.API\wwwroot\favicon.ico'
+2021-05-23 14:31:17.010 -07:00 [INF] Request finished in 14.7661ms 200 image/x-icon
+2021-05-23 14:32:30.223 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api//world/room/1  
+2021-05-23 14:32:30.226 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:32:30.228 -07:00 [INF] Request finished in 5.2437ms 404 
+2021-05-23 14:32:55.858 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api//world/room/1  
+2021-05-23 14:32:55.859 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:32:55.860 -07:00 [INF] Request finished in 1.2709ms 404 
+2021-05-23 14:33:02.243 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/World/Area  
+2021-05-23 14:33:02.243 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:33:02.245 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.World.Area.Area] Get() on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 14:33:02.255 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:33:02.258 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.6005ms.
+2021-05-23 14:33:02.259 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.World.Area.Area, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-23 14:33:02.263 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 18.0063ms
+2021-05-23 14:33:02.263 -07:00 [INF] Request finished in 20.4898ms 200 application/json; charset=utf-8
+2021-05-23 14:33:03.932 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/World/Area/1  
+2021-05-23 14:33:03.932 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:33:03.935 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature WhoPK.GameLogic.World.Area.Area Get(Int32) on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 14:33:03.944 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:33:03.953 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 8.6539ms.
+2021-05-23 14:33:03.953 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.World.Area.Area'.
+2021-05-23 14:33:03.954 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 18.3832ms
+2021-05-23 14:33:03.954 -07:00 [INF] Request finished in 22.2751ms 200 application/json; charset=utf-8
+2021-05-23 14:33:06.032 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api//world/room/1  
+2021-05-23 14:33:06.032 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:33:06.033 -07:00 [INF] Request finished in 1.0647ms 404 
+2021-05-23 14:33:37.341 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/World/Room//1  
+2021-05-23 14:33:37.341 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:33:37.342 -07:00 [INF] Request finished in 1.0306ms 204 
+2021-05-23 14:33:37.347 -07:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/World/Room//1 application/json 612
+2021-05-23 14:33:37.347 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:33:37.348 -07:00 [INF] Request finished in 0.5401ms 404 
+2021-05-23 14:34:43.182 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/World/Room//1  
+2021-05-23 14:34:43.182 -07:00 [INF] Request finished in 0.6526ms 404 
+2021-05-23 14:34:46.074 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/World/Room/1  
+2021-05-23 14:34:46.075 -07:00 [INF] Route matched with {action = "Get", controller = "Room"}. Executing controller action with signature WhoPK.GameLogic.World.Room.Room Get(Int32) on controller WhoPK.API.World.RoomController (WhoPK.API).
+2021-05-23 14:34:46.084 -07:00 [INF] Executing action method WhoPK.API.World.RoomController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:34:49.354 -07:00 [INF] Executed action method WhoPK.API.World.RoomController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3270.2561ms.
+2021-05-23 14:34:49.354 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.World.Room.Room'.
+2021-05-23 14:34:49.355 -07:00 [INF] Executed action WhoPK.API.World.RoomController.Get (WhoPK.API) in 3279.9868ms
+2021-05-23 14:34:49.358 -07:00 [INF] Request finished in 3281.4507ms 200 application/json; charset=utf-8
+2021-05-23 14:35:18.883 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api//world/room/1  
+2021-05-23 14:35:18.883 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:35:18.884 -07:00 [INF] Request finished in 0.7849ms 404 
+2021-05-23 14:35:22.631 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/World/Room//1  
+2021-05-23 14:35:22.632 -07:00 [INF] Request finished in 0.6192ms 404 
+2021-05-23 14:35:25.299 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/values  
+2021-05-23 14:35:25.299 -07:00 [INF] Request finished in 0.6837ms 404 
+2021-05-23 14:35:26.189 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/world/room/1  
+2021-05-23 14:35:26.190 -07:00 [INF] Request finished in 0.5708ms 404 
+2021-05-23 14:35:29.032 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/World/Area/1  
+2021-05-23 14:35:29.032 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:35:29.033 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature WhoPK.GameLogic.World.Area.Area Get(Int32) on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 14:35:29.042 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:35:29.044 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.3723ms.
+2021-05-23 14:35:29.044 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.World.Area.Area'.
+2021-05-23 14:35:29.045 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 12.2402ms
+2021-05-23 14:35:29.045 -07:00 [INF] Request finished in 13.2951ms 200 application/json; charset=utf-8
+2021-05-23 14:35:32.783 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/World/Area  
+2021-05-23 14:35:32.783 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:35:32.784 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.World.Area.Area] Get() on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 14:35:32.793 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:35:32.793 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.3318ms.
+2021-05-23 14:35:32.793 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.World.Area.Area, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-23 14:35:32.794 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 9.7629ms
+2021-05-23 14:35:32.794 -07:00 [INF] Request finished in 10.6907ms 200 application/json; charset=utf-8
+2021-05-23 14:35:34.436 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/World/Area/1  
+2021-05-23 14:35:34.436 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:35:34.436 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature WhoPK.GameLogic.World.Area.Area Get(Int32) on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 14:35:34.446 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:35:34.447 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.0851ms.
+2021-05-23 14:35:34.447 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.World.Area.Area'.
+2021-05-23 14:35:34.448 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 11.3119ms
+2021-05-23 14:35:34.448 -07:00 [INF] Request finished in 12.1545ms 200 application/json; charset=utf-8
+2021-05-23 14:35:45.684 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/World/Area/1  
+2021-05-23 14:35:45.684 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:35:45.685 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature WhoPK.GameLogic.World.Area.Area Get(Int32) on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 14:35:45.695 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:35:45.696 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.1316ms.
+2021-05-23 14:35:45.696 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.World.Area.Area'.
+2021-05-23 14:35:45.697 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 11.4881ms
+2021-05-23 14:35:45.697 -07:00 [INF] Request finished in 12.631ms 200 application/json; charset=utf-8
+2021-05-23 14:35:46.548 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api//world/room/1  
+2021-05-23 14:35:46.548 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:35:46.549 -07:00 [INF] Request finished in 0.5276ms 404 
+2021-05-23 14:36:07.140 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/World/Room/1  
+2021-05-23 14:36:07.140 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:36:07.140 -07:00 [INF] Request finished in 0.2792ms 204 
+2021-05-23 14:36:07.145 -07:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/World/Room/1 application/json 614
+2021-05-23 14:36:07.145 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:36:07.147 -07:00 [INF] Route matched with {action = "Put", controller = "Room"}. Executing controller action with signature Void Put(WhoPK.GameLogic.World.Room.Room) on controller WhoPK.API.World.RoomController (WhoPK.API).
+2021-05-23 14:36:07.201 -07:00 [INF] Executing action method WhoPK.API.World.RoomController.Put (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:38:13.994 -07:00 [INF] Starting up ArchaicQuest
+2021-05-23 14:38:15.160 -07:00 [INF] User profile is available. Using 'C:\Users\markb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-23 14:38:22.638 -07:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/values  
+2021-05-23 14:38:22.712 -07:00 [INF] Request finished in 75.4968ms 404 
+2021-05-23 14:38:24.669 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/World/Room/1  
+2021-05-23 14:38:24.672 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:38:24.673 -07:00 [INF] Request finished in 3.5429ms 204 
+2021-05-23 14:38:24.680 -07:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/World/Room/1 application/json 614
+2021-05-23 14:38:24.680 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:38:24.695 -07:00 [INF] Route matched with {action = "Put", controller = "Room"}. Executing controller action with signature Void Put(WhoPK.GameLogic.World.Room.Room) on controller WhoPK.API.World.RoomController (WhoPK.API).
+2021-05-23 14:38:24.831 -07:00 [INF] Executing action method WhoPK.API.World.RoomController.Put (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:39:44.148 -07:00 [INF] Starting up ArchaicQuest
+2021-05-23 14:39:45.355 -07:00 [INF] User profile is available. Using 'C:\Users\markb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-23 14:39:52.848 -07:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/values  
+2021-05-23 14:39:52.920 -07:00 [INF] Request finished in 72.6634ms 404 
+2021-05-23 14:39:53.832 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/World/Room/1  
+2021-05-23 14:39:53.835 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:39:53.836 -07:00 [INF] Request finished in 3.4769ms 204 
+2021-05-23 14:39:53.843 -07:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/World/Room/1 application/json 614
+2021-05-23 14:39:53.843 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:39:53.858 -07:00 [INF] Route matched with {action = "Put", controller = "Room"}. Executing controller action with signature Void Put(WhoPK.GameLogic.World.Room.Room) on controller WhoPK.API.World.RoomController (WhoPK.API).
+2021-05-23 14:39:53.998 -07:00 [INF] Executing action method WhoPK.API.World.RoomController.Put (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:44:04.321 -07:00 [INF] Starting up ArchaicQuest
+2021-05-23 14:44:05.646 -07:00 [INF] User profile is available. Using 'C:\Users\markb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-23 14:44:13.497 -07:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/values  
+2021-05-23 14:44:13.574 -07:00 [INF] Request finished in 77.6706ms 404 
+2021-05-23 14:44:14.390 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/World/Room/1  
+2021-05-23 14:44:14.392 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:44:14.393 -07:00 [INF] Request finished in 3.2988ms 204 
+2021-05-23 14:44:14.401 -07:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/World/Room/1 application/json 614
+2021-05-23 14:44:14.401 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:44:14.415 -07:00 [INF] Route matched with {action = "Put", controller = "Room"}. Executing controller action with signature Void Put(WhoPK.GameLogic.World.Room.Room) on controller WhoPK.API.World.RoomController (WhoPK.API).
+2021-05-23 14:44:14.551 -07:00 [INF] Executing action method WhoPK.API.World.RoomController.Put (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:44:17.949 -07:00 [INF] Executed action method WhoPK.API.World.RoomController.Put (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 3393.9954ms.
+2021-05-23 14:44:17.952 -07:00 [INF] Executed action WhoPK.API.World.RoomController.Put (WhoPK.API) in 3534.1576ms
+2021-05-23 14:44:17.952 -07:00 [INF] Request finished in 3551.4625ms 200 
+2021-05-23 14:44:32.345 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/World/Room/1  
+2021-05-23 14:44:32.346 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:44:32.346 -07:00 [INF] Request finished in 0.9067ms 204 
+2021-05-23 14:44:32.352 -07:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/World/Room/1 application/json 614
+2021-05-23 14:44:32.352 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:44:32.354 -07:00 [INF] Route matched with {action = "Put", controller = "Room"}. Executing controller action with signature Void Put(WhoPK.GameLogic.World.Room.Room) on controller WhoPK.API.World.RoomController (WhoPK.API).
+2021-05-23 14:44:32.364 -07:00 [INF] Executing action method WhoPK.API.World.RoomController.Put (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:44:35.965 -07:00 [INF] Executed action method WhoPK.API.World.RoomController.Put (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 3600.9113ms.
+2021-05-23 14:44:35.965 -07:00 [INF] Executed action WhoPK.API.World.RoomController.Put (WhoPK.API) in 3611.0788ms
+2021-05-23 14:44:35.965 -07:00 [INF] Request finished in 3613.7335ms 200 
+2021-05-23 14:44:58.538 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/World/Room/1  
+2021-05-23 14:44:58.539 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:44:58.539 -07:00 [INF] Request finished in 0.6327ms 204 
+2021-05-23 14:44:58.544 -07:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/World/Room/1 application/json 623
+2021-05-23 14:44:58.544 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:44:58.545 -07:00 [INF] Route matched with {action = "Put", controller = "Room"}. Executing controller action with signature Void Put(WhoPK.GameLogic.World.Room.Room) on controller WhoPK.API.World.RoomController (WhoPK.API).
+2021-05-23 14:44:58.553 -07:00 [INF] Executing action method WhoPK.API.World.RoomController.Put (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:45:01.105 -07:00 [INF] Executed action method WhoPK.API.World.RoomController.Put (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 2552.1241ms.
+2021-05-23 14:45:01.106 -07:00 [INF] Executed action WhoPK.API.World.RoomController.Put (WhoPK.API) in 2560.9584ms
+2021-05-23 14:45:01.106 -07:00 [INF] Request finished in 2561.7733ms 200 
+2021-05-23 14:45:03.902 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/World/Area  
+2021-05-23 14:45:03.902 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:45:03.904 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature System.Collections.Generic.List`1[WhoPK.GameLogic.World.Area.Area] Get() on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 14:45:03.913 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:45:03.917 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.4302ms.
+2021-05-23 14:45:03.918 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WhoPK.GameLogic.World.Area.Area, WhoPK.GameLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-05-23 14:45:03.940 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 35.9252ms
+2021-05-23 14:45:03.940 -07:00 [INF] Request finished in 38.6728ms 200 application/json; charset=utf-8
+2021-05-23 14:45:05.925 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/World/Area/1  
+2021-05-23 14:45:05.925 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:45:05.927 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature WhoPK.GameLogic.World.Area.Area Get(Int32) on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 14:45:05.937 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:45:05.945 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 8.3959ms.
+2021-05-23 14:45:05.945 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.World.Area.Area'.
+2021-05-23 14:45:05.954 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 26.7647ms
+2021-05-23 14:45:05.954 -07:00 [INF] Request finished in 29.5107ms 200 application/json; charset=utf-8
+2021-05-23 14:45:08.033 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api//world/room/2  
+2021-05-23 14:45:08.034 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:45:08.034 -07:00 [INF] Request finished in 0.8973ms 404 
+2021-05-23 14:45:18.468 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/World/Area/1  
+2021-05-23 14:45:18.468 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:45:18.469 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature WhoPK.GameLogic.World.Area.Area Get(Int32) on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 14:45:18.479 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:45:18.480 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.4042ms.
+2021-05-23 14:45:18.480 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.World.Area.Area'.
+2021-05-23 14:45:18.482 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 12.4369ms
+2021-05-23 14:45:18.482 -07:00 [INF] Request finished in 13.7068ms 200 application/json; charset=utf-8
+2021-05-23 14:45:24.600 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api//world/room/2  
+2021-05-23 14:45:24.600 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:45:24.601 -07:00 [INF] Request finished in 0.8995ms 404 
+2021-05-23 14:45:25.465 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/World/Area/1  
+2021-05-23 14:45:25.465 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:45:25.465 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature WhoPK.GameLogic.World.Area.Area Get(Int32) on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 14:45:25.475 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:45:25.476 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.9924ms.
+2021-05-23 14:45:25.476 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.World.Area.Area'.
+2021-05-23 14:45:25.476 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 10.7381ms
+2021-05-23 14:45:25.476 -07:00 [INF] Request finished in 11.7292ms 200 application/json; charset=utf-8
+2021-05-23 14:45:29.159 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/World/Area/1  
+2021-05-23 14:45:29.160 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:45:29.160 -07:00 [INF] Route matched with {action = "Get", controller = "Area"}. Executing controller action with signature WhoPK.GameLogic.World.Area.Area Get(Int32) on controller WhoPK.Controllers.AreaController (WhoPK.API).
+2021-05-23 14:45:29.169 -07:00 [INF] Executing action method WhoPK.Controllers.AreaController.Get (WhoPK.API) - Validation state: "Valid"
+2021-05-23 14:45:29.170 -07:00 [INF] Executed action method WhoPK.Controllers.AreaController.Get (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.949ms.
+2021-05-23 14:45:29.171 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.World.Area.Area'.
+2021-05-23 14:45:29.171 -07:00 [INF] Executed action WhoPK.Controllers.AreaController.Get (WhoPK.API) in 10.8353ms
+2021-05-23 14:45:29.171 -07:00 [INF] Request finished in 11.8281ms 200 application/json; charset=utf-8
+2021-05-23 14:45:31.019 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api//world/room/2  
+2021-05-23 14:45:31.019 -07:00 [INF] CORS policy execution successful.
+2021-05-23 14:45:31.020 -07:00 [INF] Request finished in 0.755ms 404 

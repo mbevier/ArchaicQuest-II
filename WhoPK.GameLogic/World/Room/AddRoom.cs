@@ -52,28 +52,28 @@ namespace WhoPK.GameLogic.World.Room
         }
         public void MapRoomId(Room room)
         {
-            var northRoom = room.Exits[Direction.North].Coords;
+            var northRoom = room.ExitMap.ContainsKey(Direction.North) ? room.ExitMap[Direction.North].Coords : null;
             if (northRoom != null)
             {
-                room.Exits[Direction.North].RoomId = GetRoomFromCoords(northRoom) != null ? GetRoomFromCoords(northRoom).Id : -1;
+                room.ExitMap[Direction.North].RoomId = GetRoomFromCoords(northRoom) != null ? GetRoomFromCoords(northRoom).Id : -1;
             }
 
-            var eastRoom = room.Exits[Direction.East]?.Coords;
+            var eastRoom = room.ExitMap.ContainsKey(Direction.East) ? room.ExitMap[Direction.East].Coords : null;
             if (eastRoom != null)
             {
-                room.Exits[Direction.North].RoomId = GetRoomFromCoords(eastRoom) != null ? GetRoomFromCoords(eastRoom).Id : -1;
+                room.ExitMap[Direction.East].RoomId = GetRoomFromCoords(eastRoom) != null ? GetRoomFromCoords(eastRoom).Id : -1;
             }
 
-            var southRoom = room.Exits[Direction.South]?.Coords;
+            var southRoom = room.ExitMap.ContainsKey(Direction.South) ? room.ExitMap[Direction.South].Coords : null;
             if (southRoom != null)
             {
-                room.Exits[Direction.South].RoomId = GetRoomFromCoords(southRoom) != null ? GetRoomFromCoords(southRoom).Id : -1;
+                room.ExitMap[Direction.South].RoomId = GetRoomFromCoords(southRoom) != null ? GetRoomFromCoords(southRoom).Id : -1;
             }
 
-            var westRoom = room.Exits[Direction.West]?.Coords;
+            var westRoom = room.ExitMap.ContainsKey(Direction.West) ? room.ExitMap[Direction.West].Coords : null;
             if (westRoom != null)
             {
-                room.Exits[Direction.West].RoomId = GetRoomFromCoords(westRoom) != null ? GetRoomFromCoords(westRoom).Id : -1;
+                room.ExitMap[Direction.West].RoomId = GetRoomFromCoords(westRoom) != null ? GetRoomFromCoords(westRoom).Id : -1;
             }
         }
 

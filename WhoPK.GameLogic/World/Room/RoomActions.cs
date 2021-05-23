@@ -21,7 +21,7 @@ namespace WhoPK.GameLogic.World.Room
         public void Look(Room room, Player player)
         {
 
-            var exits = string.Join(", ", room.Exits.Select(x => x.Key)).Trim();
+            var exits = string.Join(", ", room.ExitMap.Select(x => x.Key)).Trim();
             var items = DisplayItems(room);
             var mobs = DisplayMobs(room);
 

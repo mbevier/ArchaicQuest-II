@@ -134,9 +134,13 @@ namespace WhoPK.GameLogic.Hubs
             var player = GetCharacter(Context.ConnectionId, characterId);
             Entity playerEntity = _world.CreateEntity(); // you can pass an unique ID as first parameter.
             var playerInput = new PlayerInputComponent();
+            var playerLocation = new LocationComponent();
+            playerLocation.RoomId = 0;
             playerInput.connectionId = player.ConnectionId;
             playerInput.userId = player.AccountId;
+            //TODO:  Create character load to store/load components
             playerEntity.AddComponent(playerInput);
+            playerEntity.AddComponent(playerLocation);
             AddCharacterToCache(Context.ConnectionId, player, playerEntity);
             await SendToClient($"Welcome {player.Name}. Your adventure awaits you.", Context.ConnectionId);
 
