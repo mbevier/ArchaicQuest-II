@@ -1,6 +1,6 @@
 
 This project contains:
-* The Web API that powers the Admin tool
+* The Web API that powers the Admin tool and Client
 * The Signalr game server
 * The Web client
 * Entity component system to handle objects in world
