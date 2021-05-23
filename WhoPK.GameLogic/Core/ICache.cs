@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Artemis;
+using System;
 using System.Collections.Concurrent;
 using WhoPK.GameLogic.Character;
 using WhoPK.GameLogic.World.Room;
@@ -12,7 +13,11 @@ namespace WhoPK.GameLogic.Core
         /// </summary>
         /// <returns>returns player Cache</returns>
         bool AddPlayer(string id, Player player);
+
+        bool AddPlayerEntity(string id, Entity player);
         Player GetPlayer(string id);
+
+        Entity GetPlayerEntity(string id);
         ConcurrentDictionary<string, Player> GetPlayerCache();
         bool PlayerAlreadyExists(Guid id);
 

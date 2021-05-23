@@ -14,10 +14,10 @@ namespace WhoPK.GameLogic.Core.System
     {
         ICache _cache;
         IClientMessenger _messenger;
-        public MovementSystem(ICache cache, IClientMessenger messenger) : base(Aspect.All(typeof(LocationComponent), typeof(MovementComponent))) 
+        public MovementSystem() : base(Aspect.All(typeof(LocationComponent), typeof(MovementComponent))) 
         {
-            this._cache = cache;
-            this._messenger = messenger;
+            _cache = EntitySystem.BlackBoard.GetEntry<ICache>("Cache"); ;
+            _messenger = EntitySystem.BlackBoard.GetEntry<IClientMessenger>("ClientMessenger");
         }
 
         public override void Process(Entity e)

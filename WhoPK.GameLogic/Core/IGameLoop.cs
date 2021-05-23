@@ -9,9 +9,9 @@ namespace WhoPK.GameLogic.Core
    public interface IGameLoop
     {
         Task Start();
-        Task UpdateTime();
+        //Task UpdateTime();
 
-        Task UpdatePlayers();
+        //Task UpdatePlayers();
         //  void UpdatePlayers();
     }
 }

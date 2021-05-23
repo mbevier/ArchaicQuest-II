@@ -5098,3 +5098,432 @@ System.InvalidOperationException: Unable to resolve service for type 'WhoPK.Game
 2021-05-22 17:00:08.937 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 181.073ms
 2021-05-22 17:00:08.938 -07:00 [INF] Request finished in 3853.9194ms 200 application/json; charset=utf-8
 2021-05-22 17:00:14.297 -07:00 [INF] Player sent test, hub ID
+2021-05-23 10:02:56.049 -07:00 [INF] Starting up ArchaicQuest
+2021-05-23 10:02:57.553 -07:00 [INF] User profile is available. Using 'C:\Users\markb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-23 10:02:57.692 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2021-05-23 10:02:57.698 -07:00 [INF] CORS policy execution successful.
+2021-05-23 10:02:57.982 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2021-05-23 10:02:58.045 -07:00 [INF] Executing action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) - Validation state: "Valid"
+2021-05-23 10:02:58.085 -07:00 [INF] Executed action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 37.0737ms.
+2021-05-23 10:02:58.088 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2021-05-23 10:02:58.183 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 198.6449ms
+2021-05-23 10:02:58.184 -07:00 [INF] Request finished in 493.6387ms 200 application/json; charset=utf-8
+2021-05-23 10:04:06.564 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/Hubs/game/negotiate  
+2021-05-23 10:04:06.564 -07:00 [INF] CORS policy execution successful.
+2021-05-23 10:04:06.566 -07:00 [INF] Request finished in 2.0132ms 204 
+2021-05-23 10:04:06.574 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/Hubs/game/negotiate text/plain;charset=UTF-8 0
+2021-05-23 10:04:06.575 -07:00 [INF] CORS policy execution successful.
+2021-05-23 10:04:06.576 -07:00 [INF] Executing endpoint '/Hubs/game/negotiate'
+2021-05-23 10:04:06.581 -07:00 [INF] Executed endpoint '/Hubs/game/negotiate'
+2021-05-23 10:04:06.581 -07:00 [INF] Request finished in 6.7659ms 200 application/json
+2021-05-23 10:04:06.584 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/Hubs/game?id=ls855jxy1_MUIl1qAAVb0w  
+2021-05-23 10:04:06.584 -07:00 [INF] CORS policy execution successful.
+2021-05-23 10:04:06.586 -07:00 [INF] Executing endpoint '/Hubs/game'
+2021-05-23 10:04:06.634 -07:00 [INF] Player sent 
+ <pre>    
+
+                               ==(W{==========-      /===-
+                                ||  (.--.)         /===-_---~~~~~~~----__
+                                | \_,|<span style="color:red">*</span><span style="color:red">*</span>|,__      |===-~___            _,-'`
+                   -==\\        `\ ' `--'   ),    `//~\\   ~~~~`--._.-~
+               ______-==|        /`\_. .__/\ \    | |  \\          _-~`
+         __--~~~  ,-/-==\\      (   | .  |~~~~|   | |   `\       ,'
+      _-~       /'    |  \\     )__/==0==-\<>/   / /      \     /   <span style="color:#fff">Welcome! A great addictive fantasy arena  </span> 
+    .'        /       |   \\      /~\___/~~\/  /' /        \   /     <span style="color:#fff">awaits you, I hope.     </span> 
+   /  ____  /         |    \`\.__/-~~   \  |_/'  /          \/'              
+  /-'~    ~~~~~---__  |     ~-/~         ( )   /'        _--~`                
+                    \_|      /        _) | ;  ),   __--~~                
+                      '~~--_/      _-~/- |/ \   '-~ \
+                     {\__--_/}    / \\_>-|)<__\      \
+                     /'   (_/  _-~  | |__>--<__|      |         <span style="color:#fff">Written, maintained and coded by Suunmar</span>
+                    |   _/) )-~     | |__>--<__|      |         <span style="color:#fff">Admin: Suunmar (mbevier@gmail.com)</span>
+                    / /~ ,_/       / /__>---<__/      |         <span style="color:#fff">Contributers: None!</span>
+                   o-o _//        /-~_>---<__-~      /          <span style="color:#fff">Codebase: Closed, for now</span>
+                   (^(~          /~_>---<__-      _-~
+                  <span style="color:tomato">,/|</span>           /__>--<__/     _-~
+               <span style="color:tomato">,//('(</span>          |__>--<__|     /                  .--_
+              <span style="color:tomato">( ( '))</span>          |__>--<__|    |                 /' _-_~\
+           <span style="color:tomato">`-)) )) (</span>           |__>--<__|    | -Tua Xiong    /'  /   ~\`\
+          <span style="color:tomato">,/,'//( (</span>             \__>--<__\    \            /'  //      ||
+        <span style="color:tomato">,( ( ((, ))</span>              ~-__>--<_~-_  ~--__---~'/'/  /'       VV
+      <span style="color:tomato">`~/  )` ) ,/|</span>                 ~-_~>--<_/-__      __-~ _/
+    <span style="color:tomato">._-~//( )/ )) `</span>                    ~~-'_/_/ /~~~~~__--~
+     <span style="color:tomato">;'( ')/ ,)(</span>                              ~~~~~~~~
+    <span style="color:tomato">' ') '( (/</span>
+	</span>
+</pre>
+2021-05-23 10:05:02.614 -07:00 [INF] Player sent Welcome Mark. Your adventure awaits you.
+2021-05-23 10:05:02.637 -07:00 [INF] Executed endpoint '/Hubs/game'
+2021-05-23 10:05:02.639 -07:00 [INF] Request finished in 56054.6784ms 101 
+2021-05-23 10:05:55.417 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2021-05-23 10:05:55.417 -07:00 [INF] CORS policy execution successful.
+2021-05-23 10:05:55.418 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2021-05-23 10:05:55.428 -07:00 [INF] Executing action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) - Validation state: "Valid"
+2021-05-23 10:05:55.430 -07:00 [INF] Executed action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.8651ms.
+2021-05-23 10:05:55.430 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2021-05-23 10:05:55.431 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 13.1127ms
+2021-05-23 10:05:55.432 -07:00 [INF] Request finished in 14.9645ms 200 application/json; charset=utf-8
+2021-05-23 10:05:58.095 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2021-05-23 10:05:58.096 -07:00 [INF] CORS policy execution successful.
+2021-05-23 10:05:58.096 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2021-05-23 10:05:58.106 -07:00 [INF] Executing action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) - Validation state: "Valid"
+2021-05-23 10:05:58.108 -07:00 [INF] Executed action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.8966ms.
+2021-05-23 10:05:58.108 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2021-05-23 10:05:58.109 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 12.8953ms
+2021-05-23 10:05:58.109 -07:00 [INF] Request finished in 14.215ms 200 application/json; charset=utf-8
+2021-05-23 10:05:59.293 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/Hubs/game/negotiate  
+2021-05-23 10:05:59.293 -07:00 [INF] CORS policy execution successful.
+2021-05-23 10:05:59.294 -07:00 [INF] Request finished in 1.0414ms 204 
+2021-05-23 10:05:59.295 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/Hubs/game/negotiate text/plain;charset=UTF-8 0
+2021-05-23 10:05:59.295 -07:00 [INF] CORS policy execution successful.
+2021-05-23 10:05:59.296 -07:00 [INF] Executing endpoint '/Hubs/game/negotiate'
+2021-05-23 10:05:59.296 -07:00 [INF] Executed endpoint '/Hubs/game/negotiate'
+2021-05-23 10:05:59.301 -07:00 [INF] Request finished in 6.4993ms 200 application/json
+2021-05-23 10:05:59.305 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/Hubs/game?id=XjUx3FNuY_pQsA80YGAnAw  
+2021-05-23 10:05:59.305 -07:00 [INF] CORS policy execution successful.
+2021-05-23 10:05:59.305 -07:00 [INF] Executing endpoint '/Hubs/game'
+2021-05-23 10:05:59.313 -07:00 [INF] Player sent 
+ <pre>    
+
+                               ==(W{==========-      /===-
+                                ||  (.--.)         /===-_---~~~~~~~----__
+                                | \_,|<span style="color:red">*</span><span style="color:red">*</span>|,__      |===-~___            _,-'`
+                   -==\\        `\ ' `--'   ),    `//~\\   ~~~~`--._.-~
+               ______-==|        /`\_. .__/\ \    | |  \\          _-~`
+         __--~~~  ,-/-==\\      (   | .  |~~~~|   | |   `\       ,'
+      _-~       /'    |  \\     )__/==0==-\<>/   / /      \     /   <span style="color:#fff">Welcome! A great addictive fantasy arena  </span> 
+    .'        /       |   \\      /~\___/~~\/  /' /        \   /     <span style="color:#fff">awaits you, I hope.     </span> 
+   /  ____  /         |    \`\.__/-~~   \  |_/'  /          \/'              
+  /-'~    ~~~~~---__  |     ~-/~         ( )   /'        _--~`                
+                    \_|      /        _) | ;  ),   __--~~                
+                      '~~--_/      _-~/- |/ \   '-~ \
+                     {\__--_/}    / \\_>-|)<__\      \
+                     /'   (_/  _-~  | |__>--<__|      |         <span style="color:#fff">Written, maintained and coded by Suunmar</span>
+                    |   _/) )-~     | |__>--<__|      |         <span style="color:#fff">Admin: Suunmar (mbevier@gmail.com)</span>
+                    / /~ ,_/       / /__>---<__/      |         <span style="color:#fff">Contributers: None!</span>
+                   o-o _//        /-~_>---<__-~      /          <span style="color:#fff">Codebase: Closed, for now</span>
+                   (^(~          /~_>---<__-      _-~
+                  <span style="color:tomato">,/|</span>           /__>--<__/     _-~
+               <span style="color:tomato">,//('(</span>          |__>--<__|     /                  .--_
+              <span style="color:tomato">( ( '))</span>          |__>--<__|    |                 /' _-_~\
+           <span style="color:tomato">`-)) )) (</span>           |__>--<__|    | -Tua Xiong    /'  /   ~\`\
+          <span style="color:tomato">,/,'//( (</span>             \__>--<__\    \            /'  //      ||
+        <span style="color:tomato">,( ( ((, ))</span>              ~-__>--<_~-_  ~--__---~'/'/  /'       VV
+      <span style="color:tomato">`~/  )` ) ,/|</span>                 ~-_~>--<_/-__      __-~ _/
+    <span style="color:tomato">._-~//( )/ )) `</span>                    ~~-'_/_/ /~~~~~__--~
+     <span style="color:tomato">;'( ')/ ,)(</span>                              ~~~~~~~~
+    <span style="color:tomato">' ') '( (/</span>
+	</span>
+</pre>
+2021-05-23 10:05:59.314 -07:00 [INF] Player sent Welcome Mark. Your adventure awaits you.
+2021-05-23 10:06:03.472 -07:00 [INF] Player sent test, hub ID
+2021-05-23 10:06:10.615 -07:00 [INF] Player sent look, hub ID
+2021-05-23 10:06:13.699 -07:00 [INF] Player sent e, hub ID
+2021-05-23 10:25:16.506 -07:00 [INF] Starting up ArchaicQuest
+2021-05-23 10:25:17.528 -07:00 [INF] User profile is available. Using 'C:\Users\markb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-23 10:26:00.507 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2021-05-23 10:26:00.512 -07:00 [INF] CORS policy execution successful.
+2021-05-23 10:26:00.617 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2021-05-23 10:26:00.670 -07:00 [INF] Executing action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) - Validation state: "Valid"
+2021-05-23 10:26:00.711 -07:00 [INF] Executed action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 37.3631ms.
+2021-05-23 10:26:00.713 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2021-05-23 10:26:00.809 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 189.0929ms
+2021-05-23 10:26:00.810 -07:00 [INF] Request finished in 304.4898ms 200 application/json; charset=utf-8
+2021-05-23 10:26:15.139 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2021-05-23 10:26:15.139 -07:00 [INF] CORS policy execution successful.
+2021-05-23 10:26:15.150 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2021-05-23 10:26:15.160 -07:00 [INF] Executing action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) - Validation state: "Valid"
+2021-05-23 10:26:15.162 -07:00 [INF] Executed action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.8223ms.
+2021-05-23 10:26:15.162 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2021-05-23 10:26:15.163 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 12.9043ms
+2021-05-23 10:26:15.163 -07:00 [INF] Request finished in 24.6208ms 200 application/json; charset=utf-8
+2021-05-23 10:26:19.850 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/Hubs/game/negotiate  
+2021-05-23 10:26:19.851 -07:00 [INF] CORS policy execution successful.
+2021-05-23 10:26:19.852 -07:00 [INF] Request finished in 1.9876ms 204 
+2021-05-23 10:26:19.854 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/Hubs/game/negotiate text/plain;charset=UTF-8 0
+2021-05-23 10:26:19.854 -07:00 [INF] CORS policy execution successful.
+2021-05-23 10:26:19.856 -07:00 [INF] Executing endpoint '/Hubs/game/negotiate'
+2021-05-23 10:26:19.860 -07:00 [INF] Executed endpoint '/Hubs/game/negotiate'
+2021-05-23 10:26:19.861 -07:00 [INF] Request finished in 6.7192ms 200 application/json
+2021-05-23 10:26:19.863 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/Hubs/game?id=xG7VFSbRh9oxDu9iWw0IwQ  
+2021-05-23 10:26:19.863 -07:00 [INF] CORS policy execution successful.
+2021-05-23 10:26:19.864 -07:00 [INF] Executing endpoint '/Hubs/game'
+2021-05-23 10:26:19.901 -07:00 [INF] Player sent 
+ <pre>    
+
+                               ==(W{==========-      /===-
+                                ||  (.--.)         /===-_---~~~~~~~----__
+                                | \_,|<span style="color:red">*</span><span style="color:red">*</span>|,__      |===-~___            _,-'`
+                   -==\\        `\ ' `--'   ),    `//~\\   ~~~~`--._.-~
+               ______-==|        /`\_. .__/\ \    | |  \\          _-~`
+         __--~~~  ,-/-==\\      (   | .  |~~~~|   | |   `\       ,'
+      _-~       /'    |  \\     )__/==0==-\<>/   / /      \     /   <span style="color:#fff">Welcome! A great addictive fantasy arena  </span> 
+    .'        /       |   \\      /~\___/~~\/  /' /        \   /     <span style="color:#fff">awaits you, I hope.     </span> 
+   /  ____  /         |    \`\.__/-~~   \  |_/'  /          \/'              
+  /-'~    ~~~~~---__  |     ~-/~         ( )   /'        _--~`                
+                    \_|      /        _) | ;  ),   __--~~                
+                      '~~--_/      _-~/- |/ \   '-~ \
+                     {\__--_/}    / \\_>-|)<__\      \
+                     /'   (_/  _-~  | |__>--<__|      |         <span style="color:#fff">Written, maintained and coded by Suunmar</span>
+                    |   _/) )-~     | |__>--<__|      |         <span style="color:#fff">Admin: Suunmar (mbevier@gmail.com)</span>
+                    / /~ ,_/       / /__>---<__/      |         <span style="color:#fff">Contributers: None!</span>
+                   o-o _//        /-~_>---<__-~      /          <span style="color:#fff">Codebase: Closed, for now</span>
+                   (^(~          /~_>---<__-      _-~
+                  <span style="color:tomato">,/|</span>           /__>--<__/     _-~
+               <span style="color:tomato">,//('(</span>          |__>--<__|     /                  .--_
+              <span style="color:tomato">( ( '))</span>          |__>--<__|    |                 /' _-_~\
+           <span style="color:tomato">`-)) )) (</span>           |__>--<__|    | -Tua Xiong    /'  /   ~\`\
+          <span style="color:tomato">,/,'//( (</span>             \__>--<__\    \            /'  //      ||
+        <span style="color:tomato">,( ( ((, ))</span>              ~-__>--<_~-_  ~--__---~'/'/  /'       VV
+      <span style="color:tomato">`~/  )` ) ,/|</span>                 ~-_~>--<_/-__      __-~ _/
+    <span style="color:tomato">._-~//( )/ )) `</span>                    ~~-'_/_/ /~~~~~__--~
+     <span style="color:tomato">;'( ')/ ,)(</span>                              ~~~~~~~~
+    <span style="color:tomato">' ') '( (/</span>
+	</span>
+</pre>
+2021-05-23 10:26:19.913 -07:00 [INF] Player sent Welcome Mark. Your adventure awaits you.
+2021-05-23 10:38:41.036 -07:00 [INF] Starting up ArchaicQuest
+2021-05-23 10:38:42.056 -07:00 [INF] User profile is available. Using 'C:\Users\markb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-23 10:39:25.352 -07:00 [INF] Starting up ArchaicQuest
+2021-05-23 10:39:26.380 -07:00 [INF] User profile is available. Using 'C:\Users\markb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-23 10:43:00.984 -07:00 [INF] Starting up ArchaicQuest
+2021-05-23 10:43:02.079 -07:00 [INF] User profile is available. Using 'C:\Users\markb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-23 11:30:49.303 -07:00 [INF] Starting up ArchaicQuest
+2021-05-23 11:30:50.813 -07:00 [INF] User profile is available. Using 'C:\Users\markb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-23 11:31:03.573 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2021-05-23 11:31:03.579 -07:00 [INF] CORS policy execution successful.
+2021-05-23 11:31:03.804 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2021-05-23 11:31:03.852 -07:00 [INF] Executing action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) - Validation state: "Valid"
+2021-05-23 11:31:03.893 -07:00 [INF] Executed action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 37.4688ms.
+2021-05-23 11:31:03.895 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2021-05-23 11:31:03.995 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 188.861ms
+2021-05-23 11:31:03.996 -07:00 [INF] Request finished in 424.5504ms 200 application/json; charset=utf-8
+2021-05-23 11:31:05.634 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/Hubs/game/negotiate  
+2021-05-23 11:31:05.634 -07:00 [INF] CORS policy execution successful.
+2021-05-23 11:31:05.636 -07:00 [INF] Request finished in 2.0354ms 204 
+2021-05-23 11:31:05.638 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/Hubs/game/negotiate text/plain;charset=UTF-8 0
+2021-05-23 11:31:05.638 -07:00 [INF] CORS policy execution successful.
+2021-05-23 11:31:05.639 -07:00 [INF] Executing endpoint '/Hubs/game/negotiate'
+2021-05-23 11:31:05.643 -07:00 [INF] Executed endpoint '/Hubs/game/negotiate'
+2021-05-23 11:31:05.643 -07:00 [INF] Request finished in 5.7045ms 200 application/json
+2021-05-23 11:31:05.647 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/Hubs/game?id=vUkQPs_dFTLSg1laks6zPA  
+2021-05-23 11:31:05.647 -07:00 [INF] CORS policy execution successful.
+2021-05-23 11:31:05.648 -07:00 [INF] Executing endpoint '/Hubs/game'
+2021-05-23 11:31:05.693 -07:00 [INF] Player sent 
+ <pre>    
+
+                               ==(W{==========-      /===-
+                                ||  (.--.)         /===-_---~~~~~~~----__
+                                | \_,|<span style="color:red">*</span><span style="color:red">*</span>|,__      |===-~___            _,-'`
+                   -==\\        `\ ' `--'   ),    `//~\\   ~~~~`--._.-~
+               ______-==|        /`\_. .__/\ \    | |  \\          _-~`
+         __--~~~  ,-/-==\\      (   | .  |~~~~|   | |   `\       ,'
+      _-~       /'    |  \\     )__/==0==-\<>/   / /      \     /   <span style="color:#fff">Welcome! A great addictive fantasy arena  </span> 
+    .'        /       |   \\      /~\___/~~\/  /' /        \   /     <span style="color:#fff">awaits you, I hope.     </span> 
+   /  ____  /         |    \`\.__/-~~   \  |_/'  /          \/'              
+  /-'~    ~~~~~---__  |     ~-/~         ( )   /'        _--~`                
+                    \_|      /        _) | ;  ),   __--~~                
+                      '~~--_/      _-~/- |/ \   '-~ \
+                     {\__--_/}    / \\_>-|)<__\      \
+                     /'   (_/  _-~  | |__>--<__|      |         <span style="color:#fff">Written, maintained and coded by Suunmar</span>
+                    |   _/) )-~     | |__>--<__|      |         <span style="color:#fff">Admin: Suunmar (mbevier@gmail.com)</span>
+                    / /~ ,_/       / /__>---<__/      |         <span style="color:#fff">Contributers: None!</span>
+                   o-o _//        /-~_>---<__-~      /          <span style="color:#fff">Codebase: Closed, for now</span>
+                   (^(~          /~_>---<__-      _-~
+                  <span style="color:tomato">,/|</span>           /__>--<__/     _-~
+               <span style="color:tomato">,//('(</span>          |__>--<__|     /                  .--_
+              <span style="color:tomato">( ( '))</span>          |__>--<__|    |                 /' _-_~\
+           <span style="color:tomato">`-)) )) (</span>           |__>--<__|    | -Tua Xiong    /'  /   ~\`\
+          <span style="color:tomato">,/,'//( (</span>             \__>--<__\    \            /'  //      ||
+        <span style="color:tomato">,( ( ((, ))</span>              ~-__>--<_~-_  ~--__---~'/'/  /'       VV
+      <span style="color:tomato">`~/  )` ) ,/|</span>                 ~-_~>--<_/-__      __-~ _/
+    <span style="color:tomato">._-~//( )/ )) `</span>                    ~~-'_/_/ /~~~~~__--~
+     <span style="color:tomato">;'( ')/ ,)(</span>                              ~~~~~~~~
+    <span style="color:tomato">' ') '( (/</span>
+	</span>
+</pre>
+2021-05-23 11:31:05.705 -07:00 [INF] Player sent Welcome Mark. Your adventure awaits you.
+2021-05-23 11:56:55.281 -07:00 [INF] Starting up ArchaicQuest
+2021-05-23 11:56:56.321 -07:00 [INF] User profile is available. Using 'C:\Users\markb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-23 11:56:56.635 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2021-05-23 11:56:56.640 -07:00 [INF] CORS policy execution successful.
+2021-05-23 11:56:56.726 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2021-05-23 11:56:56.780 -07:00 [INF] Executing action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) - Validation state: "Valid"
+2021-05-23 11:56:56.821 -07:00 [INF] Executed action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 37.1133ms.
+2021-05-23 11:56:56.823 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2021-05-23 11:56:56.915 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 186.667ms
+2021-05-23 11:56:56.916 -07:00 [INF] Request finished in 283.2763ms 200 application/json; charset=utf-8
+2021-05-23 11:57:03.076 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/Hubs/game/negotiate  
+2021-05-23 11:57:03.076 -07:00 [INF] CORS policy execution successful.
+2021-05-23 11:57:03.078 -07:00 [INF] Request finished in 2.0511ms 204 
+2021-05-23 11:57:03.079 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/Hubs/game/negotiate text/plain;charset=UTF-8 0
+2021-05-23 11:57:03.079 -07:00 [INF] CORS policy execution successful.
+2021-05-23 11:57:03.080 -07:00 [INF] Executing endpoint '/Hubs/game/negotiate'
+2021-05-23 11:57:03.085 -07:00 [INF] Executed endpoint '/Hubs/game/negotiate'
+2021-05-23 11:57:03.085 -07:00 [INF] Request finished in 5.9786ms 200 application/json
+2021-05-23 11:57:03.088 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/Hubs/game?id=aFd4lbqGMrgBwwhBkKCmww  
+2021-05-23 11:57:03.088 -07:00 [INF] CORS policy execution successful.
+2021-05-23 11:57:03.089 -07:00 [INF] Executing endpoint '/Hubs/game'
+2021-05-23 11:57:03.129 -07:00 [INF] Player sent 
+ <pre>    
+
+                               ==(W{==========-      /===-
+                                ||  (.--.)         /===-_---~~~~~~~----__
+                                | \_,|<span style="color:red">*</span><span style="color:red">*</span>|,__      |===-~___            _,-'`
+                   -==\\        `\ ' `--'   ),    `//~\\   ~~~~`--._.-~
+               ______-==|        /`\_. .__/\ \    | |  \\          _-~`
+         __--~~~  ,-/-==\\      (   | .  |~~~~|   | |   `\       ,'
+      _-~       /'    |  \\     )__/==0==-\<>/   / /      \     /   <span style="color:#fff">Welcome! A great addictive fantasy arena  </span> 
+    .'        /       |   \\      /~\___/~~\/  /' /        \   /     <span style="color:#fff">awaits you, I hope.     </span> 
+   /  ____  /         |    \`\.__/-~~   \  |_/'  /          \/'              
+  /-'~    ~~~~~---__  |     ~-/~         ( )   /'        _--~`                
+                    \_|      /        _) | ;  ),   __--~~                
+                      '~~--_/      _-~/- |/ \   '-~ \
+                     {\__--_/}    / \\_>-|)<__\      \
+                     /'   (_/  _-~  | |__>--<__|      |         <span style="color:#fff">Written, maintained and coded by Suunmar</span>
+                    |   _/) )-~     | |__>--<__|      |         <span style="color:#fff">Admin: Suunmar (mbevier@gmail.com)</span>
+                    / /~ ,_/       / /__>---<__/      |         <span style="color:#fff">Contributers: None!</span>
+                   o-o _//        /-~_>---<__-~      /          <span style="color:#fff">Codebase: Closed, for now</span>
+                   (^(~          /~_>---<__-      _-~
+                  <span style="color:tomato">,/|</span>           /__>--<__/     _-~
+               <span style="color:tomato">,//('(</span>          |__>--<__|     /                  .--_
+              <span style="color:tomato">( ( '))</span>          |__>--<__|    |                 /' _-_~\
+           <span style="color:tomato">`-)) )) (</span>           |__>--<__|    | -Tua Xiong    /'  /   ~\`\
+          <span style="color:tomato">,/,'//( (</span>             \__>--<__\    \            /'  //      ||
+        <span style="color:tomato">,( ( ((, ))</span>              ~-__>--<_~-_  ~--__---~'/'/  /'       VV
+      <span style="color:tomato">`~/  )` ) ,/|</span>                 ~-_~>--<_/-__      __-~ _/
+    <span style="color:tomato">._-~//( )/ )) `</span>                    ~~-'_/_/ /~~~~~__--~
+     <span style="color:tomato">;'( ')/ ,)(</span>                              ~~~~~~~~
+    <span style="color:tomato">' ') '( (/</span>
+	</span>
+</pre>
+2021-05-23 11:57:03.142 -07:00 [INF] Player sent Welcome Mark. Your adventure awaits you.
+2021-05-23 11:57:15.656 -07:00 [INF] Player sent look, hub ID
+2021-05-23 11:57:48.518 -07:00 [INF] Starting up ArchaicQuest
+2021-05-23 11:57:49.531 -07:00 [INF] User profile is available. Using 'C:\Users\markb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-23 11:57:49.831 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2021-05-23 11:57:49.841 -07:00 [INF] CORS policy execution successful.
+2021-05-23 11:57:49.935 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2021-05-23 11:57:49.990 -07:00 [INF] Executing action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) - Validation state: "Valid"
+2021-05-23 11:57:50.034 -07:00 [INF] Executed action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 39.9086ms.
+2021-05-23 11:57:50.036 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2021-05-23 11:57:50.134 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 196.9779ms
+2021-05-23 11:57:50.135 -07:00 [INF] Request finished in 306.1204ms 200 application/json; charset=utf-8
+2021-05-23 11:57:50.289 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2021-05-23 11:57:50.289 -07:00 [INF] CORS policy execution successful.
+2021-05-23 11:57:50.295 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2021-05-23 11:57:50.305 -07:00 [INF] Executing action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) - Validation state: "Valid"
+2021-05-23 11:57:50.307 -07:00 [INF] Executed action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.4773ms.
+2021-05-23 11:57:50.307 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2021-05-23 11:57:50.309 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 14.7388ms
+2021-05-23 11:57:50.309 -07:00 [INF] Request finished in 20.7469ms 200 application/json; charset=utf-8
+2021-05-23 11:57:51.030 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/Hubs/game/negotiate  
+2021-05-23 11:57:51.031 -07:00 [INF] CORS policy execution successful.
+2021-05-23 11:57:51.032 -07:00 [INF] Request finished in 1.6588ms 204 
+2021-05-23 11:57:51.034 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/Hubs/game/negotiate text/plain;charset=UTF-8 0
+2021-05-23 11:57:51.034 -07:00 [INF] CORS policy execution successful.
+2021-05-23 11:57:51.036 -07:00 [INF] Executing endpoint '/Hubs/game/negotiate'
+2021-05-23 11:57:51.040 -07:00 [INF] Executed endpoint '/Hubs/game/negotiate'
+2021-05-23 11:57:51.040 -07:00 [INF] Request finished in 5.9336ms 200 application/json
+2021-05-23 11:57:51.043 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/Hubs/game?id=Vn-nIUO59Gjpsm0xMKLTKQ  
+2021-05-23 11:57:51.043 -07:00 [INF] CORS policy execution successful.
+2021-05-23 11:57:51.043 -07:00 [INF] Executing endpoint '/Hubs/game'
+2021-05-23 11:57:51.082 -07:00 [INF] Player sent 
+ <pre>    
+
+                               ==(W{==========-      /===-
+                                ||  (.--.)         /===-_---~~~~~~~----__
+                                | \_,|<span style="color:red">*</span><span style="color:red">*</span>|,__      |===-~___            _,-'`
+                   -==\\        `\ ' `--'   ),    `//~\\   ~~~~`--._.-~
+               ______-==|        /`\_. .__/\ \    | |  \\          _-~`
+         __--~~~  ,-/-==\\      (   | .  |~~~~|   | |   `\       ,'
+      _-~       /'    |  \\     )__/==0==-\<>/   / /      \     /   <span style="color:#fff">Welcome! A great addictive fantasy arena  </span> 
+    .'        /       |   \\      /~\___/~~\/  /' /        \   /     <span style="color:#fff">awaits you, I hope.     </span> 
+   /  ____  /         |    \`\.__/-~~   \  |_/'  /          \/'              
+  /-'~    ~~~~~---__  |     ~-/~         ( )   /'        _--~`                
+                    \_|      /        _) | ;  ),   __--~~                
+                      '~~--_/      _-~/- |/ \   '-~ \
+                     {\__--_/}    / \\_>-|)<__\      \
+                     /'   (_/  _-~  | |__>--<__|      |         <span style="color:#fff">Written, maintained and coded by Suunmar</span>
+                    |   _/) )-~     | |__>--<__|      |         <span style="color:#fff">Admin: Suunmar (mbevier@gmail.com)</span>
+                    / /~ ,_/       / /__>---<__/      |         <span style="color:#fff">Contributers: None!</span>
+                   o-o _//        /-~_>---<__-~      /          <span style="color:#fff">Codebase: Closed, for now</span>
+                   (^(~          /~_>---<__-      _-~
+                  <span style="color:tomato">,/|</span>           /__>--<__/     _-~
+               <span style="color:tomato">,//('(</span>          |__>--<__|     /                  .--_
+              <span style="color:tomato">( ( '))</span>          |__>--<__|    |                 /' _-_~\
+           <span style="color:tomato">`-)) )) (</span>           |__>--<__|    | -Tua Xiong    /'  /   ~\`\
+          <span style="color:tomato">,/,'//( (</span>             \__>--<__\    \            /'  //      ||
+        <span style="color:tomato">,( ( ((, ))</span>              ~-__>--<_~-_  ~--__---~'/'/  /'       VV
+      <span style="color:tomato">`~/  )` ) ,/|</span>                 ~-_~>--<_/-__      __-~ _/
+    <span style="color:tomato">._-~//( )/ )) `</span>                    ~~-'_/_/ /~~~~~__--~
+     <span style="color:tomato">;'( ')/ ,)(</span>                              ~~~~~~~~
+    <span style="color:tomato">' ') '( (/</span>
+	</span>
+</pre>
+2021-05-23 11:57:51.093 -07:00 [INF] Player sent Welcome Mark. Your adventure awaits you.
+2021-05-23 11:58:03.363 -07:00 [INF] Player sent look, hub ID
+2021-05-23 12:26:05.995 -07:00 [INF] Starting up ArchaicQuest
+2021-05-23 12:26:07.010 -07:00 [INF] User profile is available. Using 'C:\Users\markb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-23 12:26:07.321 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2021-05-23 12:26:07.326 -07:00 [INF] CORS policy execution successful.
+2021-05-23 12:26:07.417 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2021-05-23 12:26:07.478 -07:00 [INF] Executing action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) - Validation state: "Valid"
+2021-05-23 12:26:07.521 -07:00 [INF] Executed action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 39.811ms.
+2021-05-23 12:26:07.523 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2021-05-23 12:26:07.620 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 200.2364ms
+2021-05-23 12:26:07.621 -07:00 [INF] Request finished in 301.7094ms 200 application/json; charset=utf-8
+2021-05-23 12:26:07.699 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2021-05-23 12:26:07.699 -07:00 [INF] CORS policy execution successful.
+2021-05-23 12:26:07.704 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2021-05-23 12:26:07.714 -07:00 [INF] Executing action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) - Validation state: "Valid"
+2021-05-23 12:26:07.715 -07:00 [INF] Executed action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.5267ms.
+2021-05-23 12:26:07.716 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2021-05-23 12:26:07.718 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 14.0405ms
+2021-05-23 12:26:07.719 -07:00 [INF] Request finished in 19.7958ms 200 application/json; charset=utf-8
+2021-05-23 12:26:08.605 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/Hubs/game/negotiate  
+2021-05-23 12:26:08.605 -07:00 [INF] CORS policy execution successful.
+2021-05-23 12:26:08.607 -07:00 [INF] Request finished in 2.2453ms 204 
+2021-05-23 12:26:08.608 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/Hubs/game/negotiate text/plain;charset=UTF-8 0
+2021-05-23 12:26:08.608 -07:00 [INF] CORS policy execution successful.
+2021-05-23 12:26:08.610 -07:00 [INF] Executing endpoint '/Hubs/game/negotiate'
+2021-05-23 12:26:08.614 -07:00 [INF] Executed endpoint '/Hubs/game/negotiate'
+2021-05-23 12:26:08.614 -07:00 [INF] Request finished in 5.6391ms 200 application/json
+2021-05-23 12:26:08.617 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/Hubs/game?id=ppd3vrMtlc2spyOJn7LShw  
+2021-05-23 12:26:08.617 -07:00 [INF] CORS policy execution successful.
+2021-05-23 12:26:08.617 -07:00 [INF] Executing endpoint '/Hubs/game'
+2021-05-23 12:26:08.649 -07:00 [INF] Player sent 
+ <pre>    
+
+                               ==(W{==========-      /===-
+                                ||  (.--.)         /===-_---~~~~~~~----__
+                                | \_,|<span style="color:red">*</span><span style="color:red">*</span>|,__      |===-~___            _,-'`
+                   -==\\        `\ ' `--'   ),    `//~\\   ~~~~`--._.-~
+               ______-==|        /`\_. .__/\ \    | |  \\          _-~`
+         __--~~~  ,-/-==\\      (   | .  |~~~~|   | |   `\       ,'
+      _-~       /'    |  \\     )__/==0==-\<>/   / /      \     /   <span style="color:#fff">Welcome! A great addictive fantasy arena  </span> 
+    .'        /       |   \\      /~\___/~~\/  /' /        \   /     <span style="color:#fff">awaits you, I hope.     </span> 
+   /  ____  /         |    \`\.__/-~~   \  |_/'  /          \/'              
+  /-'~    ~~~~~---__  |     ~-/~         ( )   /'        _--~`                
+                    \_|      /        _) | ;  ),   __--~~                
+                      '~~--_/      _-~/- |/ \   '-~ \
+                     {\__--_/}    / \\_>-|)<__\      \
+                     /'   (_/  _-~  | |__>--<__|      |         <span style="color:#fff">Written, maintained and coded by Suunmar</span>
+                    |   _/) )-~     | |__>--<__|      |         <span style="color:#fff">Admin: Suunmar (mbevier@gmail.com)</span>
+                    / /~ ,_/       / /__>---<__/      |         <span style="color:#fff">Contributers: None!</span>
+                   o-o _//        /-~_>---<__-~      /          <span style="color:#fff">Codebase: Closed, for now</span>
+                   (^(~          /~_>---<__-      _-~
+                  <span style="color:tomato">,/|</span>           /__>--<__/     _-~
+               <span style="color:tomato">,//('(</span>          |__>--<__|     /                  .--_
+              <span style="color:tomato">( ( '))</span>          |__>--<__|    |                 /' _-_~\
+           <span style="color:tomato">`-)) )) (</span>           |__>--<__|    | -Tua Xiong    /'  /   ~\`\
+          <span style="color:tomato">,/,'//( (</span>             \__>--<__\    \            /'  //      ||
+        <span style="color:tomato">,( ( ((, ))</span>              ~-__>--<_~-_  ~--__---~'/'/  /'       VV
+      <span style="color:tomato">`~/  )` ) ,/|</span>                 ~-_~>--<_/-__      __-~ _/
+    <span style="color:tomato">._-~//( )/ )) `</span>                    ~~-'_/_/ /~~~~~__--~
+     <span style="color:tomato">;'( ')/ ,)(</span>                              ~~~~~~~~
+    <span style="color:tomato">' ') '( (/</span>
+	</span>
+</pre>
+2021-05-23 12:26:08.660 -07:00 [INF] Player sent Welcome Mark. Your adventure awaits you.
+2021-05-23 12:26:15.064 -07:00 [INF] Player sent look, hub ID

@@ -9,6 +9,7 @@ using WhoPK.GameLogic.Hubs;
 using Microsoft.AspNet.SignalR;
 using WhoPK.GameLogic.Core.System;
 using Artemis;
+using Artemis.System;
 
 namespace WhoPK.GameLogic.Core
 {
@@ -16,45 +17,33 @@ namespace WhoPK.GameLogic.Core
     public class GameLoop : IGameLoop
     {
 
-        private IClientMessenger _writeToClient;
+        private IClientMessenger _messenger;
         private ICache _cache;
         private ICommandManager _commandManager;
-        private PlayerInputSystem _playerInputSystem;
-        private MovementSystem _movementSystem;
         private EntityWorld _gameWorld;
 
-        public GameLoop(IClientMessenger writeToClient, ICache cache, ICommandManager commandManager)
+        public GameLoop(IClientMessenger writeToClient, ICache cache, ICommandManager commandManager, EntityWorld world)
         {
-            _writeToClient = writeToClient;
+            _messenger = writeToClient;
             _cache = cache;
             _commandManager = commandManager;
-            _gameWorld = new EntityWorld();
-            _playerInputSystem = new PlayerInputSystem(_commandManager);
-            _movementSystem = new MovementSystem(_cache, _writeToClient);
+            _gameWorld = world;
+
+            InitializeSystems();
         }
 
-
-        public async Task UpdateTime()
+        private void InitializeSystems()
         {
-
-            //var players = _cache.GetPlayerCache();
-            //var validPlayers = players.Where(x => x.Value.Buffer.Count > 0);
-
-            //foreach (var player in validPlayers)
-            //{
-            //    _writeToClient.WriteLine("update", player.Value.ConnectionId);
-
-            //}
-
+            EntitySystem.BlackBoard.SetEntry<ICommandManager>("CommandManager", _commandManager);
+            EntitySystem.BlackBoard.SetEntry<ICache>("Cache", _cache);
+            _gameWorld.InitializeAll(true);
         }
 
         public async Task Start()
         {
-            _gameWorld.SystemManager.Systems.Add(_playerInputSystem);
-            _gameWorld.SystemManager.Systems.Add(_movementSystem);
             try
             {
-                _writeToClient.WriteLine("start game loop ");
+                _messenger.WriteLine("start game loop ");
                 while (true)
                 {
                     await Task.Delay(50);
@@ -67,17 +56,6 @@ namespace WhoPK.GameLogic.Core
                 throw ex;
             }
         }
-
-
-        public async Task UpdatePlayers()
-        {
-            while (true)
-            {
-                await Task.Delay(125);
-                _playerInputSystem.Process();
-            }
-        }
-
     }
 
 

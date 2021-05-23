@@ -27,6 +27,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.NewtonsoftJson;
 using WhoPK.GameLogic.World.Area;
 using System.Runtime.InteropServices.ComTypes;
+using WhoPK.GameLogic.Core;
+using Artemis;
+using WhoPK.GameLogic.Core.System;
 
 namespace WhoPK.API
 {
@@ -114,7 +117,7 @@ namespace WhoPK.API
             services.AddTransient<IRoomActions, RoomActions>();
             services.AddTransient<IAddRoom, AddRoom>();
             services.AddSingleton<IClientMessenger, WriteToClient>((factory) => new WriteToClient(_hubContext));
-
+            services.AddSingleton<EntityWorld>();
             // Register the Swagger services
             services.AddSwaggerDocument();
         }
@@ -135,7 +138,7 @@ namespace WhoPK.API
           
          
             app.UseStaticFiles();
-
+            
 
 
 
@@ -235,7 +238,7 @@ namespace WhoPK.API
             Task.Run(loop.Start).ContinueWith((t) =>
             {
                 if (t.IsFaulted) throw t.Exception;
-            }); ;
+            });
 
             //Task.Run(loop.UpdatePlayers);
         }

@@ -10,7 +10,7 @@ namespace WhoPK.GameLogic.Core.Component
 {
     public class PlayerInputComponent : ComponentPoolable
     {
-        public Stack<string> commands;
+        public Stack<string> commands = new Stack<string>();
         public Guid userId;
         public string connectionId;
         public bool locked = false;

@@ -23,14 +23,14 @@ namespace WhoPK.GameLogic.Hubs
         private ICache _cache { get; }
         private readonly IClientMessenger _writeToClient;
         private int start = 0;
-        private EntityWorld _entityWorld;
-        public GameHub(IDataBase db, ICache cache, ILogger<GameHub> logger, IClientMessenger writeToClient)
+        private EntityWorld _world;
+        public GameHub(IDataBase db, ICache cache, ILogger<GameHub> logger, IClientMessenger writeToClient, EntityWorld world)
         {
             _logger = logger;
             _db = db;
             _cache = cache;
             _writeToClient = writeToClient;
-            _entityWorld = new EntityWorld();
+            _world = world;
         }
 
  
@@ -69,7 +69,14 @@ namespace WhoPK.GameLogic.Hubs
         {
             _logger.LogInformation($"Player sent {message}, hub ID{connectionId}");
             var player = _cache.GetPlayer(Context.ConnectionId);
+            var playerEntity = _cache.GetPlayerEntity(Context.ConnectionId);
+            var playerInput = playerEntity.GetComponent<PlayerInputComponent>();
+            if (playerInput != null)
+            {
+                playerInput.commands.Push(message);
+            }
             player.Buffer.Push(message);
+
           //   var room = _cache.GetRoom(player.RoomId);
 
           //  GetRoom(connectionId, player);
@@ -125,10 +132,12 @@ namespace WhoPK.GameLogic.Hubs
         {
 
             var player = GetCharacter(Context.ConnectionId, characterId);
-            AddCharacterToCache(Context.ConnectionId, player);
-            Entity playerEntity = _entityWorld.CreateEntity(); // you can pass an unique ID as first parameter.
-            playerEntity.AddComponent(new PlayerInputComponent());
-
+            Entity playerEntity = _world.CreateEntity(); // you can pass an unique ID as first parameter.
+            var playerInput = new PlayerInputComponent();
+            playerInput.connectionId = player.ConnectionId;
+            playerInput.userId = player.AccountId;
+            playerEntity.AddComponent(playerInput);
+            AddCharacterToCache(Context.ConnectionId, player, playerEntity);
             await SendToClient($"Welcome {player.Name}. Your adventure awaits you.", Context.ConnectionId);
 
             GetRoom(Context.ConnectionId, player);
@@ -152,7 +161,7 @@ namespace WhoPK.GameLogic.Hubs
             return player;
         }
 
-        private void AddCharacterToCache(string hubId, Player character)
+        private void AddCharacterToCache(string hubId, Player character, Entity playerEntity)
         {
              
             if (_cache.PlayerAlreadyExists(character.Id))
@@ -163,6 +172,7 @@ namespace WhoPK.GameLogic.Hubs
             }
 
             _cache.AddPlayer(hubId, character);
+            _cache.AddPlayerEntity(hubId, playerEntity);
 
         }
 

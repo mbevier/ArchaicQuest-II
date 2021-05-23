@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Artemis;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,10 +13,15 @@ namespace WhoPK.GameLogic.Core
     {
         private readonly ConcurrentDictionary<string, Player> _playerCache = new ConcurrentDictionary<string, Player>();
         private readonly ConcurrentDictionary<int, Room> _roomCache = new ConcurrentDictionary<int, Room>();
-
+        private readonly ConcurrentDictionary<string, Entity> _playerEntityCache = new ConcurrentDictionary<string, Entity>();
         public bool AddPlayer(string id, Player player)
         {
             return _playerCache.TryAdd(id, player);
+        }
+
+        public bool AddPlayerEntity(string id, Entity player)
+        {
+            return _playerEntityCache.TryAdd(id, player);
         }
 
         public Player GetPlayer(string id)
@@ -24,6 +30,13 @@ namespace WhoPK.GameLogic.Core
 
             return player;
         }
+        public Entity GetPlayerEntity(string id)
+        {
+            _playerEntityCache.TryGetValue(id, out Entity player);
+
+            return player;
+        }
+
 
         /// <summary>
         /// Only for the main loop
