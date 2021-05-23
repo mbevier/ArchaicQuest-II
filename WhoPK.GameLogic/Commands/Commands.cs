@@ -15,12 +15,10 @@ namespace WhoPK.GameLogic.Commands
    public class CommandManager : ICommandManager
     {
         IInterpreter _interpreter;
-        IMovement _movement;
         IVisual _visual;
-        public CommandManager(IInterpreter interpreter, IMovement movement, IVisual visual)
+        public CommandManager(IInterpreter interpreter, IVisual visual)
         {
             _interpreter = interpreter;
-            _movement = movement;
             _visual = visual;
             LoadCommands();
         }
@@ -30,10 +28,10 @@ namespace WhoPK.GameLogic.Commands
             //TODO:  Have these tag with component for further processing?  hmmm
             CommandList = new Dictionary<string, Action<Entity, string>>()
             {
-                { "north", new Action<Entity, string>(_movement.MoveNorth) },
-                { "south", new Action<Entity, string>(_movement.MoveSouth) },
-                { "east", new Action<Entity, string>(_movement.MoveEast) },
-                { "west", new Action<Entity, string>(_movement.MoveWest) },
+                { "north", new Action<Entity, string>(new MoveCommand(Direction.North).Execute) },
+                { "south", new Action<Entity, string>(new MoveCommand(Direction.South).Execute) },
+                { "east", new Action<Entity, string>(new MoveCommand(Direction.East).Execute) },
+                { "west", new Action<Entity, string>(new MoveCommand(Direction.West).Execute) },
                 { "look", new Action<Entity, string>(_visual.Look) },
             };
         }

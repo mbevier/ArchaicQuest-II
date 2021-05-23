@@ -12,12 +12,12 @@ namespace WhoPK.GameLogic.Tests.Commands
     {
         private GameLogic.World.Room.Room _room;
         private Player _player;
-        private readonly Mock<IMovement> _movement;
+        //private readonly Mock<IMovement> _movement;
         private readonly Mock<IRoomActions> _roomActions;
 
         public CommandsTests()
         {
-            _movement = new Mock<IMovement>();
+            //_movement = new Mock<IMovement>();
             _roomActions = new Mock<IRoomActions>();
 
             _player = new Player();

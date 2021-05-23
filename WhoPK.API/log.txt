@@ -4937,3 +4937,164 @@ System.InvalidOperationException: Unable to resolve service for type 'WhoPK.Game
 2020-08-26 10:19:06.197 -07:00 [INF] Player sent l, hub ID
 2020-08-26 10:19:07.309 -07:00 [INF] Player sent look, hub ID
 2020-08-26 10:19:08.109 -07:00 [INF] Player sent lo, hub ID
+2021-05-22 15:39:10.069 -07:00 [INF] Starting up ArchaicQuest
+2021-05-22 15:39:11.898 -07:00 [INF] User profile is available. Using 'C:\Users\markb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-22 16:43:35.232 -07:00 [INF] Starting up ArchaicQuest
+2021-05-22 16:43:36.226 -07:00 [INF] User profile is available. Using 'C:\Users\markb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-22 16:44:36.638 -07:00 [INF] Starting up ArchaicQuest
+2021-05-22 16:44:37.691 -07:00 [INF] User profile is available. Using 'C:\Users\markb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-22 16:46:23.205 -07:00 [INF] Starting up ArchaicQuest
+2021-05-22 16:46:24.256 -07:00 [INF] User profile is available. Using 'C:\Users\markb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-22 16:48:26.329 -07:00 [INF] Starting up ArchaicQuest
+2021-05-22 16:48:27.347 -07:00 [INF] User profile is available. Using 'C:\Users\markb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-22 16:49:03.662 -07:00 [INF] Starting up ArchaicQuest
+2021-05-22 16:49:04.686 -07:00 [INF] User profile is available. Using 'C:\Users\markb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-22 16:51:55.190 -07:00 [INF] Starting up ArchaicQuest
+2021-05-22 16:51:56.149 -07:00 [INF] User profile is available. Using 'C:\Users\markb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-22 16:53:55.745 -07:00 [INF] Starting up ArchaicQuest
+2021-05-22 16:53:56.733 -07:00 [INF] User profile is available. Using 'C:\Users\markb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-22 16:53:56.874 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2021-05-22 16:53:56.880 -07:00 [INF] CORS policy execution successful.
+2021-05-22 16:53:56.888 -07:00 [INF] Request finished in 15.5391ms 204 
+2021-05-22 16:53:56.889 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 55
+2021-05-22 16:53:56.889 -07:00 [INF] CORS policy execution successful.
+2021-05-22 16:53:57.198 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2021-05-22 16:53:57.353 -07:00 [INF] Executing action method WhoPK.API.Controllers.AccountController.Login (WhoPK.API) - Validation state: "Valid"
+2021-05-22 16:53:57.447 -07:00 [INF] Executed action method WhoPK.API.Controllers.AccountController.Login (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 90.4456ms.
+2021-05-22 16:53:57.449 -07:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-05-22 16:53:57.467 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 265.9935ms
+2021-05-22 16:53:57.467 -07:00 [INF] Request finished in 578.1921ms 400 application/json; charset=utf-8
+2021-05-22 16:54:17.986 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account  
+2021-05-22 16:54:17.987 -07:00 [INF] CORS policy execution successful.
+2021-05-22 16:54:17.987 -07:00 [INF] Request finished in 1.3616ms 204 
+2021-05-22 16:54:17.988 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account application/json-patch+json 71
+2021-05-22 16:54:17.989 -07:00 [INF] CORS policy execution successful.
+2021-05-22 16:54:17.999 -07:00 [INF] Route matched with {action = "Post", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(WhoPK.GameLogic.Account.Account) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2021-05-22 16:54:18.012 -07:00 [INF] Executing action method WhoPK.API.Controllers.AccountController.Post (WhoPK.API) - Validation state: "Valid"
+2021-05-22 16:54:18.013 -07:00 [INF] Executed action method WhoPK.API.Controllers.AccountController.Post (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 1.08ms.
+2021-05-22 16:54:18.013 -07:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-05-22 16:54:18.013 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Post (WhoPK.API) in 14.074ms
+2021-05-22 16:54:18.014 -07:00 [INF] Request finished in 25.2084ms 400 application/json; charset=utf-8
+2021-05-22 16:54:27.502 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/api/Account/Login  
+2021-05-22 16:54:27.503 -07:00 [INF] CORS policy execution successful.
+2021-05-22 16:54:27.503 -07:00 [INF] Request finished in 0.6811ms 204 
+2021-05-22 16:54:27.504 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/api/Account/Login application/json-patch+json 53
+2021-05-22 16:54:27.504 -07:00 [INF] CORS policy execution successful.
+2021-05-22 16:54:27.505 -07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(WhoPK.GameLogic.Account.Login) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2021-05-22 16:54:27.515 -07:00 [INF] Executing action method WhoPK.API.Controllers.AccountController.Login (WhoPK.API) - Validation state: "Valid"
+2021-05-22 16:54:27.566 -07:00 [INF] Executed action method WhoPK.API.Controllers.AccountController.Login (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 51.0017ms.
+2021-05-22 16:54:27.567 -07:00 [INF] Executing ObjectResult, writing value of type 'System.Guid'.
+2021-05-22 16:54:27.568 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.Login (WhoPK.API) in 62.1956ms
+2021-05-22 16:54:27.568 -07:00 [INF] Request finished in 63.9617ms 200 application/json; charset=utf-8
+2021-05-22 16:54:27.586 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2021-05-22 16:54:27.586 -07:00 [INF] CORS policy execution successful.
+2021-05-22 16:54:27.588 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2021-05-22 16:54:27.598 -07:00 [INF] Executing action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) - Validation state: "Valid"
+2021-05-22 16:54:27.629 -07:00 [INF] Executed action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 30.4628ms.
+2021-05-22 16:54:27.629 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2021-05-22 16:54:27.665 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 76.7129ms
+2021-05-22 16:54:27.665 -07:00 [INF] Request finished in 79.1297ms 200 application/json; charset=utf-8
+2021-05-22 16:54:31.050 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/Hubs/game/negotiate  
+2021-05-22 16:54:31.050 -07:00 [INF] CORS policy execution successful.
+2021-05-22 16:54:31.051 -07:00 [INF] Request finished in 0.7199ms 204 
+2021-05-22 16:54:31.052 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/Hubs/game/negotiate text/plain;charset=UTF-8 0
+2021-05-22 16:54:31.052 -07:00 [INF] CORS policy execution successful.
+2021-05-22 16:54:31.053 -07:00 [INF] Executing endpoint '/Hubs/game/negotiate'
+2021-05-22 16:54:31.060 -07:00 [INF] Executed endpoint '/Hubs/game/negotiate'
+2021-05-22 16:54:31.060 -07:00 [INF] Request finished in 7.6331ms 200 application/json
+2021-05-22 16:54:31.063 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/Hubs/game?id=hWHWsG4qma_ZE4_4xipknA  
+2021-05-22 16:54:31.063 -07:00 [INF] CORS policy execution successful.
+2021-05-22 16:54:31.063 -07:00 [INF] Executing endpoint '/Hubs/game'
+2021-05-22 16:54:31.112 -07:00 [INF] Player sent 
+ <pre>    
+
+                               ==(W{==========-      /===-
+                                ||  (.--.)         /===-_---~~~~~~~----__
+                                | \_,|<span style="color:red">*</span><span style="color:red">*</span>|,__      |===-~___            _,-'`
+                   -==\\        `\ ' `--'   ),    `//~\\   ~~~~`--._.-~
+               ______-==|        /`\_. .__/\ \    | |  \\          _-~`
+         __--~~~  ,-/-==\\      (   | .  |~~~~|   | |   `\       ,'
+      _-~       /'    |  \\     )__/==0==-\<>/   / /      \     /   <span style="color:#fff">Welcome! A great addictive fantasy arena  </span> 
+    .'        /       |   \\      /~\___/~~\/  /' /        \   /     <span style="color:#fff">awaits you, I hope.     </span> 
+   /  ____  /         |    \`\.__/-~~   \  |_/'  /          \/'              
+  /-'~    ~~~~~---__  |     ~-/~         ( )   /'        _--~`                
+                    \_|      /        _) | ;  ),   __--~~                
+                      '~~--_/      _-~/- |/ \   '-~ \
+                     {\__--_/}    / \\_>-|)<__\      \
+                     /'   (_/  _-~  | |__>--<__|      |         <span style="color:#fff">Written, maintained and coded by Suunmar</span>
+                    |   _/) )-~     | |__>--<__|      |         <span style="color:#fff">Admin: Suunmar (mbevier@gmail.com)</span>
+                    / /~ ,_/       / /__>---<__/      |         <span style="color:#fff">Contributers: None!</span>
+                   o-o _//        /-~_>---<__-~      /          <span style="color:#fff">Codebase: Closed, for now</span>
+                   (^(~          /~_>---<__-      _-~
+                  <span style="color:tomato">,/|</span>           /__>--<__/     _-~
+               <span style="color:tomato">,//('(</span>          |__>--<__|     /                  .--_
+              <span style="color:tomato">( ( '))</span>          |__>--<__|    |                 /' _-_~\
+           <span style="color:tomato">`-)) )) (</span>           |__>--<__|    | -Tua Xiong    /'  /   ~\`\
+          <span style="color:tomato">,/,'//( (</span>             \__>--<__\    \            /'  //      ||
+        <span style="color:tomato">,( ( ((, ))</span>              ~-__>--<_~-_  ~--__---~'/'/  /'       VV
+      <span style="color:tomato">`~/  )` ) ,/|</span>                 ~-_~>--<_/-__      __-~ _/
+    <span style="color:tomato">._-~//( )/ )) `</span>                    ~~-'_/_/ /~~~~~__--~
+     <span style="color:tomato">;'( ')/ ,)(</span>                              ~~~~~~~~
+    <span style="color:tomato">' ') '( (/</span>
+	</span>
+</pre>
+2021-05-22 16:54:31.120 -07:00 [INF] Player sent Welcome Mark. Your adventure awaits you.
+2021-05-22 16:55:01.197 -07:00 [INF] Player sent test, hub ID
+2021-05-22 16:56:41.249 -07:00 [INF] Starting up ArchaicQuest
+2021-05-22 16:56:42.262 -07:00 [INF] User profile is available. Using 'C:\Users\markb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-22 16:59:53.944 -07:00 [INF] Starting up ArchaicQuest
+2021-05-22 16:59:54.917 -07:00 [INF] User profile is available. Using 'C:\Users\markb\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-05-22 17:00:05.086 -07:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62640/Hubs/game/negotiate  
+2021-05-22 17:00:05.086 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/api/Account/Profile/d529c13d-cb10-4e8f-8e45-1178ac949633  
+2021-05-22 17:00:05.092 -07:00 [INF] CORS policy execution successful.
+2021-05-22 17:00:05.092 -07:00 [INF] CORS policy execution successful.
+2021-05-22 17:00:08.634 -07:00 [INF] Request starting HTTP/1.1 POST http://localhost:62640/Hubs/game/negotiate text/plain;charset=UTF-8 0
+2021-05-22 17:00:08.634 -07:00 [INF] CORS policy execution successful.
+2021-05-22 17:00:08.642 -07:00 [INF] Request finished in 3550.1128ms 204 
+2021-05-22 17:00:08.718 -07:00 [INF] Executing endpoint '/Hubs/game/negotiate'
+2021-05-22 17:00:08.726 -07:00 [INF] Executed endpoint '/Hubs/game/negotiate'
+2021-05-22 17:00:08.726 -07:00 [INF] Request finished in 92.4604ms 200 application/json
+2021-05-22 17:00:08.744 -07:00 [INF] Request starting HTTP/1.1 GET http://localhost:62640/Hubs/game?id=Qj1wuHgKMuMY4DynI3gFJA  
+2021-05-22 17:00:08.744 -07:00 [INF] CORS policy execution successful.
+2021-05-22 17:00:08.745 -07:00 [INF] Executing endpoint '/Hubs/game'
+2021-05-22 17:00:08.753 -07:00 [INF] Route matched with {action = "GetProfile", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile(System.String) on controller WhoPK.API.Controllers.AccountController (WhoPK.API).
+2021-05-22 17:00:08.798 -07:00 [INF] Executing action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) - Validation state: "Valid"
+2021-05-22 17:00:08.809 -07:00 [INF] Player sent 
+ <pre>    
+
+                               ==(W{==========-      /===-
+                                ||  (.--.)         /===-_---~~~~~~~----__
+                                | \_,|<span style="color:red">*</span><span style="color:red">*</span>|,__      |===-~___            _,-'`
+                   -==\\        `\ ' `--'   ),    `//~\\   ~~~~`--._.-~
+               ______-==|        /`\_. .__/\ \    | |  \\          _-~`
+         __--~~~  ,-/-==\\      (   | .  |~~~~|   | |   `\       ,'
+      _-~       /'    |  \\     )__/==0==-\<>/   / /      \     /   <span style="color:#fff">Welcome! A great addictive fantasy arena  </span> 
+    .'        /       |   \\      /~\___/~~\/  /' /        \   /     <span style="color:#fff">awaits you, I hope.     </span> 
+   /  ____  /         |    \`\.__/-~~   \  |_/'  /          \/'              
+  /-'~    ~~~~~---__  |     ~-/~         ( )   /'        _--~`                
+                    \_|      /        _) | ;  ),   __--~~                
+                      '~~--_/      _-~/- |/ \   '-~ \
+                     {\__--_/}    / \\_>-|)<__\      \
+                     /'   (_/  _-~  | |__>--<__|      |         <span style="color:#fff">Written, maintained and coded by Suunmar</span>
+                    |   _/) )-~     | |__>--<__|      |         <span style="color:#fff">Admin: Suunmar (mbevier@gmail.com)</span>
+                    / /~ ,_/       / /__>---<__/      |         <span style="color:#fff">Contributers: None!</span>
+                   o-o _//        /-~_>---<__-~      /          <span style="color:#fff">Codebase: Closed, for now</span>
+                   (^(~          /~_>---<__-      _-~
+                  <span style="color:tomato">,/|</span>           /__>--<__/     _-~
+               <span style="color:tomato">,//('(</span>          |__>--<__|     /                  .--_
+              <span style="color:tomato">( ( '))</span>          |__>--<__|    |                 /' _-_~\
+           <span style="color:tomato">`-)) )) (</span>           |__>--<__|    | -Tua Xiong    /'  /   ~\`\
+          <span style="color:tomato">,/,'//( (</span>             \__>--<__\    \            /'  //      ||
+        <span style="color:tomato">,( ( ((, ))</span>              ~-__>--<_~-_  ~--__---~'/'/  /'       VV
+      <span style="color:tomato">`~/  )` ) ,/|</span>                 ~-_~>--<_/-__      __-~ _/
+    <span style="color:tomato">._-~//( )/ )) `</span>                    ~~-'_/_/ /~~~~~__--~
+     <span style="color:tomato">;'( ')/ ,)(</span>                              ~~~~~~~~
+    <span style="color:tomato">' ') '( (/</span>
+	</span>
+</pre>
+2021-05-22 17:00:08.840 -07:00 [INF] Player sent Welcome Mark. Your adventure awaits you.
+2021-05-22 17:00:08.841 -07:00 [INF] Executed action method WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 38.1832ms.
+2021-05-22 17:00:08.844 -07:00 [INF] Executing ObjectResult, writing value of type 'WhoPK.GameLogic.Account.AccountViewModel'.
+2021-05-22 17:00:08.937 -07:00 [INF] Executed action WhoPK.API.Controllers.AccountController.GetProfile (WhoPK.API) in 181.073ms
+2021-05-22 17:00:08.938 -07:00 [INF] Request finished in 3853.9194ms 200 application/json; charset=utf-8
+2021-05-22 17:00:14.297 -07:00 [INF] Player sent test, hub ID

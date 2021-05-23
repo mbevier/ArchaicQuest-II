@@ -8,6 +8,7 @@ using WhoPK.GameLogic.Commands;
 using WhoPK.GameLogic.Hubs;
 using Microsoft.AspNet.SignalR;
 using WhoPK.GameLogic.Core.System;
+using Artemis;
 
 namespace WhoPK.GameLogic.Core
 {
@@ -19,12 +20,17 @@ namespace WhoPK.GameLogic.Core
         private ICache _cache;
         private ICommandManager _commandManager;
         private PlayerInputSystem _playerInputSystem;
+        private MovementSystem _movementSystem;
+        private EntityWorld _gameWorld;
 
         public GameLoop(IClientMessenger writeToClient, ICache cache, ICommandManager commandManager)
         {
             _writeToClient = writeToClient;
             _cache = cache;
             _commandManager = commandManager;
+            _gameWorld = new EntityWorld();
+            _playerInputSystem = new PlayerInputSystem(_commandManager);
+            _movementSystem = new MovementSystem(_cache, _writeToClient);
         }
 
 
@@ -44,21 +50,16 @@ namespace WhoPK.GameLogic.Core
 
         public async Task Start()
         {
+            _gameWorld.SystemManager.Systems.Add(_playerInputSystem);
+            _gameWorld.SystemManager.Systems.Add(_movementSystem);
             try
             {
                 _writeToClient.WriteLine("start game loop ");
                 while (true)
                 {
                     await Task.Delay(50);
-                    //var players = _cache.GetPlayerCache();
-                    //var commandQueuedPlayers = players.Where(x => x.Value.Buffer.Count > 0);
+                    _gameWorld.Update();
 
-                    _playerInputSystem.Process();
-                    //foreach (var player in commandQueuedPlayers)
-                    //{
-                    //    var commandExecuted = _commandManager.ProcessCommand(player.Value.Buffer.Pop(), player.Value);
-                    //    if (!commandExecuted) _writeToClient.WriteLine("Huh?");
-                    //}
                 }
             }
             catch (Exception ex)
@@ -74,17 +75,6 @@ namespace WhoPK.GameLogic.Core
             {
                 await Task.Delay(125);
                 _playerInputSystem.Process();
-                //var players = _cache.GetPlayerCache();
-                //var validPlayers = players.Where(x => x.Value.Buffer.Count > 0);
-
-                //foreach (var entity in validEntities)
-                //{
-
-                //    var command = player.Value.Buffer.Pop();
-                //    //var room = _cache.GetRoom(player.Value.RoomId);
-                //    _commandManager.ProcessCommand(command, player.Value);
-
-                //}
             }
         }
 

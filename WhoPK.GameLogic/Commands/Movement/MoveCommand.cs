@@ -1,21 +1,24 @@
-﻿using System;
+﻿using Artemis;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using WhoPK.GameLogic.Character;
+using WhoPK.GameLogic.Core.Component;
+using WhoPK.GameLogic.World.Room;
 
 namespace WhoPK.GameLogic.Commands
 {
     public class MoveCommand : ICommand
     {
-        string _direction;
-        public MoveCommand (Player player, string direction)
+        readonly Direction _direction;
+        public MoveCommand (Direction dir)
         {
-            _direction = direction;
+            _direction = dir;
         }
-        public virtual void Execute(Player character, string argument)
+        public virtual void Execute(Entity e, string argument)
         {
-            //move character
-            throw new NotImplementedException();
+            var movement = e.GetComponent<MovementComponent>();
+            movement.direction = _direction;
         }
     }
 }
