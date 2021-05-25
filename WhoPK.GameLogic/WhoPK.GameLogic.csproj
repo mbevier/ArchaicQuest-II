@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WhoPK.DataAccess\WhoPK.DataAccess.csproj" />
+    <ProjectReference Include="..\WhoPK.HierarchalTaskNetworkPlanner\WhoPK.HierarchalTaskNetworkPlanner.csproj" />
   </ItemGroup>
 
   <ItemGroup>
