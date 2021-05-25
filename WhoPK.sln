@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhoPK.API", "WhoPK.API\WhoP
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhoPK.GameLogic.Tests", "WhoPK.GameLogic.Tests\WhoPK.GameLogic.Tests.csproj", "{DC45C0AE-72CE-4310-9C8C-0F95337A152D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhoPK.HierarchalTaskNetworkPlanner", "WhoPK.HierarchalTaskNetworkPlanner\WhoPK.HierarchalTaskNetworkPlanner.csproj", "{BD75C38C-FB0E-462B-A1A5-84EE8CA8D421}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhoPK.HierarchalTaskNetworkPlanner.Tests", "WhoPK.HierarchalTaskNetworkPlanner.Tests\WhoPK.HierarchalTaskNetworkPlanner.Tests.csproj", "{77DBD98B-5043-4A8D-8E13-49F99FBEB8C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{DC45C0AE-72CE-4310-9C8C-0F95337A152D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC45C0AE-72CE-4310-9C8C-0F95337A152D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC45C0AE-72CE-4310-9C8C-0F95337A152D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD75C38C-FB0E-462B-A1A5-84EE8CA8D421}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD75C38C-FB0E-462B-A1A5-84EE8CA8D421}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD75C38C-FB0E-462B-A1A5-84EE8CA8D421}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD75C38C-FB0E-462B-A1A5-84EE8CA8D421}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77DBD98B-5043-4A8D-8E13-49F99FBEB8C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77DBD98B-5043-4A8D-8E13-49F99FBEB8C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77DBD98B-5043-4A8D-8E13-49F99FBEB8C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77DBD98B-5043-4A8D-8E13-49F99FBEB8C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
